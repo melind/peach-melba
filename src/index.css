@@ -1,13 +1,62 @@
+@font-face {
+font-family: 'Pelmeshka Cyrillic';
+font-style: normal;
+font-weight: normal;
+src: local('Pelmeshka Cyrillic'), url('./fonts/pelmeshka/Pelmeshka.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Margot';
+    src: url('./fonts/margot/MargotBoldItalic.eot');
+    src: local('Margot Bold Italic'), local('MargotBoldItalic'),
+        url('./fonts/margot/MargotBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/margot/MargotBoldItalic.woff2') format('woff2'),
+        url('./fonts/margot/MargotBoldItalic.woff') format('woff'),
+        url('./fonts/margot/MargotBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Margot';
+    src: url('./fonts/margot/MargotBold.eot');
+    src: local('Margot Bold'), local('MargotBold'),
+        url('./fonts/margot/MargotBold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/margot/MargotBold.woff2') format('woff2'),
+        url('./fonts/margot/MargotBold.woff') format('woff'),
+        url('./fonts/margot/MargotBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Margot';
+    src: url('./fonts/margot/MargotRegularItalic.eot');
+    src: local('Margot Regular Italic'), local('MargotRegularItalic'),
+        url('./fonts/margot/MargotRegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/margot/MargotRegularItalic.woff2') format('woff2'),
+        url('./fonts/margot/MargotRegularItalic.woff') format('woff'),
+        url('./fonts/margot/MargotRegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Margot';
+    src: url('./fonts/margot/MargotRegular.eot');
+    src: local('Margot Regular'), local('MargotRegular'),
+        url('./fonts/margot/MargotRegular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/margot/MargotRegular.woff2') format('woff2'),
+        url('./fonts/margot/MargotRegular.woff') format('woff'),
+        url('./fonts/margot/MargotRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+   font-family: 'Pelmeshka Cyrillic';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

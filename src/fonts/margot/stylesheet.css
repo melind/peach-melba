@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Margot';
+    src: url('MargotBoldItalic.eot');
+    src: local('Margot Bold Italic'), local('MargotBoldItalic'),
+        url('MargotBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('MargotBoldItalic.woff2') format('woff2'),
+        url('MargotBoldItalic.woff') format('woff'),
+        url('MargotBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Margot';
+    src: url('MargotBold.eot');
+    src: local('Margot Bold'), local('MargotBold'),
+        url('MargotBold.eot?#iefix') format('embedded-opentype'),
+        url('MargotBold.woff2') format('woff2'),
+        url('MargotBold.woff') format('woff'),
+        url('MargotBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Margot';
+    src: url('MargotRegularItalic.eot');
+    src: local('Margot Regular Italic'), local('MargotRegularItalic'),
+        url('MargotRegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('MargotRegularItalic.woff2') format('woff2'),
+        url('MargotRegularItalic.woff') format('woff'),
+        url('MargotRegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Margot';
+    src: url('MargotRegular.eot');
+    src: local('Margot Regular'), local('MargotRegular'),
+        url('MargotRegular.eot?#iefix') format('embedded-opentype'),
+        url('MargotRegular.woff2') format('woff2'),
+        url('MargotRegular.woff') format('woff'),
+        url('MargotRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
