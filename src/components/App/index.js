@@ -9,9 +9,7 @@ import NotFound  from '../NotFound';
 const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-     <br/> Peche Melba  
-      </header>
+      
       <Switch>
         <Route path="/" exact component={Home}/>
         <Route path="/404" exact component={NotFound}/>

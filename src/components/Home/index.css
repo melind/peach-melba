@@ -1,6 +1,17 @@
 .home {
-    border: red solid 2px;
-   
+   /* border: red solid 2px;
+    /*background-color: #f1dbba;*/
+    background-image: url('../../icones/fond.svg');
+    background-size: cover;
+    min-height: 100vh;
+    background-color: #f1dbba;
+    font-size: 130px;
+    color: #f1dbba ;
     /*height: 100%;
     /*width: 100%;*/
+}
+
+.title {
+   padding-top: 4%;
+   margin-bottom: 2%;
 }
