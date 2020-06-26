@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  border: blue solid 2px;
+  min-height: 100vh;
 }
 
 
