@@ -4,6 +4,8 @@ import { Route, Switch, Redirect} from 'react-router-dom';
 import './index.css';
 
 import Home from '../Home';
+import Test from '../Test';
+import Footer from '../Footer';
 import NotFound  from '../NotFound';
 
 const App = () => {
@@ -13,8 +15,10 @@ const App = () => {
       <Switch>
         <Route path="/" exact component={Home}/>
         <Route path="/404" exact component={NotFound}/>
+        <Route path="/test" exact component={Test}/>
           <Redirect to="/404" />
       </Switch>
+      <Footer />
     </div>
   );
 }

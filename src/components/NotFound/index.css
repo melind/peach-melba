@@ -3,9 +3,11 @@
     background-size: cover;
     height: 500px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #f1dbba ;
+    /*color: #f1dbba ;*/
+    color: #5b0025;
 }
 
 .ntf h1 {
@@ -18,3 +20,4 @@
    display: block;
    background-color: white;
 }
+

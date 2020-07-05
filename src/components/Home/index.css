@@ -1,33 +1,111 @@
-.home {
-    border: red solid 2px;
-    /*background-color: #f1dbba;*/
-    
-    
-    background-color: #f1dbba;
-    
+.hom {
+    border: white solid 2px;
+    background-color: #df4f15;
     color: #f1dbba ;
-    /*height: 10px;min-height: 150vh;
-    /*width: 100%;*/
+    min-height: 100vh;
 }
-
-.title {
-   /*border: red solid 2px;*/
-   position: absolute;
-  /* text-align: center;*/
-   width: 100%;
-   /*padding-top: 4%;
-   margin-bottom: 2%;*/
-   
+.nav {
+   position: fixed;
+   height: 70%;
+   width: 3%;
+   background-color: #fff197;
 }
-
+.name {
+   /*border: green solid 2px;*/
+}
 .t {
+   background-color: #f1dbba;
    display: flex;
    flex-direction: row;
    justify-content: center;
 }
+.content {
+   /*border: blue solid 2px;*/
+}
+.presentation {
+  /* border: red solid 2px;*/
+   min-height: 50vh;
+}
 
-#peche {
+.skills {
+   /*border: red solid 2px;*/
+   background-color: #5b0025;
+  
+}
+.list {
+   /*border: red solid 2px;*/
+   min-height: 50vh;
+   display: flex;
+   justify-content: space-around;
+  
+}
+.pro {
+   background-color: #f79203;
+   width: 200px;
+   height: 200px;
+}
+
+.skill {
+   width: 200px;
+   height: 200px;
+}
+.one {
+   background-color: #ff8f91;
+}
+.two {
+   background-color: #ff6a66;
+}
+.three {
+   background-color: #da0c67;
+}
+.cursus {
+  /* border: red solid 2px;*/
+   background-color: white;
+   min-height: 50vh;
    color: #f79203;
+   
+}
+
+.xps {
+   display:flex;
+   flex-direction:row;
+   flex-wrap: wrap;
+}
+
+.xp {
+   display:flex;
+   align-items: center;
+}
+.realisation {
+    background-color: #f1dbba;
+    color: #df4f15;
+    min-height: 50vh;
+}
+.projects {
+  /* border: red solid 2px;*/
+   display: flex;
+   flex-direction:row;
+   justify-content: space-around;
+}
+
+
+.project {
+   background-color: #df4f15;
+   width: 200px;
+   height: 200px;
+}
+
+#pm {
+   color: #5b0025;
+}
+#par {
+   color: #f79203;
+}
+#point {
+   color: white;
+}
+#peche {
+   color: #f1dbba;
 }
 #melba {
    color: #5b0025;
@@ -49,7 +127,7 @@
 }
 
 #ee {
-   color: #df4f15;
+   color: #f79203;
 }
 
 
@@ -58,7 +136,7 @@
 }
 
 #eee {
-   color: #da0c67;
+   color: white;
 }
 
 #l {
@@ -70,31 +148,58 @@
 }
 
 #a {
-   color: #df4f15;
+   color: #5b0025;
 }
 
 #\(\) {
    color: #f79203;
 }
-.logo {
-   display: flex;
-   flex-wrap: wrap;
+/*test2*/
+
+#pt {
+   color: #f79203;
 }
 
-.logo1 {
-    /*background-image: url('../../icones/fond.svg');
-    background-repeat: no-repeat;*/
-    background-color: #5b0025;
-    flex: 1;
-    min-height: 100vh;
-    padding-top: 5%;
-}
-.logo2 {
-   flex: 1;
-   padding-top: 5%;
+#et {
+   color: #da0c67;
 }
 
-#fond {
-   
-   margin-left: -15%;
+#ct {
+   color: #ff6a66;
+}
+
+#ht {
+   color: white;
+}
+
+#eet {
+   color: #ff8f91;
+}
+
+
+#mt {
+   color: #5b0025;
+}
+
+#eeet {
+   color: #da0c67;
+}
+
+#lt {
+   color: #ff6a66;
+}
+
+#bt {
+   color: #ff8f91;
+}
+
+#at {
+   color: #df4f15;
+}
+
+#\(\)t {
+   color: #f79203;
+}
+#pointt {
+   color: white;
 }

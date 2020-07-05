@@ -82,10 +82,10 @@ const NotFound = () => {
       const rot = time * speed;
       cube.rotation.x = rot;
       cube.rotation.y = rot;
-    });*/
+    });
    
        peach.rotation.x = time;
-      peach.rotation.y = time;
+      peach.rotation.y = time;*/
 
     renderer.render(scene, camera);
 
@@ -103,6 +103,7 @@ const NotFound = () => {
         <h1>   "404" </h1>
        
          <canvas id="peach"> </canvas>
+        
         </div>
     )
 }

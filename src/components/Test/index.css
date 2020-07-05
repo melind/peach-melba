@@ -1,0 +1,100 @@
+.home {
+    border: red solid 2px;
+    /*background-color: #f1dbba;*/
+    
+    
+    background-color: #df4f15;
+    
+    color: #f1dbba ;
+    /*height: 10px;min-height: 150vh;
+    /*width: 100%;*/
+}
+
+.title {
+   /*border: red solid 2px;*/
+   position: absolute;
+  /* text-align: center;*/
+   width: 100%;
+   /*padding-top: 4%;
+   margin-bottom: 2%;*/
+   
+}
+
+.t {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+#peche {
+   color: #df4f15;
+}
+#melba {
+   color: #5b0025;
+}
+#p {
+   color: #da0c67;
+}
+
+#e {
+   color: #ff6a66;
+}
+
+#c {
+   color: white;
+}
+
+#h {
+   color: #ff8f91;
+}
+
+#ee {
+   color: #df4f15;
+}
+
+
+#m {
+   color: #ff8f91;
+}
+
+#eee {
+   color: #da0c67;
+}
+
+#l {
+   color: #5b0025;
+}
+
+#b {
+   color: #ff6a66;
+}
+
+#a {
+   color: #df4f15;
+}
+
+#\(\) {
+   color: #f79203;
+}
+.logo {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.logo1 {
+    /*background-image: url('../../icones/fond.svg');
+    background-repeat: no-repeat;*/
+    background-color: #5b0025;
+    flex: 1;
+    min-height: 100vh;
+    padding-top: 5%;
+}
+.logo2 {
+   flex: 1;
+   padding-top: 5%;
+}
+
+#fond {
+   
+   margin-left: -15%;
+}

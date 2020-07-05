@@ -55,8 +55,12 @@ src: local('Pelmeshka Cyrillic'), url('./fonts/pelmeshka/Pelmeshka.woff') format
 
 body {
   margin: 0;
-   font-family: 'Pelmeshka Cyrillic';
+   font-family: 'Margot';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    font-family: 'Pelmeshka Cyrillic';
 }
 
