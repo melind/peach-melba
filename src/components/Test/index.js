@@ -3,6 +3,9 @@ import './index.css';
 
 import logo1 from '../../icones/logo1.svg';
 import logo2 from '../../icones/logo2.svg';
+import logo1bis from '../../icones/logo1+fond.svg';
+import logo2bis from '../../icones/logo2+fond.svg';
+import peche1 from '../../icones/peche1.svg';
 import fond from '../../icones/fond.svg';
 /* <div id="fond">  </div>
   <p id="p">P</p><p id="e">e</p><p id="c">c</p><p id="h">h</p><p id="ee">e</p><p id="point">.</p>
@@ -10,16 +13,13 @@ import fond from '../../icones/fond.svg';
 const Test = () => {
 
     return (
-        <div className="home">
-       
         
-
-         <div className="logo">
-         <div className="logo1"> <img src={logo1} width="220"/> </div>
-         <div className="logo2"> <img src={logo2} width="220"/> </div>
-         </div>
-
+       
+        <div className="load">
+        <div className="heartbeat"> <img src={peche1} width="220"/> </div>
+         <div className="spinner"> <img src={peche1} width="220"/> </div>
         </div>
+        
     )
 }
 export default Test;

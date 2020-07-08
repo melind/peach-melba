@@ -34,8 +34,8 @@ const NotFound = () => {
   }
     
     const radius = 17;
-    const widthSegments = 80;
-    const heightSegments = 100;
+    const widthSegments = 40;
+    const heightSegments = 30;
     
     const geometry= new THREE.SphereBufferGeometry(radius, widthSegments, heightSegments);
 
@@ -46,14 +46,6 @@ const NotFound = () => {
     
 
     scene.add(peach);
-    renderer.render(scene, camera);
-  /*   
-  //const material = new THREE.MeshBasicMaterial({color: 0x44aa88});//without light
-  const material = new THREE.MeshPhongMaterial({color: 0x44aa88});  // cyan
-  const cube = new THREE.Mesh(geometry, material);
-  scene.add(cube);
-  renderer.render(scene, camera);*/
-
 
 
     function resizeRendererToDisplaySize(renderer) {
@@ -77,15 +69,9 @@ const NotFound = () => {
       camera.updateProjectionMatrix();
   }
 
-    /*cubes.forEach((cube, ndx) => {
-      const speed = 1 + ndx * .1;
-      const rot = time * speed;
-      cube.rotation.x = rot;
-      cube.rotation.y = rot;
-    });
-   
+  
        peach.rotation.x = time;
-      peach.rotation.y = time;*/
+      peach.rotation.y = time;
 
     renderer.render(scene, camera);
 

@@ -16,25 +16,9 @@
    background-color: white;
    min-height: 100vh;
 }
-.logo {
+.brand {
    display: flex;
-   flex-wrap: wrap;
-}
-
-.logo1 {
-    /*background-image: url('../../icones/fond.svg');
-    background-repeat: no-repeat;*/
-    background-color: #5b0025;
-    flex: 1;
-    min-height: 100vh;
-    padding-top: 5%;
-}
-.logo2 {
-   flex: 1;
-   padding-top: 5%;
-}
-
-#fond {
-   
-   margin-left: -15%;
+   flex-direction: column;
+   background-color: #f1dbba;
+   align-items: center;
 }

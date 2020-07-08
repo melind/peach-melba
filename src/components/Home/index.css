@@ -3,35 +3,63 @@
     background-color: #df4f15;
     color: #f1dbba ;
     min-height: 100vh;
+    padding-left: 5%;
+    padding-top: 1%;
+}/*
+.fond {
+   height: 500px;
+   width: 1000px;
+   background-image: url('../../icones/fond.svg');
+   background-size: cover;
+   margin-top: -10%;
+}*/
+
+.hom a {
+   color: #df4f15;
+}
+
+.hom a:visited {
+   color: #5b0025;
+}
+.icone {
+   padding-right: 100%;
 }
 .nav {
    position: fixed;
    height: 70%;
    width: 3%;
    background-color: #fff197;
+   right: 0;
 }
-.name {
-   /*border: green solid 2px;*/
-}
+
+
+
+
 .t {
-   background-color: #f1dbba;
+   /*background-color: #f1dbba;*/
    display: flex;
-   flex-direction: row;
-   justify-content: center;
+   align-items: center;
+   margin-top: -4%;
 }
+
 .content {
    /*border: blue solid 2px;*/
+   display: flex;
+   flex-direction: column;
 }
 .presentation {
   /* border: red solid 2px;*/
    min-height: 50vh;
+   text-align: left;
 }
 
 .skills {
    /*border: red solid 2px;*/
    background-color: #5b0025;
-  
+  min-height: 50vh;
 }
+
+
 .list {
    /*border: red solid 2px;*/
    min-height: 50vh;
@@ -45,9 +73,11 @@
    height: 200px;
 }
 
-.skill {
-   width: 200px;
-   height: 200px;
+.position{
+   display: flex;
+   flex-direction: column;
+   justify-content: center; 
+   align-items: center;
 }
 .one {
    background-color: #ff8f91;
@@ -57,8 +87,9 @@
 }
 .three {
    background-color: #da0c67;
+   color: #1bd6b2;
 }
-.cursus {
+.experiences {
   /* border: red solid 2px;*/
    background-color: white;
    min-height: 50vh;
@@ -69,13 +100,25 @@
 .xps {
    display:flex;
    flex-direction:row;
+   justify-content: space-around;
    flex-wrap: wrap;
 }
 
 .xp {
    display:flex;
    align-items: center;
+   flex-wrap: wrap;
+   width: 40%;
 }
+
+.xp div {
+   width: 50%;
+}
+
+.xp p {
+   text-align: justify;
+}
+
 .realisation {
     background-color: #f1dbba;
     color: #df4f15;
@@ -85,33 +128,22 @@
   /* border: red solid 2px;*/
    display: flex;
    flex-direction:row;
+   flex-wrap: wrap;
    justify-content: space-around;
 }
 
 
 .project {
-   background-color: #df4f15;
-   width: 200px;
-   height: 200px;
+   color: #df4f15;
 }
 
-#pm {
-   color: #5b0025;
-}
-#par {
-   color: #f79203;
-}
+
 #point {
    color: white;
 }
-#peche {
-   color: #f1dbba;
-}
-#melba {
-   color: #5b0025;
-}
-#p {
-   color: #da0c67;
+
+#P {
+   color: #f79203;
 }
 
 #e {
@@ -154,52 +186,4 @@
 #\(\) {
    color: #f79203;
 }
-/*test2*/
 
-#pt {
-   color: #f79203;
-}
-
-#et {
-   color: #da0c67;
-}
-
-#ct {
-   color: #ff6a66;
-}
-
-#ht {
-   color: white;
-}
-
-#eet {
-   color: #ff8f91;
-}
-
-
-#mt {
-   color: #5b0025;
-}
-
-#eeet {
-   color: #da0c67;
-}
-
-#lt {
-   color: #ff6a66;
-}
-
-#bt {
-   color: #ff8f91;
-}
-
-#at {
-   color: #df4f15;
-}
-
-#\(\)t {
-   color: #f79203;
-}
-#pointt {
-   color: white;
-}

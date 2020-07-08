@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Switch, Redirect} from 'react-router-dom';
 //import logo from './logo.svg';
 import './index.css';
 
 import Home from '../Home';
 import Test from '../Test';
-import Footer from '../Footer';
+import Load from '../Load';
+
 import NotFound  from '../NotFound';
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+    
+     setTimeout(function () {
+      setLoading(false);
+    }, 2000);
+    if (loading) {
+           return <Load />
+         }
   return (
     <div className="App">
       
@@ -18,7 +27,7 @@ const App = () => {
         <Route path="/test" exact component={Test}/>
           <Redirect to="/404" />
       </Switch>
-      <Footer />
+      
     </div>
   );
 }
