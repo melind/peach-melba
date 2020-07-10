@@ -22,3 +22,9 @@
    background-color: #f1dbba;
    align-items: center;
 }
+.t {
+   /*background-color: #f1dbba;*/
+   display: flex;
+   align-items: center;
+   margin-top: -4%;
+}

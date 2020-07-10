@@ -28,27 +28,38 @@ const Home = () => {
     return (
         <div className="hom">
            <div className="nav"></div>
-           <div className="icone fadeIn">
-             <img src={peche2} width="200"/>
-           </div>
-           <div className="content">
-            <section className="presentation"><p> Hello, <br/> I'm peche melba a web developer </p>
 
-            </section>
+           <div className="presentation">
+              <div className="presentationBackground"></div>
+              <div className="presentationContent">
+                  <div className="icone fadeIn">
+                    <img src={peche2} width="200"/>
+                  </div>
+                  <p> Hello, <br/> I'm peche melba a web developer </p>
+              </div>
+            </div>
+
+           <div className="mainContent">
+            <div className="background"></div>
+            
+            <div  className="image"></div>
             <section className="skills">  <h1>Skills </h1>
                  <div className="list">
                  <div className="position one shape"><img src={mongodb} width="150"/></div>
                  <div className="position two shape"><img src={node} width="150"/></div>
                   <div className="position three shape"><img src={react} width="110"/><h2>React</h2></div>
                   </div>
-                  
             </section>
-            <section className="experiences"> <h1>Web Experiences</h1>
+            <section className="experiences"> 
+            <div className="experiencesBackground"></div>
+            
+            <div  className="experiencesTitle"></div>
+            <h1>Web Experiences</h1>
                 <div className="xps">
 
-                    <div className="xp"> <img src={peche1} width="200" className="wiggle"/>
+                    <div className="xp"> <img src={peche1} width="150" className="wiggle"/>
                       <div> 
-                        <h3>Developer full stack JS</h3>
+                        <h4>Developer full stack JS</h4>
                         <p> 
                             End of training project with O'clock <br/>
                             Specifications wrighting, use cases, sequence diagram.<br/>
@@ -57,9 +68,9 @@ const Home = () => {
                       </div>
                     </div>
 
-                    <div className="xp"> <img src={toque} width="200" className="pulse"/> 
+                    <div className="xp"> <img src={toque} width="150" className="pulse"/> 
                       <div>  
-                        <h3>Project Manager (e-commerce website)</h3> 
+                        <h4>Project Manager (e-commerce website)</h4> 
                         <p>Student Project with Simplon <br/>
                             Using Trello as project management tool.<br/>
                             Assignment and follow-up of tasks of the different members of the team.<br/>
@@ -67,9 +78,9 @@ const Home = () => {
                       </div>
                     </div>
 
-                    <div className="xp"> <img src={mijote} width="200" className="floater"/>
+                    <div className="xp"> <img src={mijote} width="150" className="floater"/>
                       <div>
-                        <h3>Développeur back-end (Forum)</h3>
+                        <h4>Développeur back-end (Forum)</h4>
                         <p>Student Project with Simplon <br/>
                             Back-end development using php.<br/>
                             Data persistance and creating a database using phpmyadmin.
@@ -82,9 +93,10 @@ const Home = () => {
 
 
             <section className="realisation"> <h1>Projects</h1>
+                <div className="realisationBackground"></div>
                 <div className="projects">
-                <div className="project  position"><img src={tw} width="350"/><h3>To watch</h3><a href="http://www.to-watch.info">www.to-watch.info</a></div>
-                <div className="project position"><br/><img src={perso} width="350"/><h3>Luminaris</h3></div>
+                <div className="project  position"><img src={tw} width="300"/><h3>To watch</h3><a href="http://www.to-watch.info">www.to-watch.info</a></div>
+                <div className="project position"><br/><img src={perso} width="300"/><h3>Luminaris</h3></div>
                 
                 </div>
             </section>

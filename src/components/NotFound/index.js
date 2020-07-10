@@ -1,7 +1,7 @@
 /* global THREE */ 
 import * as THREE from 'three';
 import React, { useEffect } from 'react';
-
+import texture from '../../images/texture.jpg'; 
 import './index.css'
 
 
@@ -39,9 +39,14 @@ const NotFound = () => {
     
     const geometry= new THREE.SphereBufferGeometry(radius, widthSegments, heightSegments);
 
-    
-     const material = new THREE.MeshStandardMaterial({color: 0xdf4f15, roughness: 0.6, metalness: 0.1});
-
+    const loader = new THREE.TextureLoader();
+     /*const material = new THREE.MeshStandardMaterial({
+       color: 0xdf4f15, roughness: 0.6, metalness: 0.1
+       });*/
+const material = new THREE.MeshBasicMaterial({
+       
+       map: loader.load(texture),
+       });
      const peach = new THREE.Mesh(geometry, material);
     
 
