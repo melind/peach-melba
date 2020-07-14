@@ -5,27 +5,70 @@
      
 
 }
-.hom a {
-   color: #df4f15;
-}
-
-.hom a:hover {
-   color: #5b0025;
-}/*
+/*
 .icone {
   
-}/*
-.nav {
-   position: fixed;
-   height: 70%;
-   width: 3%;
-   background-color: #fff197;
-   right: 0;
-   color: #5b0025;
 }*/
+.nav {
+   display: flex;
+   flex-direction: row;
+   position: fixed;
+   margin-top: 5%;
+   right: 2%;
+   z-index: 4;
+}
+.hamburgerNav {
+  /* border: red solid 2px;*/
+   height: 40px;
+   width: 40px;
+   background-color: #f79203;
+   color: #5b0025;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   border-radius: 5px; 
+   opacity: 0.5;
+}
+.hamburgerNav:hover {
+   opacity: 1;
+}
+.menu {
+   background-color: #fff197;
+   height: 6%;
+   width: 60%;
+   /*border-radius: 100px;*/
+}
 
+.bar {
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   display:none;
+   height: 40px;
+}
 
+.bar div {
+   /*border: red solid 2px;*/
+   /*background-color: transparent;*/
+   background-color: #5b0025;
+   opacity: 0.5;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   width: 125px;
+   height: 100%;
+   color: #df4f15;
+   
+}
+.bar div:hover {
+   /*color: #5b0025;*/
+   opacity: 1;
+}
 
+.bar a {
+   text-decoration: none;
+}
 
 .presentation {
    /*border: red solid 2px;*/
@@ -84,9 +127,11 @@
    /*border: red solid 2px;*/
    padding-top: 8%;
    padding-bottom: 8%;
+   padding-left: 1%;
+   padding-right: 1%;
    min-height: 50vh;
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-between;
    justify-items: center;
    flex-wrap: wrap;
 
@@ -117,6 +162,9 @@
    
    align-items: center;
   
+}
+.skill-item {
+   display: flex;
 }
 .four {
    color: #ff8f91;
@@ -173,8 +221,9 @@
 .xp {
    display:flex;
    align-items: center;
-   flex-wrap: nowrap;
-   /*width: 40%;*/
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 40%;
 }
 .xp p {
    text-align: justify;
@@ -212,7 +261,7 @@
    background-color:  #5b0025;
    height: 2vh;
    border-radius: 90px;
-   width: 75%;
+   width: 43%;
 }
 .cursusBackground {
    width: 100%;
@@ -232,8 +281,8 @@
    /*border: red solid 2px;*/
    display: flex;
    justify-content: center;
-   flex-wrap: wrap;
-  
+   flex-wrap: nowrap;
+   width: 100%;
 }
 .cursusContain {
    /*border: red solid 2px;*/
@@ -269,6 +318,9 @@
 .realisation h1 {
     position: relative;
     z-index:3;
+}
+.realisation a:visited {
+   color: #5b0025;
 }
 .realisationBackground {
   /* border: red solid 2px;*/
@@ -355,4 +407,5 @@
 #\(\) {
    color: #f79203;
 }
+
 

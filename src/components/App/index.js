@@ -4,7 +4,7 @@ import { Route, Switch, Redirect} from 'react-router-dom';
 import './index.css';
 
 import Home from '../Home';
-import Test from '../Test';
+import LegalMentions from '../LegalMentions';
 import Load from '../Load';
 
 import NotFound  from '../NotFound';
@@ -24,7 +24,7 @@ const App = () => {
       <Switch>
         <Route path="/" exact component={Home}/>
         <Route path="/404" exact component={NotFound}/>
-        <Route path="/test" exact component={Test}/>
+        <Route path="/mentionsLegales" exact component={LegalMentions}/>
           <Redirect to="/404" />
       </Switch>
       

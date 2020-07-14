@@ -1,7 +1,9 @@
 /* global THREE */ 
 import * as THREE from 'three';
 import React, { useEffect } from 'react';
+import {Link} from 'react-router-dom';
 import texture from '../../images/texture.jpg'; 
+import logos from '../../icones/logopapier.svg';
 import './index.css'
 
 
@@ -39,14 +41,14 @@ const NotFound = () => {
     
     const geometry= new THREE.SphereBufferGeometry(radius, widthSegments, heightSegments);
 
-    const loader = new THREE.TextureLoader();
-     /*const material = new THREE.MeshStandardMaterial({
+   // const loader = new THREE.TextureLoader();
+     const material = new THREE.MeshStandardMaterial({
        color: 0xdf4f15, roughness: 0.6, metalness: 0.1
-       });*/
-const material = new THREE.MeshBasicMaterial({
+       });
+/*const material = new THREE.MeshBasicMaterial({
        
        map: loader.load(texture),
-       });
+       });*/
      const peach = new THREE.Mesh(geometry, material);
     
 
@@ -90,11 +92,11 @@ const material = new THREE.MeshBasicMaterial({
     }, []);
 
     return (
-        <div className="ntf"> 
+        <div className="ntf">
+        <Link to="/"><p>Accueil</p> </Link> 
         <h1>   "404" </h1>
        
          <canvas id="peach"> </canvas>
-        
         </div>
     )
 }

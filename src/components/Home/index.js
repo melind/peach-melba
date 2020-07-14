@@ -1,35 +1,46 @@
 import React from 'react';
 import './index.css';
 import Footer from '../Footer';
-import logo1 from '../../icones/logo1.svg';
-import logo2 from '../../icones/logo2.svg';
-import logo1bis from '../../icones/logo1+fond.svg';
-import logo2bis from '../../icones/logo2+fond.svg';
-import fond from '../../icones/fond.svg';
 import peche1 from '../../icones/peche1.svg';
 import peche2 from '../../icones/peche2.svg';
 import toque from '../../icones/toque.svg';
 import mijote from '../../icones/mijote.svg';
-import react from '../../icones/react.svg';
+import react from '../../icones/react.png';
 import node from '../../icones/node.svg';
 import mongodb from '../../icones/mongodb.svg';
-import chantilly from '../../icones/chantilly.svg';
-import chantillyS from '../../icones/chantillySimplifiée.svg';
 import tw from '../../images/tw.svg';
 import perso from '../../images/perso.svg';
 
 
-/*  <img src={logo1} width="500"/><div className="cursusBackground"></div>
-             <h1 className="t ">
-                <p id="P">P</p><p id="e">e</p><p id="c">c</p><p id="h">h</p><p id="ee">e</p><p id="point">.</p>
-                 <p id="m">m</p><p id="eee">e</p><p id="l">l</p><p id="b">b</p><p id="a">a</p><p id="()">()</p>   
-             </h1>
-           */
+      
+    const show = function () {  
+      let bar = document.getElementsByClassName("bar")[0];  
+      bar.style.display= "flex"; 
+      let hambNav = document.getElementsByClassName("hamburgerNav")[0];  
+      hambNav.style.display= "none"; 
+    }
+    const hide = function () {  
+      let bar = document.getElementsByClassName("bar")[0];   
+      bar.style.display= "none"; 
+      let hambNav = document.getElementsByClassName("hamburgerNav")[0];  
+      hambNav.style.display= "flex"; 
+    }
 const Home = () => {
 
     return (
         <div className="hom">
-                   <div className="nav"></div>
+                  <div className="nav" onClick={show} >
+                           <div className="hamburgerNav" >
+                                    <div className="menu"></div><div className="menu"></div><div className="menu">
+                           </div>
+                           </div>
+                            <div className="bar"onMouseOver={show} onMouseOut={hide}>
+                                  <a href="#skill"><div>Skills</div></a>
+                                  <a href="#webXp"><div>Web Experiences</div></a>
+                                  <a href="#cursus"><div>Cursus</div></a>
+                                  <a href="#project"><div>Project</div></a>
+                            </div>
+                   </div>
             
                    <div className="presentation">
             
@@ -38,7 +49,7 @@ const Home = () => {
                               <div className="presentationContent">
             
                                            <div className="icone fadeIn">
-                                             <img src={peche2} width="200"/>
+                                             <img src={peche2} width="200" alt="pech melba icone"/>
                                            </div>
                                            <p> Hello,  I'm peche melba a web developer  </p>
             
@@ -54,12 +65,12 @@ const Home = () => {
             
                           <section className="skills">  
             
-                               <h1>Skills </h1>
+                               <h1 id="skill">Skills </h1>
                                <div className="list">
             
-                                  <div className="position one shape"><img src={mongodb} width="150"/></div> <div className="positionTwo four">Mongoose</div>
-                                  <div className="position two shape"><img src={node} width="150"/></div><div className="positionTwo five ">ExpressJS</div>
-                                  <div className="position three shape"><img src={react} width="110"/><h2>React</h2></div><div className="positionTwo six ">Redux</div>
+                                  <div className="skill-item"><div className="position one shape"><img src={mongodb} width="150" alt="mongodb logo"/></div> <div className="positionTwo four">Mongoose</div></div>
+                                  <div className="skill-item"> <div className="position two shape"><img src={node} width="150" alt="nodejs logo"/></div><div className="positionTwo five ">ExpressJS</div></div>
+                                  <div className="skill-item"> <div className="position three shape"><img src={react} width="110" alt="reactjs logo"/><h2>React</h2></div><div className="positionTwo six ">Redux</div></div>
             
                                 </div>
                           </section>
@@ -70,11 +81,11 @@ const Home = () => {
             
             
             
-                              <div className="xps"><h1 className="h2">Web Experiences</h1>
+                              <div className="xps"><h1 className="h2" id="webXp">Web Experiences</h1>
                                 <div  className="xpTransition"></div>
             
             
-                                  <div className="xp"> <img src={peche1} width="150" className="wiggle"/>
+                                  <div className="xp"> <img src={peche1} width="150" className="wiggle" alt="peach melba icone"/>
             
                                     <div> 
                                       <h4>Developer full stack JS</h4>
@@ -87,7 +98,7 @@ const Home = () => {
             
                                   </div>
             
-                                  <div className="xp"> <img src={toque} width="150" className="pulse"/> 
+                                  <div className="xp"> <img src={toque} width="150" className="pulse" alt="chef hat icone"/> 
             
                                     <div>  
                                       <h4>Project Manager (e-commerce website)</h4> 
@@ -99,7 +110,7 @@ const Home = () => {
             
                                   </div>
             
-                                  <div className="xp"> <img src={mijote} width="150" className="floater"/>
+                                  <div className="xp"> <img src={mijote} width="150" className="floater" alt="pan icone"/>
             
                                     <div>
                                       <h4>Développeur back-end (Forum)</h4>
@@ -118,7 +129,7 @@ const Home = () => {
             
                           <div className="cursusBackground"></div>
             
-                          <h1>Cursus</h1>
+                          <h1 id="cursus">Cursus</h1>
             
                           <div className="cursusTransition"></div>
             
@@ -166,16 +177,18 @@ const Home = () => {
             
                           <section className="realisation">
             
-                              <h1>Projects</h1>
+                              <h1 id="project">Projects</h1>
             
                               <div className="realisationBackground"></div>
                               <div className="projects">
             
-                                   <div className="project position"><img src={tw} width="300"/><h3>To watch</h3><a href="http://www.to-watch.info">www.to-watch.info</a></div>
-                                   <div className="project position"><img src={perso} width="300"/><h3>Luminaris</h3><a href="https://github.com/melind/luminaires">Github Projet</a></div>
-            
+                                   <div className="project position"><img src={tw} width="300" alt="to watch website "/><h3>To watch (school project)</h3><a href="http://www.to-watch.info">www.to-watch.info</a></div>
+                                   <div className="project position"><img src={perso} width="300" alt="Luminaris website "/><h3>Luminaris (personal project)</h3><a href="https://github.com/melind/luminaires">Github Project</a></div>
+
+                                  
+
                               </div>
-            
+
                           </section>
                     
                  </div>
