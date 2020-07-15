@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="footer">
       
       <a href="https://www.linkedin.com/in/melimendy/"><img src={linkedin} alt=" linkedin logo" width="50"/></a>
-      <a href="@https://github.com/melind"><img src={github} alt="github logo" width="50"/></a>
+      <a href="https://github.com/melind"><img src={github} alt="github logo" width="50"/></a>
       <a href="https://twitter.com/MELIMENDY"><img src={twitter} alt="twitter logo" width="50"/></a>
       <p>Contact: melinda93@hotmail.fr</p>
       <Link to="/mentionsLegales">Mentions Legales</Link>
