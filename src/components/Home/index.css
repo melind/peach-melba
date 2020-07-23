@@ -1,6 +1,413 @@
-.home {
-    border: red solid 2px;
-   
-    /*height: 100%;
-    /*width: 100%;*/
+.hom {
+    
+    color: #f1dbba ;
+    min-height: 100vh;
+     
+
 }
+/*
+.icone {
+  
+}*/
+.nav {
+   display: flex;
+   flex-direction: row;
+   position: fixed;
+   margin-top: 5%;
+   right: 2%;
+   z-index: 4;
+}
+.hamburgerNav {
+  /* border: red solid 2px;*/
+   height: 40px;
+   width: 40px;
+   background-color: #f79203;
+   color: #5b0025;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   border-radius: 5px; 
+   opacity: 0.5;
+}
+.hamburgerNav:hover {
+   opacity: 1;
+}
+.menu {
+   background-color: #fff197;
+   height: 6%;
+   width: 60%;
+   margin-top: 3%;
+   margin-bottom: 1%;
+   /*border-radius: 100px;*/
+}
+
+.bar {
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   display:none;
+   height: 40px;
+}
+
+.bar div {
+   /*border: red solid 2px;*/
+   /*background-color: transparent;*/
+   background-color: #5b0025;
+   opacity: 0.5;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   width: 125px;
+   height: 100%;
+   color: #df4f15;
+   
+}
+.bar div:hover {
+   /*color: #5b0025;*/
+   opacity: 1;
+}
+
+.bar a {
+   text-decoration: none;
+}
+
+.presentation {
+   /*border: red solid 2px;*/
+   background-color: #df4f15;
+   min-height: 100vh;
+   text-align: left;
+   
+   position: relative;
+   z-index: 1;
+}
+
+.presentationBackground {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-image: url('../../images/ordi2.jpg');
+   background-size: cover;
+   background-attachment: fixed;
+   opacity: 0.5;
+   z-index: 2;
+}
+
+.presentationContent {
+   position: absolute;
+  /* padding-left: 5%;*/
+   width: 100%;
+   height: 100%;
+   z-index:3;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.presentationContent p {
+   width: 40%;
+   margin-left: -5%;
+   margin-bottom: -4%;
+   
+}
+.mainContent {
+   /*border: blue solid 2px;*/
+   display: flex;
+   flex-direction: column;
+}
+.skills {
+   /*border: red solid 2px;*/
+   background-color: #5b0025;
+   min-height: 80vh;
+   padding-top: 5%;
+   
+   
+}
+
+
+.list {
+   /*border: red solid 2px;*/
+   padding-top: 8%;
+   padding-bottom: 8%;
+   padding-left: 1%;
+   padding-right: 1%;
+   min-height: 50vh;
+   display: flex;
+   justify-content: space-between;
+   justify-items: center;
+   flex-wrap: wrap;
+
+}
+
+.position {
+  /* border: red solid 2px;*/
+   display: flex;
+   flex-direction: column;
+   justify-content: center; 
+   align-items: center;
+  
+}
+
+.one {
+   background-color: #ff8f91;
+}
+.two {
+   background-color: #ff6a66;
+}
+.three {
+   background-color: #da0c67;
+   color: #1bd6b2;
+}
+.positionTwo {
+   display: flex;
+   flex-direction: column;
+   
+   align-items: center;
+  
+}
+.skill-item {
+   display: flex;
+}
+.four {
+   color: #ff8f91;
+}
+.five {
+   color: #ff6a66;
+}
+.six {
+   color: #da0c67;
+}
+.experiences {
+  /* border: red solid 2px;*/
+   background-color: white;
+   min-height: 50vh;
+   color: #f79203;
+   position:relative;
+}
+
+.experiences h1 {
+   margin-top: -5%;
+}
+.experiencesTitle{
+   top: 0;
+   position: absolute;
+   background-color: white;
+   opacity: 0.2;
+   height:27%;
+   width: 100%;
+   z-index: 1;
+   /*margin-top: 16%;*/
+}
+
+
+.experiencesBackground {
+   
+   width: 100%;
+   height: 100%;
+   min-height: 100vh;
+   background-image: url('../../images/exp.jpg');
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.xps {
+   display:flex;
+   flex-direction:row;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   text-align: left;
+   padding-top: 8%;
+   padding-bottom: 8%;
+}
+
+.xp {
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 40%;
+}
+.xp p {
+   text-align: justify;
+   font-size: 12px;
+}
+.xpTransition {
+   width: 100%;
+   min-height: 10vh;
+   background-image: url('../../images/transition.jpg');
+   background-size: cover;
+   background-attachment: fixed;
+   margin-bottom: 5%;
+}
+
+.cursus {
+    
+    /*color: #df4f15;*/
+    min-height: 50vh;
+   /* padding-top: 5%;*/
+}
+
+.cursus h1 {
+   color: #5b0025;
+   margin-top: 3%;
+   padding-bottom: 1%;
+}
+
+.cursus p {
+   color: #5b0025;
+   /*border: #ff6a66 solid 2px;*/
+  /* background-color:  white;*/
+   width: 40%;
+}
+.underline {
+   background-color:  #5b0025;
+   height: 2vh;
+   border-radius: 90px;
+   width: 43%;
+}
+.cursusBackground {
+   width: 100%;
+   min-height: 100vh;
+  /* background-color:  #ff8f91;*/
+   background-image: url('../../images/cursus.jpg');
+   background-size: cover;
+   background-attachment: fixed;
+  /* margin-bottom: 5%;*/
+}
+.cursusTransition {
+   background-color:  #5b0025;
+   min-height: 10vh;
+   opacity: 0.9;
+}
+.item {
+   /*border: red solid 2px;*/
+   display: flex;
+   justify-content: center;
+   flex-wrap: nowrap;
+   width: 100%;
+}
+.cursusContain {
+   /*border: red solid 2px;*/
+   width: 20%;
+}
+.school {
+   background-color: #ff8f91;
+   width: 65px;
+   height: 64px;
+   border-radius: 91px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.cursusContain img {
+   margin-bottom: -15%;
+   z-index: 2;
+  
+ }
+.cursusContain h5 {
+  color: #ff6a66;
+}
+
+
+.realisation {
+    background-color: #f1dbba;
+    color: #df4f15;
+    min-height: 110vh;
+    position: relative;
+    z-index:1;
+    padding-top: 5%;
+}
+.realisation h1 {
+    position: relative;
+    z-index:3;
+}
+.realisation a:visited {
+   color: #5b0025;
+}
+.realisationBackground {
+  /* border: red solid 2px;*/
+  /* display: flex;
+   flex-direction:row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+*/
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url('../../images/cream.jpg');
+   background-size: cover;
+   background-attachment: fixed;
+   z-index:2;
+   opacity: 0.3;
+}
+
+.projects {
+  /* border: red solid 2px;*/
+   display: flex;
+   flex-direction:row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   position: absolute;
+   width: 100%;
+   /*height: 100%;*/
+   z-index:3;
+   padding-top: 5%;
+  
+}
+.project {
+   color: #df4f15;
+}
+
+
+
+#point {
+   color: white;
+}
+
+#P {
+   color: #f79203;
+}
+
+#e {
+   color: #ff6a66;
+}
+
+#c {
+   color: white;
+}
+
+#h {
+   color: #ff8f91;
+}
+
+#ee {
+   color: #f79203;
+}
+
+
+#m {
+   color: #ff8f91;
+}
+
+#eee {
+   color: white;
+}
+
+#l {
+   color: #5b0025;
+}
+
+#b {
+   color: #ff6a66;
+}
+
+#a {
+   color: #5b0025;
+}
+
+#\(\) {
+   color: #f79203;
+}
+
+

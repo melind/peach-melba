@@ -1,0 +1,19 @@
+
+.load{
+   margin-top: 10%;
+   display: flex;
+   justify-content: center;
+   background-color: white;
+   min-height: 100vh;
+}
+.brand {
+   display: flex;
+   flex-direction: column;
+   background-color: #f1dbba;
+   align-items: center;
+}
+.brandName {
+   display: flex;
+   align-items: center;
+   margin-top: -4%;
+}
