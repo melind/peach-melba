@@ -19,26 +19,5 @@
                 }
             }
         }
-    },
-    "dev": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-peachmelba-dev-233356-authRole",
-            "UnauthRoleArn": "arn:aws:iam::269756700018:role/amplify-peachmelba-dev-233356-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::269756700018:role/amplify-peachmelba-dev-233356-authRole",
-            "Region": "eu-west-2",
-            "DeploymentBucketName": "amplify-peachmelba-dev-233356-deployment",
-            "UnauthRoleName": "amplify-peachmelba-dev-233356-unauthRole",
-            "StackName": "amplify-peachmelba-dev-233356",
-            "StackId": "arn:aws:cloudformation:eu-west-2:269756700018:stack/amplify-peachmelba-dev-233356/14e79520-b4d0-11ea-8714-06452e71541c",
-            "AmplifyAppId": "d2k40kvbyo9mok"
-        },
-        "categories": {
-            "hosting": {
-                "amplifyhosting": {
-                    "appId": "d2k40kvbyo9mok",
-                    "type": "manual"
-                }
-            }
-        }
     }
 }

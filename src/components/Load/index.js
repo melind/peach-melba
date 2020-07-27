@@ -3,6 +3,8 @@ import './index.css';
 
 import logo1 from '../../icones/logo1.svg';
 
+
+
 const Load = () => {
 
     return (
