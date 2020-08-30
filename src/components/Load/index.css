@@ -1,16 +1,19 @@
 
 .load{
-   margin-top: 10%;
+   padding-top: 5%;
    display: flex;
-   justify-content: center;
-   background-color: white;
+   /*justify-content: center;*/
+   align-items: center;
+   flex-direction: column;
+   background-color: #f1dbba;
    min-height: 100vh;
+   /*border: violet solid 2px;*/
 }
 .brand {
    display: flex;
-   flex-direction: column;
-   background-color: #f1dbba;
-   align-items: center;
+   /*flex-direction: column;
+   /*background-color: #f1dbba;
+   align-items: center;*/
 }
 .brandName {
    display: flex;
