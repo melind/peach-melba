@@ -34,7 +34,7 @@ import Logo from '../Logo';
 const Home = () => {
 
     return (
-        <div className="hom">
+        <div className="hom" >
                   <div className="nav" >
                             <div className="tab">
                                   <a href="#skill"><div>Skills</div></a>
@@ -56,7 +56,7 @@ const Home = () => {
                                     <div className="menu"></div><div className="menu"></div><div className="menu">
                            </div>
                            </div>
-                            <div className="bar"onMouseOver={show} onMouseOut={hide}>
+                            <div className="bar"onMouseOver={show} >
                                   <a href="#skill"><div>Skills</div></a>
                                   <a href="#webXp"><div>Web Experiences</div></a>
                                   <a href="#cursus"><div>Cursus</div></a>
@@ -65,7 +65,7 @@ const Home = () => {
                             </div>
                    </div>
             
-                   <div className="presentation">
+                   <div className="presentation" onClick={hide}>
             
                               <div className="presentationBackground"></div>
             
@@ -80,13 +80,13 @@ const Home = () => {
             
                     </div>
             
-                   <div className="mainContent">
+                   <div className="mainContent" onClick={hide}>
             
                          <div className="background"></div>
                     
                          <div  className="image"></div>
             
-                          <section className="skills">  
+                          <section className="skills" >  
             
                                <h1 id="skill">Skills </h1>
                                <div className="list">
