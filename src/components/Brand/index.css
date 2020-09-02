@@ -1,0 +1,57 @@
+.brandName {
+   display: flex;
+   align-items: center;
+   margin-top: -4%;
+}
+
+
+#point {
+   color: #df4f15;
+}
+
+#P {
+   color: #f79203;
+}
+
+#e {
+   color: #ff6a66;
+}
+
+#c {
+   color: #da0c67;
+}
+
+#h {
+   color: #ff8f91;
+}
+
+#ee {
+   color: #f79203;
+}
+
+
+#m {
+   color: #ff8f91;
+}
+
+#eee {
+   color: #da0c67;
+}
+
+#l {
+   color: #5b0025;
+}
+
+#b {
+   color: #ff6a66;
+}
+
+#a {
+   color: #5b0025;
+}
+
+#\(\) {
+   color: #f79203;
+}
+
+

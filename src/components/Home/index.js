@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './index.css';
 import Footer from '../Footer';
 import peche1 from '../../icones/peche1.svg';
@@ -10,9 +10,10 @@ import node from '../../icones/node.svg';
 import mongodb from '../../icones/mongodb.svg';
 import tw from '../../images/tw.svg';
 import perso from '../../images/perso.svg';
+//import logo2 from '../../icones/logo2.svg';
+import logo1 from '../../icones/logo1.svg';
+import Logo from '../Logo';
 
-
-      
     const show = function () {  
       let bar = document.getElementsByClassName("bar")[0];  
       bar.style.display= "flex"; 
@@ -24,12 +25,33 @@ import perso from '../../images/perso.svg';
       bar.style.display= "none"; 
       let hambNav = document.getElementsByClassName("hamburgerNav")[0];  
       hambNav.style.display= "flex"; 
+
     }
+
+       
+    
+  
 const Home = () => {
 
     return (
         <div className="hom">
-                  <div className="nav" onClick={show} >
+                  <div className="nav" >
+                            <div className="tab">
+                                  <a href="#skill"><div>Skills</div></a>
+                                  <a href="#webXp"><div>Web Experiences</div></a>
+                                  <a href="#cursus"><div>Cursus</div></a>
+                                  <a href="#project"><div>Project</div></a>
+                                 <div className="logo">
+                                    <img src={logo1} width="40" alt="pech melba icone"/>
+                                    < Logo  />
+                                </div>
+                            </div>
+                  </div>
+                  <div className="nav-mobile" onClick={show} >
+                          <div className="logo-mobile">
+                                  <img src={logo1} width="50" alt="pech melba icone"/>
+                                  < Logo />
+                          </div>
                            <div className="hamburgerNav" >
                                     <div className="menu"></div><div className="menu"></div><div className="menu">
                            </div>
@@ -39,6 +61,7 @@ const Home = () => {
                                   <a href="#webXp"><div>Web Experiences</div></a>
                                   <a href="#cursus"><div>Cursus</div></a>
                                   <a href="#project"><div>Project</div></a>
+                                  
                             </div>
                    </div>
             
@@ -51,7 +74,7 @@ const Home = () => {
                                            <div className="icone fadeIn">
                                              <img src={peche2} width="200" alt="pech melba icone"/>
                                            </div>
-                                           <p> Hello,  I'm peche melba a web developer  </p>
+                                           <p> Hello,  I'm Mélinda MENDY a web developer  </p>
             
                               </div>
             
@@ -84,11 +107,11 @@ const Home = () => {
                               <div className="xps"><h1 className="h2" id="webXp">Web Experiences</h1>
                                 <div  className="xpTransition"></div>
             
-            
+                                  <div className="xp-list">
                                   <div className="xp"> <img src={peche1} width="150" className="wiggle" alt="peach melba icone"/>
             
                                     <div> 
-                                      <h4>Developer full stack JS</h4>
+                                      <h4>Developer full stack JS (info-movie website)</h4>
                                       <p> 
                                           End of training project with O'clock <br/>
                                           Specifications wrighting, use cases, sequence diagram.<br/>
@@ -105,6 +128,7 @@ const Home = () => {
                                       <p>Student Project with Simplon <br/>
                                           Using Trello as project management tool.<br/>
                                           Assignment and follow-up of tasks of the different members of the team.<br/>
+                                      <br/>
                                       </p>
                                     </div>
             
@@ -121,7 +145,7 @@ const Home = () => {
                                    </div>
             
                                   </div>
-            
+            </div>
                               </div>
                           </section>
             

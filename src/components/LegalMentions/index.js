@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './index.css';
-
+import Logo from '../Logo';
+import logo1 from '../../icones/logo1.svg';
 
 const LegalMentions = () => {
 
@@ -10,7 +11,14 @@ const LegalMentions = () => {
        
         <div className="mentions">
             
-            <Link to="/">Accueil</Link>
+            
+            <div className="logo-ml">
+                                    <img src={logo1} width="50" alt="pêche melba icone"/>
+                                    < Logo  />
+            </div>
+            
+            <Link to="/"><p className="accueil">Accueil</p></Link>
+
             <p>MENTIONS LEGALES :</p>
 
     <p>Conformément aux dispositions des articles 6-III et 19 de la Loi n° 2004-575 du 21 juin 2004 pour la Confiance dans l'économie numérique, dite L.C.E.N., nous portons à la connaissance des utilisateurs et visiteurs du site : <a href="https://www.pechemelba.fr" target="_blank" rel="noopener noreferrer">www.pechemelba.fr</a> les informations suivantes :</p>
