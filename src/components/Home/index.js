@@ -10,7 +10,7 @@ import node from '../../icones/node.svg';
 import mongodb from '../../icones/mongodb.svg';
 import tw from '../../images/tw.svg';
 import perso from '../../images/perso.svg';
-//import logo2 from '../../icones/logo2.svg';
+import social from '../../images/social_design.jpg';
 import logo1 from '../../icones/logo1.svg';
 import Logo from '../Logo';
 
@@ -42,14 +42,14 @@ const Home = () => {
                                   <a href="#cursus"><div>Cursus</div></a>
                                   <a href="#project"><div>Project</div></a>
                                  <div className="logo">
-                                    <img src={logo1} width="40" alt="pech melba icone"/>
+                                    <img src={logo1} width="40" alt="peche melba icone"/>
                                     < Logo  />
                                 </div>
                             </div>
                   </div>
                   <div className="nav-mobile" onClick={show} >
                           <div className="logo-mobile">
-                                  <img src={logo1} width="50" alt="pech melba icone"/>
+                                  <img src={logo1} width="50" alt="peche melba icone"/>
                                   < Logo />
                           </div>
                            <div className="hamburgerNav" >
@@ -74,8 +74,17 @@ const Home = () => {
                                            <div className="icone fadeIn">
                                              <img src={peche2} width="200" alt="pech melba icone"/>
                                            </div>
-                                           <p> Hello,  I'm Mélinda MENDY a web developer  </p>
-            
+                                           <p> Hello,  I'm Mélinda MENDY a web developer.  <br /> 
+                                               Je suis Mélinda MENDY, développeuse web. <br /><br />
+                                               
+                                                    I like to create website in different sectors
+                                                    (music, decoration, electricity, etc...)
+                                                    for individuals or within a company. <br /><br />
+                                                    J'aime créer des sites internet dans des secteurs différents 
+                                                    (musique, décoration, électricité, etc...) 
+                                                    pour des particuliers ou au sein d'une entreprise.
+                                         
+                                          </p>
                               </div>
             
                     </div>
@@ -206,8 +215,11 @@ const Home = () => {
                               <div className="realisationBackground"></div>
                               <div className="projects">
             
-                                   <div className="project position"><img src={tw} width="300" alt="to watch website "/><h3>To watch (school project)</h3><a href="http://www.to-watch.info">www.to-watch.info</a></div>
-                                   <div className="project position"><img src={perso} width="300" alt="Luminaris website "/><h3>Luminaris (personal project)</h3><a href="https://github.com/melind/luminaires">Github Project</a></div>
+                                   <div className="project position"><img src={tw} width="300" alt="to watch website "/><h3>To watch (school project)</h3><a href="http://www.to-watch.info" target="_blank">www.to-watch.info</a></div>
+                                   <div className="project position"><img src={perso} width="300" alt="Luminaris website "/><h3>Luminaris (personal project)</h3><a href="https://github.com/melind/luminaires" target="_blank">Github Project</a></div>
+                                   <div className="project position"><img src={social} width="300" alt="social proof section website design"/>
+                                   <h3>Social proof section (personal project)</h3><a href="https://github.com/melind/social-proof-section" target="_blank">Github Project</a>
+                                   <a href="https://social-proof-section-sage.vercel.app/" target="_blank">Aperçu / Preview</a></div>
 
                                   
 

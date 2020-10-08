@@ -47,7 +47,9 @@
 
 .tab a {
    text-decoration: none;
+   
 }
+
 @media screen and (max-width: 500px) {
 
    .nav {
@@ -92,6 +94,16 @@
    padding-top: 5%;
    }
 
+   .presentationContent p {
+    width: 100%;
+    padding: 0 8% 0 8%;
+    margin-top: -17%;
+}
+   .presentationContent {
+  
+   justify-content: center;
+}
+
 }
 
 @media screen and (min-width: 501px) {
@@ -118,6 +130,9 @@
    .xp-list {
       display: flex;
    }
+   .presentationContent p {
+   width: 40%;
+}
 }
 
 .hamburgerNav {
@@ -206,15 +221,17 @@
    display: flex;
    align-items: center;
    flex-wrap: wrap;
-   top: 20%;
+   padding-top: 10%;
 }
-
+/*
 .presentationContent p {
-   width: 40%;
-   margin-left: -5%;
+   width: 100%;
+   height: 100%;
+   margin-left: 0;
    margin-bottom: -4%;
    
 }
+*/
 .mainContent {
    /*border: blue solid 2px;*/
    display: flex;
