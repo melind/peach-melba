@@ -11,6 +11,7 @@ import mongodb from '../../icones/mongodb.svg';
 import tw from '../../images/tw.svg';
 import perso from '../../images/perso.svg';
 import social from '../../images/social_design.jpg';
+import article from '../../images/article_design.jpg';
 import logo1 from '../../icones/logo1.svg';
 import Logo from '../Logo';
 
@@ -217,9 +218,22 @@ const Home = () => {
             
                                    <div className="project position"><img src={tw} width="300" alt="to watch website "/><h3>To watch (school project)</h3><a href="http://www.to-watch.info" target="_blank">www.to-watch.info</a></div>
                                    <div className="project position"><img src={perso} width="300" alt="Luminaris website "/><h3>Luminaris (personal project)</h3><a href="https://github.com/melind/luminaires" target="_blank">Github Project</a></div>
-                                   <div className="project position"><img src={social} width="300" alt="social proof section website design"/>
+                                   
+                                   <div className="project position">
+                                   
+                                   <img src={social} width="300" alt="social proof section website design"/>
                                    <h3>Social proof section (personal project)</h3><a href="https://github.com/melind/social-proof-section" target="_blank">Github Project</a>
-                                   <a href="https://social-proof-section-sage.vercel.app/" target="_blank">Aperçu / Preview</a></div>
+                                   <a href="https://social-proof-section-sage.vercel.app/" target="_blank">Aperçu / Preview</a>
+                                   
+                                   </div>
+
+                                   <div className="project position">
+                                   
+                                   <img src={article} width="300" alt="article preview website design"/>
+                                   <h3>article-preview (personal project)</h3><a href="https://github.com/melind/article-preview" target="_blank">Github Project</a>
+                                   <a href="https://article-preview-orcin-two.vercel.app/" target="_blank">Aperçu / Preview</a>
+                                   
+                                   </div>
 
                                   
 

@@ -6,8 +6,8 @@
    align-items: center;
    flex-direction: column;
    background-color: #f1dbba;
-   min-height: 100vh;
-   /*border: violet solid 2px;*/
+   /*min-height: 95vh;
+   border: violet solid 2px;*/
 }
 .brand {
    display: flex;
