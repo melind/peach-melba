@@ -8,8 +8,8 @@ import mijote from '../../icones/mijote.svg';
 import react from '../../icones/react.png';
 import node from '../../icones/node.svg';
 import mongodb from '../../icones/mongodb.svg';
-import tw from '../../images/tw.svg';
-import perso from '../../images/perso.svg';
+import cocktail from '../../images/cocktail.jpg';
+import events from '../../images/events.jpg';
 import social from '../../images/social_design.jpg';
 import article from '../../images/article_design.jpg';
 import logo1 from '../../icones/logo1.svg';
@@ -41,7 +41,7 @@ const Home = () => {
                                   <a href="#skill"><div>Skills</div></a>
                                   <a href="#webXp"><div>Web Experiences</div></a>
                                   <a href="#cursus"><div>Cursus</div></a>
-                                  <a href="#project"><div>Project</div></a>
+                                  <a href="#project"><div>Projects</div></a>
                                  <div className="logo">
                                     <img src={logo1} width="40" alt="peche melba icone"/>
                                     < Logo  />
@@ -216,8 +216,8 @@ const Home = () => {
                               <div className="realisationBackground"></div>
                               <div className="projects">
             
-                                   <div className="project position"><img src={tw} width="300" alt="to watch website "/><h3>To watch (school project)</h3><a href="http://www.to-watch.info" target="_blank">www.to-watch.info</a></div>
-                                   <div className="project position"><img src={perso} width="300" alt="Luminaris website "/><h3>Luminaris (personal project)</h3><a href="https://github.com/melind/luminaires" target="_blank">Github Project</a></div>
+                                   <div className="project position"><img id="cocktail" src={cocktail} width="300" height="165" alt="homemade cocktail website "/><a className="freepik" href='https://fr.freepik.com/photos/partie'>Photo by freepik</a><h3>Homemade Cocktail (personal project)</h3><a href="https://cocktail.pechemelba.fr" target="_blank">See website</a></div>
+                                   <div className="project position"><img src={events} width="300" height="165" alt="events world wide website "/><h3>Events World Wide (personal project)</h3><br/><a href="https://www.events-world-wide.fr" target="_blank">See website</a></div>
                                    
                                    <div className="project position">
                                    
