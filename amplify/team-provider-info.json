@@ -1,0 +1,23 @@
+{
+  "production": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-peachmelba-production-221345-authRole",
+      "UnauthRoleArn": "arn:aws:iam::269756700018:role/amplify-peachmelba-production-221345-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::269756700018:role/amplify-peachmelba-production-221345-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-peachmelba-production-221345-deployment",
+      "UnauthRoleName": "amplify-peachmelba-production-221345-unauthRole",
+      "StackName": "amplify-peachmelba-production-221345",
+      "StackId": "arn:aws:cloudformation:eu-west-2:269756700018:stack/amplify-peachmelba-production-221345/e1abe4f0-b4c4-11ea-bda2-060395953c4e",
+      "AmplifyAppId": "d2k40kvbyo9mok"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2k40kvbyo9mok",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
