@@ -104,6 +104,7 @@ const Home = () => {
                                   <div className="skill-item"><div className="position one shape"><img src={mongodb} width="150" alt="mongodb logo"/></div> <div className="positionTwo four">Mongoose</div></div>
                                   <div className="skill-item"> <div className="position two shape"><img src={node} width="150" alt="nodejs logo"/></div><div className="positionTwo five ">ExpressJS</div></div>
                                   <div className="skill-item"> <div className="position three shape"><img src={react} width="110" alt="reactjs logo"/><h2>React</h2></div><div className="positionTwo six ">Redux</div></div>
+                                  <div className="skill-item"> <div className="position seven shape"><h2>Three JS</h2></div><div className="positionTwo eight ">Blender</div></div>
             
                                 </div>
                           </section>
@@ -118,6 +119,17 @@ const Home = () => {
                                 <div  className="xpTransition"></div>
             
                                   <div className="xp-list">
+                                  <div className="xp"> <img src={mijote} width="150" className="floater" alt="pan icone"/>
+            
+                                    <div>
+                                      <h4>Web Consultant (<a href="https://www.facebook.com/lartdedeleguer">L'art de déléguer)</a></h4>
+                                      <p>Creation of a Leading-page<br/><br/>
+                                      In collaboration with the client, development of the landing page.<br/><br/>
+                                          <a href="https://www.subscribepage.com/lart-de-deleguer?fbclid=IwAR3fnzth7r6kN6C1OEZ3sNERanzLruLXUOsYVYZ7dvZX1Z0ii22e1sZHiSc" target="_blank">See the page</a>
+                                      </p>
+                                   </div>
+            
+                                  </div>
                                   <div className="xp"> <img src={peche1} width="150" className="wiggle" alt="peach melba icone"/>
             
                                     <div> 

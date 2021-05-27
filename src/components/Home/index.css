@@ -297,6 +297,14 @@
 .six {
    color: #da0c67;
 }
+.seven {
+   border: 2px solid #f1dbba;
+   background-color: #5b0025;
+   color: #f1dbba;
+}
+.eight {
+   color: #f1dbba;
+}
 .experiences {
   /* border: red solid 2px;*/
    background-color: white;
@@ -430,7 +438,7 @@
 .realisation {
     background-color: #f1dbba;
     color: #df4f15;
-    min-height: 110vh;
+    min-height: 60vh;
     position: relative;
     z-index:1;
     padding-top: 5%;
