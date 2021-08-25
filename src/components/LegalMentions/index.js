@@ -82,6 +82,11 @@ Le site www.pechemelba.fr est en conformité avec le RGPD voir notre politique R
 
     <p>Les bases de données sont protégées par les dispositions de la loi du 1er juillet 1998 transposant la directive 96/9 du 11 mars 1996 relative à la protection juridique des bases de données.</p>
 
+    <p><br />
+    <strong>7. Hébergement :</strong><br />
+    <br />
+Hébergeur : Amazon Web Services (AWS Amplify) <br />
+Adresse : : 60 Holborn Viaduct, London EC1A 2FD, Royaume-Uni</p>
 
            
         </div>
