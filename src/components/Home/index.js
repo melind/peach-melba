@@ -9,6 +9,7 @@ import react from '../../icones/react.png';
 import node from '../../icones/node.svg';
 import mongodb from '../../icones/mongodb.svg';
 import cocktail from '../../images/cocktail.jpg';
+import countdown from '../../images/countdown.jpg';
 import events from '../../images/events.jpg';
 import social from '../../images/social_design.jpg';
 import article from '../../images/article_design.jpg';
@@ -227,7 +228,15 @@ const Home = () => {
             
                               <div className="realisationBackground"></div>
                               <div className="projects">
-            
+
+                              <div className="project position">
+                                   
+                                   <img src={countdown} width="300" alt="countdown website design"/>
+                                   <h3>Countdown (personal project)</h3><a href="https://github.com/melind/coutdown-customn" target="_blank">Github Project</a>
+                                   <a href="https://coutdown-custom.vercel.app/" target="_blank">Aperçu / Preview</a>
+                                   
+                                   </div>
+
                                    <div className="project position"><img id="cocktail" src={cocktail} width="300" height="165" alt="homemade cocktail website "/><a className="freepik" href='https://fr.freepik.com/photos/partie'>Photo by freepik</a><h3>Homemade Cocktail (personal project)</h3><a href="https://cocktail.pechemelba.fr" target="_blank">See website</a></div>
                                    <div className="project position"><img src={events} width="300" height="165" alt="events world wide website "/><h3>Events World Wide (personal project)</h3><br/><a href="https://www.events-world-wide.fr" target="_blank">See website</a></div>
                                    
