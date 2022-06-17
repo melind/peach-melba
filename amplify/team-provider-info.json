@@ -12,6 +12,9 @@
       "AmplifyAppId": "d2k40kvbyo9mok"
     },
     "categories": {
+      "function": {
+        "peachmelba33cb8941": {}
+      },
       "hosting": {
         "amplifyhosting": {
           "appId": "d2k40kvbyo9mok",

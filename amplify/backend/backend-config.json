@@ -6,6 +6,27 @@
 			"type": "manual"
 		}
 	},
-	"function": {},
-	"api": {}
+	"function": {
+		"peachmelba33cb8941": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda"
+		}
+	},
+	"api": {
+		"apiPM": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "peachmelba33cb8941",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			]
+		}
+	}
 }
