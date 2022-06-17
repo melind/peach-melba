@@ -31,7 +31,10 @@ import Brand from '../Brand';
     }
 
    const up = function () {  
+    let body = document.body;
     
+
+
       let pechemelba = document.getElementsByClassName("presentation_center")[0];   
       pechemelba.style.transform= "translate3d(0px, 0px, 0px)";  
       pechemelba.style.transition="transform 3600ms ease-in-out";
@@ -39,32 +42,88 @@ import Brand from '../Brand';
       let bloc_l = document.getElementsByClassName("presentation_left")[0];
       let bloc_r = document.getElementsByClassName("presentation_right")[0];  
       let bloc_title = document.getElementsByClassName("presentation_title")[0]; 
+
       const opacity = function () {
         bloc_l.style.opacity= "1";  
-        bloc_l.style.transition="opacity 3600ms ease-in-out";
+        bloc_l.style.transition="opacity 1500ms ease-in-out";
         bloc_r.style.opacity= "1";  
-        bloc_r.style.transition="opacity 3600ms ease-in-out";
+        bloc_r.style.transition="opacity 1500ms ease-in-out";
       }
 
       const opacity_title = function () {
         bloc_title.style.opacity= "1";  
-        bloc_title.style.transition="opacity 3600ms ease-in-out";
+        bloc_title.style.transition="opacity 1500ms ease-in-out";
       }
-      setTimeout(opacity, 7200);
+
+      const overflowDsabled = function () {
+        body.style.overflowY="visible"
+      }
+      setTimeout(opacity, 4200);
       setTimeout(opacity_title, 3600);
+      setTimeout(overflowDsabled, 5000);
 
       
-
-
-      
-       
 
    }    
 
-   
-    
   
+
+   const rectangle = function() {
+    let rec_r = document.getElementsByClassName("rectangle_right")[0];
+    var position = rec_r.getBoundingClientRect();
+    if(position.top < 800) {
+      rec_r.style.transform= "translateX(0)";  
+      rec_r.style.transition="transform 7600ms ease-in-out";
+      console.log(position.top, window.scrollY);
+     }
+   }
+
+   
+
+
+   window.addEventListener('scroll', function(e) {
+     console.log("hey")
+              let rec_r = document.getElementsByClassName("rectangle_right")[0];
+              let rec_l = document.getElementsByClassName("rectangle_left")[0];
+
+             if(rec_r) {
+               let position_r = rec_r.getBoundingClientRect();
+
+
+            console.log(position_r);
+
+            if(position_r.top < 800){
+             rec_r.style.transform= "translateX(0)";  
+             rec_r.style.transition="transform 150ms ease-in-out";
+            }
+            else {
+             rec_r.style.transform= "translateX(-30%)";  
+             rec_r.style.transition="transform 150ms ease-in-out";
+            }
+             }
+
+             if(rec_l) {
+              let position_l = rec_l.getBoundingClientRect();
+
+
+           console.log(position_l);
+
+           if(position_l.top < 800){
+            rec_l.style.transform= "translateX(0)";  
+            rec_l.style.transition="transform 150ms ease-in-out";
+           }
+           else {
+            rec_l.style.transform= "translateX(30%)";  
+            rec_l.style.transition="transform 150ms ease-in-out";
+           }
+            }
+
+
+  });
+  
+
 const Test = () => {
+  
   
 
     return (
@@ -148,7 +207,7 @@ const Test = () => {
                        <div className='realisation_description border'></div>
                      </div>
 
-                     <div className='rectangle rectangle_right border'></div>
+                     <div className='rectangle rectangle_right border' ></div>
 
                      <div className='realisation_type realisation_type_middle border'>
                        <div className='circle circle_center'></div>

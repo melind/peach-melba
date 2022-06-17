@@ -1,11 +1,11 @@
 
 .load{
-   padding-top: 5%;
    display: flex;
-   /*justify-content: center;*/
+   justify-content: center;
    align-items: center;
    flex-direction: column;
    background-color: #f1dbba;
+   height: 100vh;
    /*min-height: 95vh;
    border: violet solid 2px;*/
 }

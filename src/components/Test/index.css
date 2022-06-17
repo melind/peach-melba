@@ -306,6 +306,7 @@
 .rectangle_right {
    background-color: #ff6a66;
    margin-left: 50%;
+   transform: translateX(-30%);
 }
 
 .rectangle_left {
