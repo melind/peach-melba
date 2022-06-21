@@ -15,9 +15,11 @@ import ai from '../../images/ai.png';
 import id from '../../images/id.png';
 import ps from '../../images/ps.png';
 import couleurs from '../../images/templates/BBS-example/choix_couleur.png';
+import moodboard from '../../images/templates/BBS-example/MB2.jpg'
 import wireframe from '../../images/templates/BBS-example/wireframe.png';
 import mockup from '../../images/templates/BBS-example/mockup.png';
 import mockup_desktop from '../../images/templates/BBS-example/mockup-barbeer-shop-website-ordinateur.jpg';
+import mobile_mockup from '../../images/templates/BBS-example/mobile_mockup.jpg';
 import typo_1 from '../../images/templates/BBS-example/typo_1.png';
 import typo_2 from '../../images/templates/BBS-example/typo_2.png';
 import logo_orange from '../../images/templates/BBS-example/Logo-orange.png';
@@ -31,6 +33,12 @@ import fcbk from '../../images/templates/BBS-example/post_fcbk.png';
 import ban_pave from '../../images/templates/BBS-example/Banniere_pave.jpg';
 import ban_skycraper from '../../images/templates/BBS-example/Gratte_ciel.jpg';
 import ban_rec from '../../images/templates/BBS-example/Tableau_bord_gif.gif';
+import qrcode from '../../images/templates/BBS-example/qrcode.jpg';
+import designer from '../../images/designer.jpg';
+import sketching from '../../images/sketching.jpg';
+import ordi from '../../images/ordi.jpg';
+import exp from '../../images/exp.jpg';
+import code from '../../images/code.jpg';
 import countdown from '../../images/countdown.jpg';
 import social from '../../images/social_design.jpg';
 import article from '../../images/article_design.jpg';
@@ -426,20 +434,20 @@ const Test = () => {
                        
                            <div className='circle circle_top 'id="0" >
 
-                                <p>CONCEPTION D'ÉLÉMENTS DE SITES WEB</p><br/>
-                                <a classname="link" href='https://www.behance.net/gallery/143722639/BarBeer-Shop' target="_blank">Lien vers le projet </a>
+                                <p>CONCEPTION D'ÉLÉMENTS GRAPHIQUES</p><br/>
+                                <a classname="link" href='https://www.behance.net/gallery/143722639/BarBeer-Shop' target="_blank">Exemple de projet </a>
 
                            </div>
 
                            <div className='realisation_description realisation_description_top '> 
+                           <div><img alt="wirefrme" src={wireframe} /></div>
+                           <div><img alt="mockup" src={mockup} /></div>
                               <div ><img alt="choix de couleurs" src={couleurs} /></div>
-                              <div ><img alt="typographie 1" src={typo_1} /></div>
-                              <div ><img alt="typographie 2" src={typo_2} /></div>
-                              <div ><img alt="logo exemple 1" src={logo_orange} /></div>
-                              <div ><img alt="logo exemple 2" src={logo_noir} /></div>
-                              <div ><img alt="wireframe" src={wireframe} /></div>
-                              <div ><img alt="mockup" src={mockup} /></div>
-                              <div id='mockup_desktop'><img  onClick={""} alt="mockup version entier" src={mockup_desktop} /></div>
+                              <div ><img alt="moodboard" src={moodboard} /></div>
+                              
+                              
+                          
+                            
                            </div>
 
                          
@@ -449,34 +457,34 @@ const Test = () => {
                      <div className='rectangle rectangle_right ' ></div>
 
                      <div id="site" className='realisation_type realisation_type_middle '>
-                       <div className='circle circle_center'id="1" >
+                                <div className='circle circle_center'id="1" >
 
-                               <p>RÉALISATION  DE SITES WEB</p><br/>
-                               <div>
-                                    <a href="https://coutdown-custom.vercel.app/" target="_blank">Lien vers le countdown</a> 
-                                    <a href="https://social-proof-section-sage.vercel.app/" target="_blank">Lien vers le social</a>
-                                    <a href="https://article-preview-orcin-two.vercel.app/" target="_blank">Lien vers l'article</a>
-                                    <a href="https://www.subscribepage.com/lart-de-deleguer?fbclid=IwAR3fnzth7r6kN6C1OEZ3sNERanzLruLXUOsYVYZ7dvZX1Z0ii22e1sZHiSc" target="_blank">Landing page</a>
-                               </div>
-                              
+                                        <p>RÉALISATIONS WEB</p><br/>
+                                        <div>
+                                             <a href="https://coutdown-custom.vercel.app/" target="_blank"> Coompte à rebours</a> 
+                                             <a href="https://social-proof-section-sage.vercel.app/" target="_blank">commentaire</a>
+                                             <a href="https://article-preview-orcin-two.vercel.app/" target="_blank">un article</a>
+                                             <a href="https://www.subscribepage.com/lart-de-deleguer?fbclid=IwAR3fnzth7r6kN6C1OEZ3sNERanzLruLXUOsYVYZ7dvZX1Z0ii22e1sZHiSc" target="_blank">Landing page</a>
+                                        </div>
 
+
+                                </div>
+                                <div className='realisation_description realisation_description_center'>
+                                <div><img alt="ordinatetur" src={ordi} /></div>
+                                      <div><img alt="code" src={code} /></div>
+                                      
+                                </div>                   
                        </div>
-                       <div className='realisation_description realisation_description_center'>
-                              <div ><img  alt="site web compte à rebours" src={countdown} /></div>
-                              <div ><img  lt="site web social " src={social} /></div>
-                              <div ><img  alt="site web artcile " src={article} /></div>
-                       </div>                     </div>
 
                      <div className='rectangle rectangle_left '></div>
 
                      <div id="webmarketing" className='realisation_type realisation_type_bottom  ' >
 
                          <div className='realisation_description realisation_description_bottom'>
-                              <div ><img alt="storyboard " src={storyboard_1} /></div>
-                              <div ><img alt="storyboard " src={storyboard_2} /></div>
-                              _
-                              <iframe width="560" height="315" src="https://www.youtube.com/embed/-rXTHIOxXO4" title="YouTube video player" frame="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                              
+                              
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/-rXTHIOxXO4" title="YouTube video player" frame="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           
                               
                              
                           </div> 
@@ -487,18 +495,18 @@ const Test = () => {
 
                               <p>CONCEPTION DE SUPPORTS PROMOTIONNELS</p><br/>
                               <div>
-                                  <a href='https://www.behance.net/gallery/143743593/Storyboard-Motion-design-BarBeer-Shop' target="_blank">Lien vers les storyboards </a>
-                                  <a href='https://www.behance.net/gallery/143743881/BarBeer-Shop-Affiche-plubicitaire' target="_blank">Lien vers les supports imprimés </a> 
-                                  <a href='https://www.behance.net/gallery/144979215/Bannieres-publicitaires' target="_blank">Lien vers les supports numériques </a>
+                                  <a href='https://www.behance.net/gallery/143743593/Storyboard-Motion-design-BarBeer-Shop' target="_blank">Storyboard</a>
+                                  <a href='https://www.behance.net/gallery/143743881/BarBeer-Shop-Affiche-plubicitaire' target="_blank"> Supports imprimés </a> 
+                                  <a href='https://www.behance.net/gallery/144979215/Bannieres-publicitaires' target="_blank">Supports numériques </a>
                               </div>
                          </div>
                          <div className='realisation_description realisation_description_bottom realisation_description_bottom_b'>
 
-                              <div ><img alt="affiche" src={affiche} /></div>
-                              <div id='flyer'><img alt="flyer" src={flyer} /></div>
-                              <div ><img alt="publication facebook" src={fcbk} /></div>
                               
-                              <div id='ban_pave'><img alt="bannière pave" src={ban_pave} /></div>
+                              <div ><img alt="publication insta" src={flyer} /></div>
+                              <div ><img alt="qrcode" src={ban_rec} /></div>
+                              
+                              
                               
                           </div>
                      </div>

@@ -28,7 +28,20 @@ import Logo from '../Logo';
 
     }
 
-       
+    /**   <div ><img alt="choix de couleurs" src={couleurs} /></div>
+                              <div ><img alt="typographie 1" src={typo_1} /></div>
+                              <div ><img alt="typographie 2" src={typo_2} /></div>
+                              <div ><img alt="logo exemple 1" src={logo_orange} /></div>
+                              <div ><img alt="logo exemple 2" src={logo_noir} /></div>
+                              <div ><img alt="wireframe" src={wireframe} /></div>
+                              <div ><img alt="mockup" src={mockup} /></div>
+                              <div id='mockup_desktop'><img  onClick={""} alt="mockup version entier" src={mockup_desktop} /></div>
+                              
+                               <div ><img  alt="site web compte à rebours" src={countdown} /></div>
+                              <div ><img  lt="site web social " src={social} /></div>
+                              <div ><img  alt="site web artcile " src={article} /></div>
+                              
+                              */   
     
   
 const Home = () => {
@@ -260,7 +273,7 @@ const Home = () => {
                     
                  </div>
                  <Footer />
-
+              
         </div>
     )
 }
