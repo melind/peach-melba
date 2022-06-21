@@ -12,10 +12,9 @@ const Footer = () => {
       
       <a href="https://www.linkedin.com/in/melimendy/"><img src={linkedin} alt=" linkedin logo" width="50"/></a>
      
-      <a href="https://twitter.com/MELIMENDY"><img src={twitter} alt="twitter logo" width="50"/></a><br></br>
-      <p>Contact: melinda@pechemelba.fr</p>
-      <a href="https://pechemelba.tunetoo.com/">Custom objects</a><br></br><br></br>
-      <Link to="/mentionsLegales">Mentions Legales</Link>
+      <a href="https://twitter.com/MELIMENDY"><img src={twitter} alt="twitter logo" width="50"/></a> <br/><br/>
+     
+      <a href="https://pechemelba.tunetoo.com/">Custom objects </a> <Link to="/mentionsLegales"> Mentions Legales</Link>
       
     </div>
   );

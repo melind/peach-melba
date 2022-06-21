@@ -1,18 +1,53 @@
 import React, {useEffect} from 'react';
-//import './index.css';
+import './index.css';
 import Footer from '../Footer';
 import peche1 from '../../icones/peche1.svg';
-import peche2 from '../../icones/peche2.svg';
+import peche_melba from '../../icones/peche_melba.png';
+import peche_melba_bis from '../../icones/peche_melba_bis.png';
 import toque from '../../icones/toque.svg';
 import mijote from '../../icones/mijote.svg';
-import react from '../../icones/react.png';
-import node from '../../icones/node.svg';
-import mongodb from '../../icones/mongodb.svg';
+import react_typescript from '../../images/react_typescript.png';
+import node from '../../images/node.png';
+import mongodb from '../../images/mongodb.png';
+import express from '../../images/express.png';
+import ae from '../../images/ae.png';
+import ai from '../../images/ai.png';
+import id from '../../images/id.png';
+import ps from '../../images/ps.png';
+import couleurs from '../../images/templates/BBS-example/choix_couleur.png';
+import moodboard from '../../images/templates/BBS-example/MB2.jpg'
+import wireframe from '../../images/templates/BBS-example/wireframe.png';
+import mockup from '../../images/templates/BBS-example/mockup.png';
+import mockup_device from '../../images/templates/BBS-example/mockup_device.jpg';
+import mockup_device_2 from '../../images/templates/BBS-example/mockup_device_2.jpg';
+import mobile_mockup from '../../images/templates/BBS-example/mobile_mockup.jpg';
+import iphone_mockup from '../../images/templates/BBS-example/iphone_mockup.jpg';
+import typo_1 from '../../images/templates/BBS-example/typo_1.png';
+import typo_2 from '../../images/templates/BBS-example/typo_2.png';
+import logo_orange from '../../images/templates/BBS-example/Logo-orange.png';
+import logo_noir from '../../images/templates/BBS-example/Logo-noir.png';
+import storyboard_1 from '../../images/templates/BBS-example/storyboard_bbs-1.png';
+import storyboard_2 from '../../images/templates/BBS-example/storyboard_bbs-2.png';
+import flyer from '../../images/templates/BBS-example/flyer_bbs.png';
+import affiche from '../../images/templates/BBS-example/affiche-mall.png';
+import insta from '../../images/templates/BBS-example/post_insta.png';
+import fcbk from '../../images/templates/BBS-example/post_fcbk.png';
+import ban_pave from '../../images/templates/BBS-example/Banniere_pave.jpg';
+import ban_skycraper from '../../images/templates/BBS-example/Gratte_ciel.jpg';
+import ban_rec from '../../images/templates/BBS-example/Tableau_bord_gif.gif';
+import qrcode from '../../images/templates/BBS-example/qrcode.jpg';
+import designer from '../../images/designer.jpg';
+import sketching from '../../images/sketching.jpg';
+import ordi from '../../images/ordi.jpg';
+import exp from '../../images/exp.jpg';
+import code from '../../images/code.jpg';
 import countdown from '../../images/countdown.jpg';
 import social from '../../images/social_design.jpg';
 import article from '../../images/article_design.jpg';
 import logo1 from '../../icones/logo1.svg';
 import Logo from '../Logo';
+import Brand from '../Brand';
+import { VSMShadowMap } from 'three';
 
     const show = function () {  
       let bar = document.getElementsByClassName("bar")[0];  
@@ -28,32 +63,176 @@ import Logo from '../Logo';
 
     }
 
-    /**   <div ><img alt="choix de couleurs" src={couleurs} /></div>
-                              <div ><img alt="typographie 1" src={typo_1} /></div>
-                              <div ><img alt="typographie 2" src={typo_2} /></div>
-                              <div ><img alt="logo exemple 1" src={logo_orange} /></div>
-                              <div ><img alt="logo exemple 2" src={logo_noir} /></div>
-                              <div ><img alt="wireframe" src={wireframe} /></div>
-                              <div ><img alt="mockup" src={mockup} /></div>
-                              <div id='mockup_desktop'><img  onClick={""} alt="mockup version entier" src={mockup_desktop} /></div>
-                              
-                               <div ><img  alt="site web compte à rebours" src={countdown} /></div>
-                              <div ><img  lt="site web social " src={social} /></div>
-                              <div ><img  alt="site web artcile " src={article} /></div>
-                              
-                              */   
+   const up = function () {  
+    let body = document.body;
     
-  
+
+
+      let pechemelba = document.getElementsByClassName("presentation_center")[0];   
+      pechemelba.style.transform= "translate3d(0px, 10px, 0px)";  
+      pechemelba.style.transition="transform 3600ms ease-in-out";
+
+      let bloc_l = document.getElementsByClassName("presentation_left")[0];
+      let bloc_r = document.getElementsByClassName("presentation_right")[0];  
+      let bloc_title = document.getElementsByClassName("presentation_title")[0];  
+
+      const opacity = function () {
+        bloc_l.style.opacity= "1";  
+        bloc_l.style.transition="opacity 1500ms ease-in-out";
+        bloc_r.style.opacity= "1";  
+        bloc_r.style.transition="opacity 1500ms ease-in-out";
+      }
+
+      const opacity_title = function () {
+        bloc_title.style.opacity= "1";  
+        bloc_title.style.transition="opacity 1500ms ease-in-out";
+      }
+
+      const overflowDsabled = function () {
+        body.style.overflowY="visible"
+      }
+      setTimeout(opacity, 4200);
+      setTimeout(opacity_title, 3600);
+      setTimeout(overflowDsabled, 5000);
+
+      
+
+   }    
+
+
+   
+
+
+   window.addEventListener('scroll', function(e) {
+     console.log("hey")
+              let rec_r = document.getElementsByClassName("rectangle_right")[0];
+              let rec_l = document.getElementsByClassName("rectangle_left")[0];
+              let pres_r = document.getElementsByClassName("presentation_right")[0];
+              let pres_l = document.getElementsByClassName("presentation_left")[0];
+              let main = document.getElementsByClassName("Home")[0];
+
+             if(rec_r) {
+               let position_r = rec_r.getBoundingClientRect();
+
+
+            console.log(position_r);
+
+            if(position_r.top < 900){
+             rec_r.style.transform= "translateX(0)";  
+             rec_r.style.transition="transform 300ms ease-in-out";
+            }
+            else{
+             rec_r.style.transform= "translateX(-90%)";  
+             rec_r.style.transition="transform 300ms ease-in-out";
+            }
+             }
+
+             if(rec_l) {
+              let position_l = rec_l.getBoundingClientRect();
+
+
+           console.log(position_l);
+
+           if(position_l.top < 800){
+            rec_l.style.transform= "translateX(0)";  
+            rec_l.style.transition="transform 300ms ease-in-out";
+           }
+           else {
+            rec_l.style.transform= "translateX(90%)";  
+            rec_l.style.transition="transform 300ms ease-in-out";
+           }
+            }
+
+
+            if(pres_l) {
+              let position_pres_l = pres_l.getBoundingClientRect();
+
+
+           console.log(position_pres_l);
+
+           if(position_pres_l.top > 190){
+            pres_l.style.transform= "translate3d(0px, 0px, 0px)";
+            pres_l.style.transition="transform 150ms ease-in-out";
+           }
+           else if(position_pres_l.top < 490) {
+            pres_l.style.transform= "translate3d(0px, -200px, 0px)";
+            pres_l.style.transition="transform 150ms ease-in-out";
+           }
+            }
+
+            if(pres_r) {
+              let position_pres_r = pres_l.getBoundingClientRect();
+
+
+           console.log(position_pres_r);
+
+           if(position_pres_r.top > 190){
+            pres_r.style.transform= "translate3d(0px, 0px, 0px)";
+            pres_r.style.transition="transform 300ms ease-in-out";
+           }
+           else if (position_pres_r.top < 490) {
+            pres_r.style.transform= "translate3d(0px, -200px, 0px)";
+            pres_r.style.transition="transform 300ms ease-in-out";
+           }
+            }
+
+            if(main) {
+              let position_main = main.getBoundingClientRect();
+
+
+           
+           if(position_main.top < -4000){
+
+          console.log(position_main,`(${position_main.top})`,`${position_main.top+50})`);
+           let x = `${position_main.top+50})`;
+            main.style.transform= "translate3d(0px, -1200px, 0px)";
+            main.style.transition="transform 600ms ease-in-out";
+           }
+          else if(position_main.top < -2800){
+            main.style.transform= "translate3d(0px, -1150px, 0px)";
+            main.style.transition="transform 600ms ease-in-out";
+           }
+           else if(position_main.top <= -2200){
+            main.style.transform= "translate3d(0px, -950px, 0px)";
+           main.style.transition="transform 1000ms ease-in-out";
+           }
+           else if(position_main.top <= -1200){
+            main.style.transform= "translate3d(0px, -650px, 0px)";
+            main.style.transition="transform 1000ms ease-in-out";
+           }
+           else if(position_main.top <= -550){
+            main.style.transform= "translate3d(0px, -350px, 0px)";
+            main.style.transition="transform 600ms ease-in-out";
+           }
+           else if(position_main.top <= -350){
+            main.style.transform= "translate3d(0px, -150px, 0px)";
+            main.style.transition="transform 600ms ease-in-out";
+           }
+         
+          
+           else {
+            main.style.transform= "translate3d(0px, 0px, 0px)";
+            main.style.transition="transform 600ms ease-in-out";
+           }
+            }
+
+  });
+
+
+
 const Home = () => {
+  
+  
 
     return (
-        <div className="hom" >
+        <div className="" >
                   <div className="nav" >
                             <div className="tab">
-                                  <a href="#skill"><div>Skills</div></a>
-                                  <a href="#webXp"><div>Web Experiences</div></a>
-                                  <a href="#cursus"><div>Cursus</div></a>
-                                  <a href="#project"><div>Projects</div></a>
+                                  <a href="#graphisme"><div>Graphisme</div></a>
+                                  <a href="#site"><div>Site web</div></a>
+                                  <a href="#webmarketing"><div>Web Marketing</div></a>
+                                  <a href="#prestations"><div>Prestations</div></a>
+                                  <a href="#propos"><div>À Propos</div></a>
                                  <div className="logo">
                                     <img src={logo1} width="40" alt="peche melba icone"/>
                                     < Logo  />
@@ -70,210 +249,263 @@ const Home = () => {
                            </div>
                            </div>
                             <div className="bar"onMouseOver={show} >
-                                  <a href="#skill"><div>Skills</div></a>
-                                  <a href="#webXp"><div>Web Experiences</div></a>
-                                  <a href="#cursus"><div>Cursus</div></a>
-                                  <a href="#project"><div>Project</div></a>
-                                  
+                                  <a href="#graphisme"><div>Graphisme</div></a>
+                                  <a href="#site"><div>Site web</div></a>
+                                  <a href="#webmarketing"><div>Web Marketing</div></a>
+                                  <a href="#prestations"><div>Prestations</div></a>
+                                  <a href="#propos"><div>À Propos</div></a>
                             </div>
                    </div>
+            <div className="Home">
+                   <section className="presentation_" onClick={hide}>
             
-                   <div className="presentation" onClick={hide}>
+                              
             
-                              <div className="presentationBackground"></div>
-            
-                              <div className="presentationContent">
-            
-                                           <div className="icone fadeIn">
-                                             <img src={peche2} width="200" alt="pech melba icone"/>
-                                           </div>
-                                           <p> Hello,  I'm Mélinda MENDY a web developer.  <br /> 
-                                               Je suis Mélinda MENDY, développeuse web. <br /><br />
-                                               
-                                                    I like to create website in different sectors
-                                                    (music, decoration, electricity, etc...)
-                                                    for individuals or within a company. <br /><br />
-                                                    J'aime créer des sites internet dans des secteurs différents 
-                                                    (musique, décoration, électricité, etc...) 
-                                                    pour des particuliers ou au sein d'une entreprise.
+                              <div className="presentationContent_">
+
+                                          <div className='brand_name presentation_title presentation_brand'> 
+                                               < Brand />
+                                               <h1 className='title'> Concepteur de site Web </h1>
+                                          </div>
                                          
-                                          </p>
-                              </div>
-            
-                    </div>
-            
-                   <div className="mainContent" onClick={hide}>
-            
-                         <div className="background"></div>
-                    
-                         <div  className="image"></div>
-            
-                          <section className="skills" >  
-            
-                               <h1 id="skill">Skills </h1>
-                               <div className="list">
-            
-                                  <div className="skill-item"><div className="position one shape"><img src={mongodb} width="150" alt="mongodb logo"/></div> <div className="positionTwo four">Mongoose</div></div>
-                                  <div className="skill-item"> <div className="position two shape"><img src={node} width="150" alt="nodejs logo"/></div><div className="positionTwo five ">ExpressJS</div></div>
-                                  <div className="skill-item"> <div className="position three shape"><img src={react} width="110" alt="reactjs logo"/><h2>React</h2></div><div className="positionTwo six ">Redux</div></div>
-                                  <div className="skill-item"> <div className="position seven shape"><h2>Three JS</h2></div><div className="positionTwo eight ">Blender</div></div>
-            
-                                </div>
-                          </section>
-            
-            
-                          <section className="experiences"> 
-                          <div className="experiencesBackground"></div>
-            
-            
-            
-                              <div className="xps"><h1 className="h2" id="webXp">Web Experiences</h1>
-                                <div  className="xpTransition"></div>
-            
-                                  <div className="xp-list">
-                                  <div className="xp"> <img src={mijote} width="150" className="floater" alt="pan icone"/>
-            
-                                    <div>
-                                      <h4>Web Consultant (<a href="https://www.facebook.com/lartdedeleguer">L'art de déléguer)</a></h4>
-                                      <p>Creation of a Leading-page<br/><br/>
-                                      In collaboration with the client, development of the landing page.<br/><br/>
-                                          <a href="https://www.subscribepage.com/lart-de-deleguer?fbclid=IwAR3fnzth7r6kN6C1OEZ3sNERanzLruLXUOsYVYZ7dvZX1Z0ii22e1sZHiSc" target="_blank">See the page</a>
-                                      </p>
-                                   </div>
-            
-                                  </div>
-                                  <div className="xp"> <img src={peche1} width="150" className="wiggle" alt="peach melba icone"/>
-            
-                                    <div> 
-                                      <h4>Developer full stack JS (info-movie website)</h4>
-                                      <p> 
-                                          End of training project with O'clock <br/>
-                                          Specifications wrighting, use cases, sequence diagram.<br/>
-                                          Development the website using Javascript(React/Node) hosted on Amazon EC2. <br/>Réalisation de tests unitaires.
-                                      </p>
-                                    </div>
-            
-                                  </div>
-            
-                                  <div className="xp"> <img src={toque} width="150" className="pulse" alt="chef hat icone"/> 
-            
-                                    <div>  
-                                      <h4>Project Manager (e-commerce website)</h4> 
-                                      <p>Student Project with Simplon <br/>
-                                          Using Trello as project management tool.<br/>
-                                          Assignment and follow-up of tasks of the different members of the team.<br/>
-                                      <br/>
-                                      </p>
-                                    </div>
-            
-                                  </div>
-            
-                                  <div className="xp"> <img src={mijote} width="150" className="floater" alt="pan icone"/>
-            
-                                    <div>
-                                      <h4>Développeur back-end (Forum)</h4>
-                                      <p>Student Project with Simplon <br/>
-                                          Back-end development using php.<br/>
-                                          Data persistance and creating a database using phpmyadmin.
-                                      </p>
-                                   </div>
-            
-                                  </div>
-            </div>
-                              </div>
-                          </section>
-            
-                          <section className="cursus"> 
-            
-                          <div className="cursusBackground"></div>
-            
-                          <h1 id="cursus">Cursus</h1>
-            
-                          <div className="cursusTransition"></div>
-            
-                            <div className="list">
-            
-                              <div className="item">
-            
-                                         <div className="cursusContain position">
                                               
-                                              <div className="school"> O'clock </div>
-                                              <div className="underline"></div>
-                                              <h5>Décembre 2018 à Décembre 2019</h5> 
-            
-                                        </div>
-                                        <p className="position">Concepteur Développeur web (titre niveau II)</p>
-            
-                                </div>
-            
-                                <div className="item">
-            
-                                         <div className="cursusContain position"> 
-             
-                                              <div className="school"> Simplon</div>  
-                                              <div className="underline"></div>
-                                              <h5>Avril 2018 à Juillet 2018 </h5>
-            
-                                        </div>
-                                        <p className="position">Coder et déployer une application simple</p>
-                                </div>
-            
-                                <div className="item">
-                                        <div className="cursusContain position ">
-            
-                                             <div className="school">UPEC </div> 
-                                             <div className="underline"></div>
-                                             <h5>Septembre 2009 à Septembre 2012</h5>
-            
-                                       </div>
-                                       <p className="position">Licence Science de la vie et de la terre</p>
-                                </div>
-            
-                            </div>
-            
-                          </section>
-            
-                          <section className="realisation">
-            
-                              <h1 id="project">Projects</h1>
-            
-                              <div className="realisationBackground"></div>
-                              <div className="projects">
 
-                              <div className="project position">
-                                   
-                                   <img src={countdown} width="300" alt="countdown website design"/>
-                                   <h3>Countdown (personal project)</h3><a href="https://github.com/melind/coutdown-customn" target="_blank">Github Project</a>
-                                   <a href="https://coutdown-custom.vercel.app/" target="_blank">Aperçu / Preview</a>
-                                   
-                                   </div>
+                                               <div className='presentation_left '>
 
-                                
-                                   <div className="project position">
-                                   
-                                   <img src={social} width="300" alt="social proof section website design"/>
-                                   <h3>Social proof section (personal project)</h3><a href="https://github.com/melind/social-proof-section" target="_blank">Github Project</a>
-                                   <a href="https://social-proof-section-sage.vercel.app/" target="_blank">Aperçu / Preview</a>
-                                   
-                                   </div>
+                                                <h2>Ingredients</h2>
 
-                                   <div className="project position">
-                                   
-                                   <img src={article} width="300" alt="article preview website design"/>
-                                   <h3>article-preview (personal project)</h3><a href="https://github.com/melind/article-preview" target="_blank">Github Project</a>
-                                   <a href="https://article-preview-orcin-two.vercel.app/" target="_blank">Aperçu / Preview</a>
-                                   
-                                   </div>
+                                                <div className='stack'>
+                                                    <div>
+                                                      <img alt="ai" src={ai} />
+                                                      <img alt="ps" src={ps} />
+                                                      <img alt="id" src={id} />
+                                                      <img alt="ae" src={ae} />
+                                                    </div>
+                                                    <div>
+                                                      <img alt="react-typescript" src={react_typescript} />
+                                                      <img alt="node" src={node} />
+                                                      <img alt="express" src={express} />
+                                                      <img alt="mongodb" src={mongodb} />
+                                                    </div>
 
-                                  
+                                                </div>
+
+                                          </div>
+
+                                          
+
+                                          <div className="presentation_center icone  " onLoad={up}>
+                                             <img  alt="pech melba icone"  srcSet={`${peche_melba} 330w, ${peche_melba_bis} 900w `} sizes="(max-width: 420px) 100vw , 35vw"/>
+                                            
+                                          </div>
+
+
+
+                                          <div className='presentation_right '>
+                                            <h2>Préparation</h2>
+                                            <ol>
+                                              <li>Conception de l'architecture du site web</li>
+                                              <li>Conception graphique du site web</li>
+                                              <li>Réalisation du site web</li>
+                                              <li>Maintenance du site web</li>
+                                              <li>Promotion du site web</li>
+                                            </ol> 
+                                          </div>
+
+                                         
+
 
                               </div>
+            
+                    </section>
 
-                          </section>
+
+            
+                   <section className="mainContent_" onClick={hide}>
+
+                     <h2>Selon votre besoin réalisation de l'ensemble ou partie de votre site web</h2>
+
+                     <div id="graphisme" className='realisation_type realisation_type_top '>
+                       
+                           <div className='circle circle_top 'id="0" >
+
+                                <p>CONCEPTION D'ÉLÉMENTS GRAPHIQUES</p><br/>
+                                <a classname="link" href='https://www.behance.net/gallery/143722639/BarBeer-Shop' target="_blank">Exemple de projet </a>
+
+                           </div>
+
+                           <div className='realisation_description realisation_description_top '> 
+                           <div><img alt="wirefrme" src={wireframe} /></div>
+                           <div><img alt="mockup" src={mockup} /></div>
+                              <div ><img alt="choix de couleurs" src={couleurs} /></div>
+                              <div ><img alt="moodboard" src={moodboard} /></div>
+                              
+                              
+                          
+                            
+                           </div>
+
+                         
+
+                     </div>
+
+                     <div className='rectangle rectangle_right ' ></div>
+
+                     <div id="site" className='realisation_type realisation_type_middle '>
+                                <div className='circle circle_center'id="1" >
+
+                                        <p>RÉALISATIONS WEB</p><br/>
+                                        <div>
+                                             <a href="https://coutdown-custom.vercel.app/" target="_blank"> Compte à rebours</a> 
+                                             <a href="https://social-proof-section-sage.vercel.app/" target="_blank">Des commentaires</a>
+                                             <a href="https://article-preview-orcin-two.vercel.app/" target="_blank">un article</a>
+                                             <a href="https://www.subscribepage.com/lart-de-deleguer?fbclid=IwAR3fnzth7r6kN6C1OEZ3sNERanzLruLXUOsYVYZ7dvZX1Z0ii22e1sZHiSc" target="_blank">Landing page</a>
+                                        </div>
+
+
+                                </div>
+                                <div className='realisation_description realisation_description_center'>
+                              
+                                      <div><img alt="mockup site web sur ordinateur" src={mockup_device} /></div>
+                                      <div><img alt="mockup site web sur ordinateur" src={mockup_device_2} /></div>
+                                      <div><img alt="mockup site web sur mobile" src={mobile_mockup} /></div>
+                                      <div><img alt="mockup site web sur mobile" src={iphone_mockup} /></div>
+
+                                      
+                                      
+                                </div>                   
+                       </div>
+
+                     <div className='rectangle rectangle_left '></div>
+
+                     <div id="webmarketing" className='realisation_type realisation_type_bottom  ' >
+
+                         <div className='realisation_description realisation_description_bottom'>
+                             
+                              
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/-rXTHIOxXO4" title="YouTube video player" frame="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           
+                              
+                             
+                          </div> 
+                          
+                          
+
+                         <div className='circle circle_bottom' id="2" >
+
+                              <p>CONCEPTION DE SUPPORTS PROMOTIONNELS</p><br/>
+                              <div>
+                                  <a href='https://www.behance.net/gallery/143743593/Storyboard-Motion-design-BarBeer-Shop' target="_blank">Storyboard</a>
+                                  <a href='https://www.behance.net/gallery/143743881/BarBeer-Shop-Affiche-plubicitaire' target="_blank"> Supports imprimés </a> 
+                                  <a href='https://www.behance.net/gallery/144979215/Bannieres-publicitaires' target="_blank">Supports numériques </a>
+                              </div>
+                         </div>
+                         <div className='realisation_description realisation_description_bottom realisation_description_bottom_b'>
+
+                              
+                              <div ><img alt="publication insta" src={flyer} /></div>
+                              <div ><img alt="qrcode" src={ban_rec} /></div>
+                              
+                              
+                              
+                          </div>
+                     </div>
+            
                     
+                 </section>
+
+
+
+                 <section id="prestations" className='prestations_list'>
+                   <h2 className=''>Envie de commander ?</h2>
+
+                   <h3>Nos menus</h3>
+
+                   <div className='prestations prestations_menus '>
+
+                               <div>
+                                          <p>SITE VITRINE STANDARD</p>
+                                          <ul>
+                                            <li>Charte graphique</li>
+                                            <li>Développement du site web - <strong>WordPress</strong> </li>
+                                            <li>Mise en ligne - choix nom de domaine et hébergeur</li>
+                                          </ul>
+                                        </div>
+                                        <div>
+                                          <p>SITE VITRINE PERSONNALISÉ</p>
+                                          <ul>
+                                            <li>Charte graphique</li>
+                                            <li>Développement du site web - <strong>sans</strong> WordPress</li>
+                                            <li>Mise en ligne - choix nom de domaine et hébergeur</li>
+                                          </ul>
+                                        </div>
+                                        <div>
+                                          <p>SITE E-COMMERCE</p>
+                                          <ul>
+                                            <li>Charte graphique</li>
+                                            <li>Développement du site web - <strong>Wordpress - prestashop </strong></li>
+                                            <li>Mise en ligne - choix nom de domaine et hébergeur</li>
+                                          </ul>
+                                        </div>
+
+
+                               </div>
+
+                   <h3>À la carte</h3>
+
+                   <div className='prestations prestations_formulas'>
+
+                                 <div>
+                                         <p>CHARTE GRAPHIQUE</p>
+                                         <ul>
+                                           <li>Choix des couleurs, de la typographie</li>
+                                           <li>Maquettes du site</li>
+                                         </ul>
+                                       </div>
+                                       <div>
+                                         <p>DÉVELOPPEMENT SITE WEB <br/>( à partir d'une charte graphique existante)</p>
+                                         <ul>
+                                           <li>Développement du site web - avec ou sans WordPress</li>
+                                         </ul>
+                                       </div>
+                                       <div>
+                                         <p>COMMUNICATION VISUELLE</p>
+                                         <ul>
+                                           <li> Supports imprimés (Flyers Affiches)</li>
+                                           <li> Supports numériques (visuel d'e-mail, de publications pour réseaux sociaux)</li>
+                                         </ul>
+                                 </div>
+
+                     
+                   </div>
+
+                  
+                      
+                  
+
+
+                 </section>
+
+                 <section className='apropos' id="propos"> <br/>
+                   <h2>À propos</h2>
+                   <p>  Je suis Mélinda MENDY, développeur web et web designer freelance. <br/>
+                   Après avoir suivi les formations de Concepteur Développeur web en 2019 (titre niveau II) et de Web Designer 2021(titre niveau II),
+                   je me lance dans l'aventure du freelancing.<br/>
+                   J'aime la diversité et créer des sites internet accompagner mes clients (particuliers, associations, entreprises) dans leur évolution numérique.
+                   
+                   </p>
+                   <p className='contact'> 
+                   <br/>
+                     Me contacter :  melinda@pechemelba.fr <br/>
+                     Tel : 06.26.81.35.11
+                    </p>
+                 
+                 </section>
+
+
                  </div>
                  <Footer />
-              
+
         </div>
     )
 }
