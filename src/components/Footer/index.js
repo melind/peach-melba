@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="footer">
       
       <a href="https://www.linkedin.com/in/melimendy/"><img src={linkedin} alt=" linkedin logo" width="50"/></a>
-      <a href="https://github.com/melind"><img src={github} alt="github logo" width="50"/></a>
+     
       <a href="https://twitter.com/MELIMENDY"><img src={twitter} alt="twitter logo" width="50"/></a><br></br>
       <p>Contact: melinda@pechemelba.fr</p>
       <a href="https://pechemelba.tunetoo.com/">Custom objects</a><br></br><br></br>

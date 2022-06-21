@@ -4,7 +4,12 @@
    margin-top: -4%;
 }
 
+@media screen and (min-width: 501px) {
+   .brand {
+      font-size: 2em;
+   }
 
+}
 #point {
    color: #df4f15;
 }

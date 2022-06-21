@@ -89,17 +89,7 @@ import { VSMShadowMap } from 'three';
 
    }    
 
-  
 
-   const rectangle = function() {
-    let rec_r = document.getElementsByClassName("rectangle_right")[0];
-    var position = rec_r.getBoundingClientRect();
-    if(position.top < 800) {
-      rec_r.style.transform= "translateX(0)";  
-      rec_r.style.transition="transform 7600ms ease-in-out";
-      console.log(position.top, window.scrollY);
-     }
-   }
 
    
 
@@ -110,7 +100,7 @@ import { VSMShadowMap } from 'three';
               let rec_l = document.getElementsByClassName("rectangle_left")[0];
               let pres_r = document.getElementsByClassName("presentation_right")[0];
               let pres_l = document.getElementsByClassName("presentation_left")[0];
-              let main = document.getElementsByClassName("mainContent_")[0];
+              let main = document.getElementsByClassName("test")[0];
 
              if(rec_r) {
                let position_r = rec_r.getBoundingClientRect();
@@ -118,13 +108,13 @@ import { VSMShadowMap } from 'three';
 
             console.log(position_r);
 
-            if(position_r.top < 800){
+            if(position_r.top < 900){
              rec_r.style.transform= "translateX(0)";  
-             rec_r.style.transition="transform 150ms ease-in-out";
+             rec_r.style.transition="transform 300ms ease-in-out";
             }
-            else {
-             rec_r.style.transform= "translateX(-30%)";  
-             rec_r.style.transition="transform 150ms ease-in-out";
+            else{
+             rec_r.style.transform= "translateX(-90%)";  
+             rec_r.style.transition="transform 300ms ease-in-out";
             }
              }
 
@@ -139,7 +129,7 @@ import { VSMShadowMap } from 'three';
             rec_l.style.transition="transform 300ms ease-in-out";
            }
            else {
-            rec_l.style.transform= "translateX(30%)";  
+            rec_l.style.transform= "translateX(90%)";  
             rec_l.style.transition="transform 300ms ease-in-out";
            }
             }
@@ -151,13 +141,13 @@ import { VSMShadowMap } from 'three';
 
            console.log(position_pres_l);
 
-           if(position_pres_l.top < 200){
-            pres_l.style.transform= "translate3d(0px, -100px, 0px)";
-            pres_l.style.transition="transform 1200ms ease-in-out";
-           }
-           else {
+           if(position_pres_l.top > 190){
             pres_l.style.transform= "translate3d(0px, 0px, 0px)";
-            pres_l.style.transition="transform 1200ms ease-in-out";
+            pres_l.style.transition="transform 150ms ease-in-out";
+           }
+           else if(position_pres_l.top < 490) {
+            pres_l.style.transform= "translate3d(0px, -200px, 0px)";
+            pres_l.style.transition="transform 150ms ease-in-out";
            }
             }
 
@@ -167,13 +157,13 @@ import { VSMShadowMap } from 'three';
 
            console.log(position_pres_r);
 
-           if(position_pres_r.top < 200){
-            pres_r.style.transform= "translate3d(0px, -100px, 0px)";
-            pres_r.style.transition="transform 600ms ease-in-out";
-           }
-           else {
+           if(position_pres_r.top > 190){
             pres_r.style.transform= "translate3d(0px, 0px, 0px)";
-            pres_r.style.transition="transform 600ms ease-in-out";
+            pres_r.style.transition="transform 300ms ease-in-out";
+           }
+           else if (position_pres_r.top < 490) {
+            pres_r.style.transform= "translate3d(0px, -200px, 0px)";
+            pres_r.style.transition="transform 300ms ease-in-out";
            }
             }
 
@@ -182,25 +172,36 @@ import { VSMShadowMap } from 'three';
 
 
            
-           if(position_main.top ){
-            console.log(position_main,`(${position_main.top})`);
-          main.style.transform= `translate3d(0px, ${position_main.top}px, 0px)`;
-           
+           if(position_main.top < -4000){
+
+          console.log(position_main,`(${position_main.top})`,`${position_main.top+50})`);
+          let x = `${position_main.top+50})`;
+          main.style.transform= "translate3d(0px, -1200px, 0px)";
+        
           
             main.style.transition="transform 600ms ease-in-out";
            }
-         /*  else if(position_main.top <= -1500){
-            main.style.transform= "translate3d(0px, -600px, 0px)";
+          else if(position_main.top < -2800){
+            main.style.transform= "translate3d(0px, -1150px, 0px)";
+            main.style.transition="transform 600ms ease-in-out";
+           }
+           else if(position_main.top <= -2200){
+            main.style.transform= "translate3d(0px, -950px, 0px)";
+           main.style.transition="transform 600ms ease-in-out";
+           }
+           else if(position_main.top <= -1200){
+            main.style.transform= "translate3d(0px, -650px, 0px)";
             main.style.transition="transform 600ms ease-in-out";
            }
            else if(position_main.top <= -350){
-            main.style.transform= "translate3d(0px, -300px, 0px)";
+            main.style.transform= "translate3d(0px, -150px, 0px)";
             main.style.transition="transform 600ms ease-in-out";
            }
+          
            else {
             main.style.transform= "translate3d(0px, 0px, 0px)";
             main.style.transition="transform 600ms ease-in-out";
-           }*/
+           }
             }
 
   });
@@ -328,7 +329,7 @@ const Test = () => {
                                   <a href="#graphisme"><div>Graphisme</div></a>
                                   <a href="#site"><div>Site web</div></a>
                                   <a href="#webmarketing"><div>Web Marketing</div></a>
-                                  <a href="#prestations"><div>Prestationss</div></a>
+                                  <a href="#prestations"><div>Prestations</div></a>
                                  <div className="logo">
                                     <img src={logo1} width="40" alt="peche melba icone"/>
                                     < Logo  />
@@ -352,7 +353,7 @@ const Test = () => {
                                   
                             </div>
                    </div>
-            
+            <div className="test">
                    <section className="presentation_" onClick={hide}>
             
                               
@@ -574,7 +575,7 @@ const Test = () => {
 
 
                  </section>
-
+                 </div>
                  <Footer />
 
         </div>

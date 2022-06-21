@@ -13,7 +13,7 @@ const Load = () => {
         <div className="load">
         
           <div className=" brand shaped rotateInLeft">
-                   <img src={logo1} width="500" alt="pech melba logo"/>       
+                   <img src={logo1} width="300" alt="pech melba logo"/>       
          </div>
             < Brand />
         </div>

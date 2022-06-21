@@ -5,9 +5,17 @@
    align-items: center;
    flex-direction: column;
    background-color: #f1dbba;
-   height: 100vh;
+   min-height: 117vh;
+   padding-top: 5%;
    /*min-height: 95vh;
    border: violet solid 2px;*/
+}
+@media screen and (max-width: 800px) {
+  
+.load img {
+   width: 60%;
+   margin-left: 20%;
+}
 }
 .brand {
    display: flex;
@@ -15,10 +23,4 @@
    /*flex-direction: column;
    /*background-color: #f1dbba;
    align-items: center;*/
-}
-@media screen and (min-width: 501px) {
-   .brand {
-      font-size: 2em;
-   }
-
 }
