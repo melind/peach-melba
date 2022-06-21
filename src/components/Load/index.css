@@ -11,7 +11,14 @@
 }
 .brand {
    display: flex;
+   
    /*flex-direction: column;
    /*background-color: #f1dbba;
    align-items: center;*/
+}
+@media screen and (min-width: 501px) {
+   .brand {
+      font-size: 2em;
+   }
+
 }

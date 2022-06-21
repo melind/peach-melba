@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import './index.css';
+//import './index.css';
 import Footer from '../Footer';
 import peche1 from '../../icones/peche1.svg';
 import peche2 from '../../icones/peche2.svg';
