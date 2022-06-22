@@ -150,6 +150,7 @@ margin-bottom: -1100px;
    margin-top: 7%;
    position: fixed;
    left: 67%;
+   z-index: 3;
  
 }
 .hamburgerNav:hover {
@@ -172,7 +173,7 @@ margin-bottom: -1100px;
    height: 40%;
    width: 100%;
    margin-top: 23%;
-  
+   z-index: 3;
 }
 
 .bar a {
@@ -404,6 +405,7 @@ width: 37.5%;
 .realisation_description_center {
    justify-content: space-around;
 }
+
 @media screen and (max-width: 1000px) {
 
    .nav {
@@ -440,6 +442,10 @@ width: 37.5%;
    .mainContent_ h2 {
       margin-top: 23%;
   }
+  .presentation_{
+     margin-top: 20vh;
+     margin-bottom: 66%;
+  }
    .presentationContent p {
     width: 100%;
     padding: 0 8% 0 8%;
@@ -453,10 +459,13 @@ margin-top: 52%;
 
 .presentation_left {
    order: 2;
+   margin-bottom: 42%;
+   margin-top: 35%;
 }
 
 .presentation_right {
    order: 3;
+   margin-top: -13%;
 }
 
 .presentation_left h2{
@@ -541,12 +550,15 @@ iframe{
       margin-top: initial;
    }
    .presentation_left{
-      margin-top: initial;
+      margin-top: 27%;
+      margin-bottom: 10%;
    }
    .presentation_right{
       margin-top: initial;
    }
-   
+   .mainContent_{
+      margin-top: -60%;
+   }
     }
      .apropos {
         margin-top: 5%;
