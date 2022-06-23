@@ -6,9 +6,9 @@ import peche_melba from '../../icones/peche_melba.png';
 import peche_melba_bis from '../../icones/peche_melba_bis.png';
 import toque from '../../icones/toque.svg';
 import mijote from '../../icones/mijote.svg';
-import react_typescript from '../../images/react_typescript.png';
+import react_typescript from '../../icones/react1.svg';
 import node from '../../images/node.png';
-import mongodb from '../../images/mongodb.png';
+import mongodb from '../../images/mgdb.png';
 import express from '../../images/express.png';
 import ae from '../../images/ae.png';
 import ai from '../../images/ai.png';
@@ -280,13 +280,13 @@ const Home = () => {
                                                 <h2>Ingredients</h2>
 
                                                 <div className='stack'>
-                                                    <div>
+                                                    <div className='logiciels'>
                                                       <img alt="ai" src={ai} />
                                                       <img alt="ps" src={ps} />
                                                       <img alt="id" src={id} />
                                                       <img alt="ae" src={ae} />
                                                     </div>
-                                                    <div>
+                                                    <div className='langages'>
                                                       <img alt="react-typescript" src={react_typescript} />
                                                       <img alt="node" src={node} />
                                                       <img alt="express" src={express} />
@@ -396,11 +396,11 @@ const Home = () => {
                      
                          <div className='realisation_description realisation_description_bottom'>
 
-                         <div className='iframe'><iframe width="560" height="315" src="https://www.youtube.com/embed/-rXTHIOxXO4" title="YouTube video player" frame="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                         <div className='iframe_container'><iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/-rXTHIOxXO4" title="YouTube video player" frame="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                          </div>
 
-                      
-                              
+                         
+                               
                               
                           </div>
                    
@@ -493,7 +493,7 @@ const Home = () => {
                    <p>  Je suis Mélinda MENDY, développeur web et web designer freelance. <br/> <br/>
                    Après avoir suivi les formations de Concepteur Développeur web en 2019 (titre niveau II) et de Web Designer 2021(titre niveau II),
                    je me lance dans l'aventure du freelancing.<br/>
-                   J'aime la diversité et créer des sites internet accompagner mes clients (particuliers, associations, entreprises) dans leur évolution numérique.
+                   J'ai plaisir à accompagner mes clients (particuliers, associations, entreprises) dans leur évolution numérique.
                    
                    </p>
                    <p className='contact'> 

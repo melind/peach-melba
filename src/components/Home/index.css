@@ -57,13 +57,14 @@ margin-bottom: -1100px;
 .logo-mobile{ 
    /*display: flex;*/
    top: 2%;
-   position: fixed;
    z-index: 1;
    left: -12%;
    width: 70%;
-   display: flex;
    flex-direction: column;
    align-items: center;
+   position: initial;
+   padding-top: 4%;
+   margin: auto;
    
 }
 
@@ -134,12 +135,6 @@ margin-bottom: -1100px;
 
 }
 
-.logo-mobile{ 
-  position: initial;
-  padding-top: 4%;
-  margin-left: 7%;
-   
-}
 
 .hamburgerNav {
   /* border: red solid 2px;*/
@@ -261,10 +256,13 @@ margin-bottom: -1100px;
 }
 */
 
-.stack img {
+.stack .langages img {
    max-width: 4em;
+   padding: 1%;
 }
-
+.stack .logiciels img {
+   max-width: 4.4em;
+}
 .mainContent_ {
  /*  border: blue solid 2px;*/
    display: flex;
@@ -418,6 +416,9 @@ width: 37.5%;
       justify-content: space-around;
   
 }
+.iframe_container{
+   margin-right:  15%;
+}
 
 @media screen and (max-width: 1000px) {
 
@@ -466,7 +467,7 @@ width: 37.5%;
 }
 
 .presentation_title{
-margin-top: 52%;
+margin-top: 25%;
   order: 0;
 }
 
@@ -524,19 +525,17 @@ margin-top: 52%;
    justify-content: space-around;
    
 }
+.realisation_description_top div {
+   width: initial;
+}
+
+.realisation_description_bottom div, .realisation_description_center div {
+   width: auto;
+}
 .realisation_description img{
    width: 74%;
 }
-.realisation_description_top div {
-   width: 50%;
-}
 
-.realisation_description_center div {
-   width: initial;
-}
-.realisation_description_bottom div{
-   width: initial;
-}
 #mockup_desktop {
    width: 9%;
 }
@@ -545,17 +544,17 @@ margin-top: 52%;
    flex-direction: column;
    justify-content: center;
 }
+.circle_top {
+   margin-right: initial;
+}
 .circle_bottom{
    margin-right: initial;
 }
-iframe{
-   width: auto;
-   height: auto;
+
+.circle_center{
+   margin-left: initial;
 }
-.iframe {
-    margin-right: initial; 
-    margin-bottom: 33%;
-}
+
 .prestations{
    flex-direction: column;
 }
@@ -564,9 +563,20 @@ iframe{
 }
 .prestations_list{
    width: initial;
+   text-align: center;
 }
-.prestations_list h3 {
-   margin-left: 16%;
+.iframe_container {
+   margin-right: 0;
+   margin-bottom: 33%;
+}
+.iframe{
+   width: auto;
+   height: auto;
+   margin-right: initial;
+}
+.presentation_title div  h1{
+   margin-left: 21%;
+   margin-bottom: 10%;
 }
 }
 .apropos {
@@ -575,9 +585,13 @@ iframe{
 .apropos p {
    text-align: left;
 }
+
+
+
+
 @media screen and (width: 768px) {
    .presentation_title{
-      margin-top: initial;
+      margin-top: 31%;
    }
    .presentation_left{
       margin-top: 27%;
@@ -589,6 +603,11 @@ iframe{
    .mainContent_{
       margin-top: -60%;
    }
+   .presentation_title div  h1{
+      margin-left: initial;
+   }
+
+
  
 }
      .apropos {
