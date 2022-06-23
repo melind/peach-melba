@@ -433,12 +433,12 @@ const Home = () => {
                                             <li>Charte graphique</li>
                                             <li>Site web - <strong>sans</strong> WordPress</li>
                                             <li>Mise en ligne</li>
+                                            <li>Nom de domaine</li>
                                             <li>Hébergement</li>
-                                            <li>Mise en ligne </li>
                                           </ul>
                                         </div>
                                         <div>
-                                          <p>SITE E-COMMERCE</p>
+                                          <p>SITE E-COMMERCE STANDARD</p>
                                           <ul>
                                             <li>Charte graphique</li>
                                             <li>Site web - <strong>Wordpress</strong></li>
