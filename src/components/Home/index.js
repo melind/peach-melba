@@ -60,16 +60,16 @@ import { VSMShadowMap } from 'three';
       bar.style.display= "none"; 
       let hambNav = document.getElementsByClassName("hamburgerNav")[0];  
       hambNav.style.display= "flex"; 
+      hambNav.style.position= "fixed"; 
 
     }
 
    const up = function () {  
     let body = document.body;
-    
 
 
       let pechemelba = document.getElementsByClassName("presentation_center")[0];   
-      pechemelba.style.transform= "translate3d(0px, 10px, 0px)";  
+      pechemelba.style.transform= "translate3d(0px, 0px, 0px)";  
       pechemelba.style.transition="transform 3600ms ease-in-out";
 
       let bloc_l = document.getElementsByClassName("presentation_left")[0];
@@ -109,7 +109,7 @@ import { VSMShadowMap } from 'three';
               let rec_l = document.getElementsByClassName("rectangle_left")[0];
               let pres_r = document.getElementsByClassName("presentation_right")[0];
               let pres_l = document.getElementsByClassName("presentation_left")[0];
-              let main = document.getElementsByClassName("Home")[0];
+             // let main = document.getElementsByClassName("Home")[0];
 
              if(rec_r) {
                let position_r = rec_r.getBoundingClientRect();
@@ -176,7 +176,7 @@ import { VSMShadowMap } from 'three';
            }
             }
 
-            if(main) {
+          /*  if(main) {
               let position_main = main.getBoundingClientRect();
 
 
@@ -214,7 +214,7 @@ import { VSMShadowMap } from 'three';
             main.style.transform= "translate3d(0px, 0px, 0px)";
             main.style.transition="transform 600ms ease-in-out";
            }
-            }
+            }*/
 
   });
 
@@ -225,7 +225,7 @@ const Home = () => {
   
 
     return (
-        <div className="" >
+        <div className=""  >
                   <div className="nav" >
                             <div className="tab">
                                   <a href="#graphisme"><div>Graphisme</div></a>
@@ -239,24 +239,29 @@ const Home = () => {
                                 </div>
                             </div>
                   </div>
-                  <div className="nav-mobile" onClick={show} >
+                  <div className="nav-mobile"  >
                           <div className="logo-mobile">
                                   <img src={logo1} width="50" alt="peche melba icone"/>
                                   < Logo />
                           </div>
-                           <div className="hamburgerNav" >
+                           <div className="hamburgerNav" onClick={show}>
                                     <div className="menu"></div><div className="menu"></div><div className="menu">
                            </div>
                            </div>
-                            <div className="bar"onMouseOver={show} >
-                                  <a href="#graphisme"><div>Graphisme</div></a>
-                                  <a href="#site"><div>Site web</div></a>
-                                  <a href="#webmarketing"><div>Web Marketing</div></a>
-                                  <a href="#prestations"><div>Prestations</div></a>
-                                  <a href="#propos"><div>À Propos</div></a>
-                            </div>
+                           <div></div>
+                            <div className="bar" >
+                            
+                                  <a href="#graphisme" className='a'><div>Graphisme</div></a>
+                                  <a href="#site" className='a'><div>Site web</div></a>
+                                  <a href="#webmarketing" className='a'><div>Web Marketing</div></a>
+                                  <a href="#prestations" className='a'><div>Prestations</div></a>
+                                  <a href="#propos" className='a'><div>À Propos</div></a>
+                                  <div className='a' onClick={hide}>X</div>
+                            </div>  
+                            
                    </div>
-            <div className="Home">
+                  
+            <div className="home" >
                    <section className="presentation_" onClick={hide}>
             
                               
@@ -321,7 +326,7 @@ const Home = () => {
 
 
             
-                   <section className="mainContent_" onClick={hide}>
+                   <section className="mainContent_ content" onClick={hide}>
 
                      <h2>Selon votre besoin réalisation de l'ensemble ou partie de votre site web</h2>
 
@@ -329,8 +334,8 @@ const Home = () => {
                        
                            <div className='circle circle_top 'id="0" >
 
-                                <p>CONCEPTION D'ÉLÉMENTS GRAPHIQUES</p><br/>
-                                <a classname="link" href='https://www.behance.net/gallery/143722639/BarBeer-Shop' target="_blank">Exemple de projet </a>
+                                <p>ÉLÉMENTS GRAPHIQUES</p><br/>
+                                <a classname="link" href='https://www.behance.net/gallery/143722639/BarBeer-Shop' target="_blank">BarBeer Shop </a>
 
                            </div>
 
@@ -356,9 +361,7 @@ const Home = () => {
 
                                         <p>RÉALISATIONS WEB</p><br/>
                                         <div>
-                                             <a href="https://coutdown-custom.vercel.app/" target="_blank"> Compte à rebours</a> 
-                                             <a href="https://social-proof-section-sage.vercel.app/" target="_blank">Des commentaires</a>
-                                             <a href="https://article-preview-orcin-two.vercel.app/" target="_blank">un article</a>
+                                             <a href="https://coutdown-custom.vercel.app/" target="_blank"> Compte à rebours</a> <br/>
                                              <a href="https://www.subscribepage.com/lart-de-deleguer?fbclid=IwAR3fnzth7r6kN6C1OEZ3sNERanzLruLXUOsYVYZ7dvZX1Z0ii22e1sZHiSc" target="_blank">Landing page</a>
                                         </div>
 
@@ -380,43 +383,34 @@ const Home = () => {
 
                      <div id="webmarketing" className='realisation_type realisation_type_bottom  ' >
 
+                     <div className='circle circle_bottom' id="2" >
+
+                                <p>SUPPORTS PROMOTIONNELS</p><br/>
+                                <div>
+                                    <a href='https://www.behance.net/gallery/143743593/Storyboard-Motion-design-BarBeer-Shop' target="_blank">Animation</a><br/>
+                                    <a href='https://www.behance.net/gallery/143743881/BarBeer-Shop-Affiche-plubicitaire' target="_blank"> Supports imprimés </a> <br/>
+                                    <a href='https://www.behance.net/gallery/144979215/Bannieres-publicitaires' target="_blank">Supports numériques </a><br/>
+                                </div>
+                                </div>
+
+                     
                          <div className='realisation_description realisation_description_bottom'>
-                             
-                              
-                              <iframe width="560" height="315" src="https://www.youtube.com/embed/-rXTHIOxXO4" title="YouTube video player" frame="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                           
-                              
-                             
-                          </div> 
-                          
-                          
 
-                         <div className='circle circle_bottom' id="2" >
-
-                              <p>CONCEPTION DE SUPPORTS PROMOTIONNELS</p><br/>
-                              <div>
-                                  <a href='https://www.behance.net/gallery/143743593/Storyboard-Motion-design-BarBeer-Shop' target="_blank">Storyboard</a>
-                                  <a href='https://www.behance.net/gallery/143743881/BarBeer-Shop-Affiche-plubicitaire' target="_blank"> Supports imprimés </a> 
-                                  <a href='https://www.behance.net/gallery/144979215/Bannieres-publicitaires' target="_blank">Supports numériques </a>
-                              </div>
+                         <div className='iframe'><iframe width="560" height="315" src="https://www.youtube.com/embed/-rXTHIOxXO4" title="YouTube video player" frame="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                          </div>
-                         <div className='realisation_description realisation_description_bottom realisation_description_bottom_b'>
 
-                              
-                              <div ><img alt="publication insta" src={flyer} /></div>
-                              <div ><img alt="qrcode" src={ban_rec} /></div>
-                              
+                      
                               
                               
                           </div>
-                     </div>
+                   
             
-                    
+                     </div> 
                  </section>
 
 
 
-                 <section id="prestations" className='prestations_list'>
+                 <section id="prestations" className='prestations_list content'>
                    <h2 className=''>Envie de commander ?</h2>
 
                    <h3>Nos menus</h3>
@@ -427,24 +421,30 @@ const Home = () => {
                                           <p>SITE VITRINE STANDARD</p>
                                           <ul>
                                             <li>Charte graphique</li>
-                                            <li>Développement du site web - <strong>WordPress</strong> </li>
-                                            <li>Mise en ligne - choix nom de domaine et hébergeur</li>
+                                            <li>Site web - <strong>WordPress</strong> </li>
+                                            <li>Mise en ligne </li>
+                                            <li>Nom de domaine</li>
+                                            <li>Hébergement</li>
                                           </ul>
                                         </div>
                                         <div>
                                           <p>SITE VITRINE PERSONNALISÉ</p>
                                           <ul>
                                             <li>Charte graphique</li>
-                                            <li>Développement du site web - <strong>sans</strong> WordPress</li>
-                                            <li>Mise en ligne - choix nom de domaine et hébergeur</li>
+                                            <li>Site web - <strong>sans</strong> WordPress</li>
+                                            <li>Mise en ligne</li>
+                                            <li>Hébergement</li>
+                                            <li>Mise en ligne </li>
                                           </ul>
                                         </div>
                                         <div>
                                           <p>SITE E-COMMERCE</p>
                                           <ul>
                                             <li>Charte graphique</li>
-                                            <li>Développement du site web - <strong>Wordpress - prestashop </strong></li>
-                                            <li>Mise en ligne - choix nom de domaine et hébergeur</li>
+                                            <li>Site web - <strong>Wordpress</strong></li>
+                                            <li>Mise en ligne </li>
+                                            <li>Nom de domaine</li>
+                                            <li>Hébergement</li>
                                           </ul>
                                         </div>
 
@@ -458,21 +458,23 @@ const Home = () => {
                                  <div>
                                          <p>CHARTE GRAPHIQUE</p>
                                          <ul>
-                                           <li>Choix des couleurs, de la typographie</li>
+                                           <li>Choix des couleurs</li>
+                                           <li>Typographie</li>
                                            <li>Maquettes du site</li>
                                          </ul>
                                        </div>
                                        <div>
-                                         <p>DÉVELOPPEMENT SITE WEB <br/>( à partir d'une charte graphique existante)</p>
+                                         <p>DÉVELOPPEMENT SITE WEB</p>
                                          <ul>
-                                           <li>Développement du site web - avec ou sans WordPress</li>
+                                           <li>Site web - avec ou sans WordPress</li>
                                          </ul>
                                        </div>
                                        <div>
                                          <p>COMMUNICATION VISUELLE</p>
                                          <ul>
                                            <li> Supports imprimés (Flyers Affiches)</li>
-                                           <li> Supports numériques (visuel d'e-mail, de publications pour réseaux sociaux)</li>
+                                           <li> Supports numériques </li>
+                                           <li>(visuel d'e-mail, réseaux sociaux,...)</li>
                                          </ul>
                                  </div>
 
@@ -486,9 +488,9 @@ const Home = () => {
 
                  </section>
 
-                 <section className='apropos' id="propos"> <br/>
+                 <section className='apropos content' id="propos"> <br/><br/>
                    <h2>À propos</h2>
-                   <p>  Je suis Mélinda MENDY, développeur web et web designer freelance. <br/>
+                   <p>  Je suis Mélinda MENDY, développeur web et web designer freelance. <br/> <br/>
                    Après avoir suivi les formations de Concepteur Développeur web en 2019 (titre niveau II) et de Web Designer 2021(titre niveau II),
                    je me lance dans l'aventure du freelancing.<br/>
                    J'aime la diversité et créer des sites internet accompagner mes clients (particuliers, associations, entreprises) dans leur évolution numérique.
@@ -496,9 +498,8 @@ const Home = () => {
                    </p>
                    <p className='contact'> 
                    <br/>
-                     Me contacter :  melinda@pechemelba.fr <br/>
-                     Tel : 06.26.81.35.11
-                    </p>
+                     Me contacter :  melinda@pechemelba.fr 
+                    </p> <br/>
                  
                  </section>
 
