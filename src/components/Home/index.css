@@ -545,13 +545,16 @@ margin-top: 52%;
    flex-direction: column;
    justify-content: center;
 }
-
+.circle_bottom{
+   margin-right: initial;
+}
 iframe{
    width: auto;
    height: auto;
-   margin-top: 15%;
-   margin-right: auto;
-   margin-left: auto;
+}
+.iframe {
+    margin-right: initial; 
+    margin-bottom: 33%;
 }
 .prestations{
    flex-direction: column;
@@ -586,7 +589,8 @@ iframe{
    .mainContent_{
       margin-top: -60%;
    }
-    }
+ 
+}
      .apropos {
         margin-top: 5%;
      }
