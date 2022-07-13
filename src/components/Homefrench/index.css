@@ -1,7 +1,33 @@
+
+
 .prestations_list h2 {
   
       font-family: 'Pelmeshka Cyrillic';
-  
+      margin-bottom: 4%;
+}
+
+.realisation_description h3 {
+   color:#ff6a66;
+}
+.realisation_description {
+   /* height: 70vh;*/
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+ }
+.realisation_description p {
+   color: #5b0025;
+   text-align: justify;
+    padding: 7%;
+}
+.citation {
+   color: #df4f15
+}
+.rectangle a{
+   color: white;
+   text-underline-position: under;
 }
 /*
 .Home {
@@ -53,7 +79,9 @@ margin-bottom: -1100px;
    text-decoration: none;
    
 }
-
+.language{
+   background-color: transparent!important;
+}
 .logo-mobile{ 
    /*display: flex;*/
    top: 2%;
@@ -66,6 +94,9 @@ margin-bottom: -1100px;
    padding-top: 4%;
    margin: auto;
    
+}
+.react {
+   margin-bottom: -2%;
 }
 
 .title {
@@ -93,6 +124,11 @@ margin-bottom: -1100px;
 
 
  }
+
+
+.prestations div {
+   width:100%
+}
 
 @media screen and (min-width: 1001px) {
 
@@ -131,8 +167,13 @@ margin-bottom: -1100px;
       top: 15%;
       left: 4%;
    }
-   
 
+ 
+.rectangle{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
 
 
@@ -244,7 +285,7 @@ margin-bottom: -1100px;
 
 .presentation_right {
    opacity: 0;
-   margin-top: 25%;
+   margin-top: 21%;
 }
 /*
 .presentationContent p {
@@ -257,11 +298,11 @@ margin-bottom: -1100px;
 */
 
 .stack .langages img {
-   max-width: 4em;
+   max-width: 3.6em;
    padding: 1%;
 }
 .stack .logiciels img {
-   max-width: 4.4em;
+   max-width: 4em;
 }
 .mainContent_ {
  /*  border: blue solid 2px;*/
@@ -279,29 +320,17 @@ margin-bottom: -1100px;
    height: 90vh;
    display: flex;
    align-items: center;
-   margin-top: 6%;
    margin-bottom: 6%;
+   margin-top: 6%;
+   justify-content: center;
 }
-.realisation_type_top {
- 
-}
+
 
 .realisation_type_middle {
    flex-direction: row-reverse;
  
    
 }
-
-.realisation_type_bottom {
-   justify-content: center;
-}
-.realisation_description {
-  /* height: 70vh;*/
-   display: flex;
-   flex-wrap: wrap;
-   flex: 1;
-}
-
 
 .circle div {
    display: flex;
@@ -315,14 +344,7 @@ margin-bottom: -1100px;
    width: 6%;
 }
 
-.realisation_description img {
-   width: 100%;
-}
-.realisation_description div{
-   width: 50%;
-   height: 50%;
-   justify-content: space-around;
-}
+
 
 .circle_top {
    background-color: #fff197;
@@ -340,13 +362,9 @@ margin-bottom: -1100px;
 .circle_bottom {
    background-color: #ff8f91;
    color: #5b0025;
-   margin-right: -10%;
   
 }
 
-.iframe{
-   margin-right: 15%;
-}
 
 .rectangle {
    height: 5vh;
@@ -390,35 +408,11 @@ ul {
 
 .prestations {
    display: flex;
-   justify-content: space-between;
+   margin-bottom: 4%;
 }
 
-#ban_pave{
-width: 43.5%;
-}
 
-#flyer {
-width: 37.5%;
-}
 
-.realisation_description_top{
-   align-items: center;
-   justify-content: space-around;
-}
-
-.realisation_description_center {
-   justify-content: space-around;
-}
-
-.realisation_description_bottom {
-  
-      align-items: center;
-      justify-content: space-around;
-  
-}
-.iframe_container{
-   margin-right:  15%;
-}
 
 @media screen and (max-width: 1000px) {
 
@@ -434,6 +428,13 @@ width: 37.5%;
  
   .brand-logo {
      visibility: hidden;
+  }
+
+  .language_mobile{
+      position: fixed;
+      right: 7%;
+      top: 10%;
+      
   }
 
    .list {
@@ -493,14 +494,9 @@ margin-top: 25%;
    margin-top: 20%;
    text-align: center;
 }
-.realisation_type_top {
-   margin-left: initial;
-}
 
-.realisation_type_middle {
-   flex-direction: row-reverse;
-   margin-right: initial;
-}
+
+
 .circle{
    width: 40vh;
    height: 40vh;
@@ -521,24 +517,9 @@ margin-top: 25%;
    height: initial;
 
 }
-.realisation_description {
-   justify-content: space-around;
-   
-}
-.realisation_description_top div {
-   width: initial;
-}
 
-.realisation_description_bottom div, .realisation_description_center div {
-   width: auto;
-}
-.realisation_description img{
-   width: 74%;
-}
 
-#mockup_desktop {
-   width: 9%;
-}
+
 .circle div {
  
    flex-direction: column;
@@ -565,15 +546,7 @@ margin-top: 25%;
    width: initial;
    text-align: center;
 }
-.iframe_container {
-   margin-right: 0;
-   margin-bottom: 33%;
-}
-.iframe{
-   width: auto;
-   height: auto;
-   margin-right: initial;
-}
+
 .presentation_title div  h1{
    margin-left: 21%;
    margin-bottom: 10%;

@@ -37,8 +37,7 @@ Le responsable de la publication est une<strong> personne physique</strong><br 
 Le Webmaster est  : <strong>Mélinda MENDY</strong><br />
 Contacter le Webmaster :  <strong><a href="mailto:melinda@pechemelba.fr?subject=Contact a partir des mentions lÃ©gales via le site www.pechemelba.fr">melinda@pechemelba.fr</a></strong><br />
 L’hebergeur du site est : <strong>www.pechemelba.fr </strong><br />
-    <strong><u>CREDIT :</u> </strong> Les mentions légales ont étés générées par<strong> <a href="https://www.generer-mentions-legales.com/generateur-mentions-legales.html" target="_blank" rel="noopener noreferrer">générateur de mentions legales</a></strong><br />
-Une eau toujours potable avec les <strong><a href="https://www.chamarrel.com/perles-de-ceramique-em-pxl-29_37.html">perles de céramique</a></strong></p>
+    <strong><u>CREDIT :</u> </strong> Les mentions légales ont étés générées par<strong> <a href="https://www.generer-mentions-legales.com/generateur-mentions-legales.html" target="_blank" rel="noopener noreferrer">générateur de mentions legales</a></strong><br /></p>
 
     <p> </p>
 

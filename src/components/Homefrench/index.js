@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import { Link } from "react-router-dom";
 import './index.css';
 import Footer from '../Footer';
 import peche1 from '../../icones/peche1.svg';
@@ -14,40 +15,9 @@ import ae from '../../images/ae.png';
 import ai from '../../images/ai.png';
 import id from '../../images/id.png';
 import ps from '../../images/ps.png';
-import couleurs from '../../images/templates/BBS-example/choix_couleur.png';
-import moodboard from '../../images/templates/BBS-example/MB2.jpg'
-import wireframe from '../../images/templates/BBS-example/wireframe.png';
-import mockup from '../../images/templates/BBS-example/mockup.png';
-import mockup_device from '../../images/templates/BBS-example/mockup_device.jpg';
-import mockup_device_2 from '../../images/templates/BBS-example/mockup_device_2.jpg';
-import mobile_mockup from '../../images/templates/BBS-example/mobile_mockup.jpg';
-import iphone_mockup from '../../images/templates/BBS-example/iphone_mockup.jpg';
-import typo_1 from '../../images/templates/BBS-example/typo_1.png';
-import typo_2 from '../../images/templates/BBS-example/typo_2.png';
-import logo_orange from '../../images/templates/BBS-example/Logo-orange.png';
-import logo_noir from '../../images/templates/BBS-example/Logo-noir.png';
-import storyboard_1 from '../../images/templates/BBS-example/storyboard_bbs-1.png';
-import storyboard_2 from '../../images/templates/BBS-example/storyboard_bbs-2.png';
-import flyer from '../../images/templates/BBS-example/flyer_bbs.png';
-import affiche from '../../images/templates/BBS-example/affiche-mall.png';
-import insta from '../../images/templates/BBS-example/post_insta.png';
-import fcbk from '../../images/templates/BBS-example/post_fcbk.png';
-import ban_pave from '../../images/templates/BBS-example/Banniere_pave.jpg';
-import ban_skycraper from '../../images/templates/BBS-example/Gratte_ciel.jpg';
-import ban_rec from '../../images/templates/BBS-example/Tableau_bord_gif.gif';
-import qrcode from '../../images/templates/BBS-example/qrcode.jpg';
-import designer from '../../images/designer.jpg';
-import sketching from '../../images/sketching.jpg';
-import ordi from '../../images/ordi.jpg';
-import exp from '../../images/exp.jpg';
-import code from '../../images/code.jpg';
-import countdown from '../../images/countdown.jpg';
-import social from '../../images/social_design.jpg';
-import article from '../../images/article_design.jpg';
 import logo1 from '../../icones/logo1.svg';
 import Logo from '../Logo';
 import Brand from '../Brand';
-import { VSMShadowMap } from 'three';
 
     const show = function () {  
       let bar = document.getElementsByClassName("bar")[0];  
@@ -214,13 +184,17 @@ import { VSMShadowMap } from 'three';
             main.style.transform= "translate3d(0px, 0px, 0px)";
             main.style.transition="transform 600ms ease-in-out";
            }
-            }*/
+            }
+           
+
+            
+            */
 
   });
 
 
 
-const Home = () => {
+const Homefrench = () => {
   
   
 
@@ -236,6 +210,7 @@ const Home = () => {
                                  <div className="logo">
                                     <img src={logo1} width="40" alt="peche melba icone"/>
                                     < Logo  />
+                                    <a className='language' href="/jp" >日本語</a>
                                 </div>
                             </div>
                   </div>
@@ -248,7 +223,7 @@ const Home = () => {
                                     <div className="menu"></div><div className="menu"></div><div className="menu">
                            </div>
                            </div>
-                           <div></div>
+                           <a className='language language_mobile' href="/jp" >日本語</a>
                             <div className="bar" >
                             
                                   <a href="#graphisme" className='a'><div>Graphisme</div></a>
@@ -260,7 +235,7 @@ const Home = () => {
                             </div>  
                             
                    </div>
-                  
+                 
             <div className="home" >
                    <section className="presentation_" onClick={hide}>
             
@@ -287,7 +262,7 @@ const Home = () => {
                                                       <img alt="ae" src={ae} />
                                                     </div>
                                                     <div className='langages'>
-                                                      <img alt="react-typescript" src={react_typescript} />
+                                                      <img alt="react-typescript"  className="react" src={react_typescript} />
                                                       <img alt="node" src={node} />
                                                       <img alt="express" src={express} />
                                                       <img alt="mongodb" src={mongodb} />
@@ -309,10 +284,8 @@ const Home = () => {
                                           <div className='presentation_right '>
                                             <h2>Préparation</h2>
                                             <ol>
-                                              <li>Conception de l'architecture du site web</li>
                                               <li>Conception graphique du site web</li>
                                               <li>Réalisation du site web</li>
-                                              <li>Maintenance du site web</li>
                                               <li>Promotion du site web</li>
                                             </ol> 
                                           </div>
@@ -328,92 +301,107 @@ const Home = () => {
             
                    <section className="mainContent_ content" onClick={hide}>
 
-                     <h2>Selon votre besoin réalisation de l'ensemble ou partie de votre site web</h2>
+                     <h2>Pour réaliser l'ensemble ou une partie de mon site web : </h2>
 
-                     <div id="graphisme" className='realisation_type realisation_type_top '>
-                       
-                           <div className='circle circle_top 'id="0" >
 
-                                <p>ÉLÉMENTS GRAPHIQUES</p><br/>
-                                <a classname="link" href='https://www.behance.net/gallery/143722639/BarBeer-Shop' target="_blank">BarBeer Shop </a>
+                     <div id="graphisme" className='realisation_type  '>
+                          <div>
 
+                                      
+                                         <div className='circle circle_top 'id="0" >
+
+                                              <p>ÉLÉMENTS GRAPHIQUES</p><br/>
+                                            
+
+                                         </div>
+                                        
+                                      
                            </div>
+                           <div className='realisation_description  '>
+                            
+                          
+                              
+                                           <h3>1. Les goûts et les couleurs ne se discutent pas !</h3> <br/>
+                                            <p>
+                                           <em className='citation'> "Je définis "MA" symbolique des couleurs."</em><br/><br/>
+                          
 
-                           <div className='realisation_description realisation_description_top '> 
-                           <div><img alt="wirefrme" src={wireframe} /></div>
-                           <div><img alt="mockup" src={mockup} /></div>
-                              <div ><img alt="choix de couleurs" src={couleurs} /></div>
-                              <div ><img alt="moodboard" src={moodboard} /></div>
-                              
-                              
+                                           En effet, "LA" symbolique des couleurs varie selon les pays, les cultures.
+                                           Alors n'hésitez pas à choisir des couleurs que vous ressentez.
+                                           Nous élaborerons ensemble l'aspect du se votre site internet.
+                                            </p>
                           
                             
                            </div>
+                           
 
                          
 
                      </div>
-
-                     <div className='rectangle rectangle_right ' ></div>
-
+                         <div className='rectangle rectangle_right ' ></div>
+                     
                      <div id="site" className='realisation_type realisation_type_middle '>
+                   
                                 <div className='circle circle_center'id="1" >
 
                                         <p>RÉALISATIONS WEB</p><br/>
-                                        <div>
-                                             <a href="https://coutdown-custom.vercel.app/" target="_blank"> Compte à rebours</a> <br/>
-                                             <a href="https://www.subscribepage.com/lart-de-deleguer?fbclid=IwAR3fnzth7r6kN6C1OEZ3sNERanzLruLXUOsYVYZ7dvZX1Z0ii22e1sZHiSc" target="_blank">Landing page</a>
-                                        </div>
+                                      
 
 
                                 </div>
-                                <div className='realisation_description realisation_description_center'>
+                                <div className='realisation_description'>
                               
-                                      <div><img alt="mockup site web sur ordinateur" src={mockup_device} /></div>
-                                      <div><img alt="mockup site web sur ordinateur" src={mockup_device_2} /></div>
-                                      <div><img alt="mockup site web sur mobile" src={mobile_mockup} /></div>
-                                      <div><img alt="mockup site web sur mobile" src={iphone_mockup} /></div>
+                                             <h3>2. L'art de déléguer ! </h3><br/>
+                                             <p>
+                                              <em className='citation'>"Grâce aux compétences mises à mon service, je concrétise la création de mon site web."   </em><br/><br/>
+                                              Après validation de la maquette graphique de votre site internet, nous procéderons au développement de celui-ci.<br/>
+                                              Cela se fera soit via un CMS (comme WordPress) soit entièrement fait à la main.
+                                              
+                                            
+                                        
 
+                                             </p>
                                       
                                       
                                 </div>                   
                        </div>
-
-                     <div className='rectangle rectangle_left '></div>
-
-                     <div id="webmarketing" className='realisation_type realisation_type_bottom  ' >
-
-                     <div className='circle circle_bottom' id="2" >
-
-                                <p>SUPPORTS PROMOTIONNELS</p><br/>
-                                <div>
-                                    <a href='https://www.behance.net/gallery/143743593/Storyboard-Motion-design-BarBeer-Shop' target="_blank">Animation</a><br/>
-                                    <a href='https://www.behance.net/gallery/143743881/BarBeer-Shop-Affiche-plubicitaire' target="_blank"> Supports imprimés </a> <br/>
-                                    <a href='https://www.behance.net/gallery/144979215/Bannieres-publicitaires' target="_blank">Supports numériques </a><br/>
-                                </div>
-                                </div>
-
                      
-                         <div className='realisation_description realisation_description_bottom'>
+                       <div className='rectangle rectangle_left '></div>
+                       
+                     <div id="webmarketing" className='realisation_type   ' >
 
-                         <div className='iframe_container'><iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/-rXTHIOxXO4" title="YouTube video player" frame="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                         </div>
+                                 <div className='circle circle_bottom' id="2" >
 
-                         
-                               
-                              
-                          </div>
-                   
+                                            <p>SUPPORTS PROMOTIONNELS</p><br/>
+
+
+                                 </div>
+
+                                 <div className='realisation_description '>
+
+                                             <h3>3. Choisir c'est renoncer !</h3> <br/>
+                                             <p>
+                                                   <em className='citation'>"Je maximise la promotion de mon site web en ciblant les canaux de communication appropriés à mon secteur."</em><br/><br/>
+                                                   
+                                                    
+                                                   Nous réalisons des visuels sous format imprimé ou numérique pour la promotion de votre site internet ou de votre activité.<br/>
+                                                   <em>Si vous n'êtes pas encore présent sur les réseaux sociaux, nous pouvons vous accompagner dans votre sélection.</em>
+                                              </p>
+
+                                 </div>
+                  
             
+
                      </div> 
+          
                  </section>
 
 
 
                  <section id="prestations" className='prestations_list content'>
-                   <h2 className=''>Envie de commander ?</h2>
+                   <h2 className=''>Envie de cuisiner ?</h2>
 
-                   <h3>Nos menus</h3>
+                   <h3>Nos recettes</h3>
 
                    <div className='prestations prestations_menus '>
 
@@ -451,7 +439,7 @@ const Home = () => {
 
                                </div>
 
-                   <h3>À la carte</h3>
+                   
 
                    <div className='prestations prestations_formulas'>
 
@@ -510,4 +498,4 @@ const Home = () => {
         </div>
     )
 }
-export default Home;
+export default Homefrench;

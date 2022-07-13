@@ -1,20 +1,17 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import twitter from '../../icones/twitter.svg';
-import github from '../../icones/github.svg';
-import linkedin from '../../icones/li.png';
 import './index.css';
 
 
 const Footer = () => {
   return (
     <div className="footer">
-      
-      <a href="https://www.linkedin.com/in/melimendy/" target="_blank"><img src={linkedin} alt=" linkedin logo" width="50"/></a><br/><br/>
+      <div className='reseaux_sociaux'>
+        <a href="https://www.linkedin.com/in/melimendy/" target="_blank"><img src="https://cdn.cdnlogo.com/logos/l/78/linkedin-icon.svg" alt=" linkedin logo" width="50"/></a><br/><br/>
+        <a href="https://www.behance.net/melimendy"><img src="https://cdn.cdnlogo.com/logos/b/29/behance.svg" width="50"/></a>
+      </div>
+        <a href="https://pechemelba.tunetoo.com/" target="_blank">Goodies </a> <br/><br/><Link to="/fr/mentions-legales"> Mentions Legales</Link>
      
-     
-      <a href="https://pechemelba.tunetoo.com/" target="_blank">Goodies </a> <Link to="/mentionsLegales"> Mentions Legales</Link>
-      
     </div>
   );
 }

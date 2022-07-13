@@ -7,4 +7,18 @@
 
 .footer a {
     text-decoration: none;
+    margin-right: 2%;
+}
+
+.reseaux_sociaux{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 1000px) {
+.reseaux_sociaux{
+    margin-bottom: 8%;
+}
+
 }
