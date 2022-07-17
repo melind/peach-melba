@@ -71,11 +71,13 @@ import Footerjapan from '../Footerjapan';
    }    
 
 
-   
+   if(  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    //console.log("mobile")
+   }else{
 
 
    window.addEventListener('scroll', function(e) {
-     console.log("hey")
+  
               let rec_r = document.getElementsByClassName("rectangle_right")[0];
               let rec_l = document.getElementsByClassName("rectangle_left")[0];
               let pres_r = document.getElementsByClassName("presentation_right")[0];
@@ -86,7 +88,7 @@ import Footerjapan from '../Footerjapan';
                let position_r = rec_r.getBoundingClientRect();
 
 
-            console.log(position_r);
+          
 
             if(position_r.top < 900){
              rec_r.style.transform= "translateX(0)";  
@@ -102,7 +104,7 @@ import Footerjapan from '../Footerjapan';
               let position_l = rec_l.getBoundingClientRect();
 
 
-           console.log(position_l);
+          
 
            if(position_l.top < 800){
             rec_l.style.transform= "translateX(0)";  
@@ -119,7 +121,7 @@ import Footerjapan from '../Footerjapan';
               let position_pres_l = pres_l.getBoundingClientRect();
 
 
-           console.log(position_pres_l);
+         
 
            if(position_pres_l.top > 190){
             pres_l.style.transform= "translate3d(0px, 0px, 0px)";
@@ -135,7 +137,6 @@ import Footerjapan from '../Footerjapan';
               let position_pres_r = pres_l.getBoundingClientRect();
 
 
-           console.log(position_pres_r);
 
            if(position_pres_r.top > 190){
             pres_r.style.transform= "translate3d(0px, 0px, 0px)";
@@ -190,7 +191,7 @@ import Footerjapan from '../Footerjapan';
   });
 
 
-
+   }
 const Homejapan = () => {
   
   

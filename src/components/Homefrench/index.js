@@ -71,10 +71,14 @@ import Brand from '../Brand';
 
 
    
-
+   if(  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    //console.log("mobile")
+   }else{
+    //console.log("pc")
+   
 
    window.addEventListener('scroll', function(e) {
-     console.log("hey")
+    
               let rec_r = document.getElementsByClassName("rectangle_right")[0];
               let rec_l = document.getElementsByClassName("rectangle_left")[0];
               let pres_r = document.getElementsByClassName("presentation_right")[0];
@@ -85,7 +89,7 @@ import Brand from '../Brand';
                let position_r = rec_r.getBoundingClientRect();
 
 
-            console.log(position_r);
+          //  console.log(position_r);
 
             if(position_r.top < 900){
              rec_r.style.transform= "translateX(0)";  
@@ -101,7 +105,7 @@ import Brand from '../Brand';
               let position_l = rec_l.getBoundingClientRect();
 
 
-           console.log(position_l);
+          // console.log(position_l);
 
            if(position_l.top < 800){
             rec_l.style.transform= "translateX(0)";  
@@ -118,7 +122,7 @@ import Brand from '../Brand';
               let position_pres_l = pres_l.getBoundingClientRect();
 
 
-           console.log(position_pres_l);
+         //  console.log(position_pres_l);
 
            if(position_pres_l.top > 190){
             pres_l.style.transform= "translate3d(0px, 0px, 0px)";
@@ -134,7 +138,7 @@ import Brand from '../Brand';
               let position_pres_r = pres_l.getBoundingClientRect();
 
 
-           console.log(position_pres_r);
+         //  console.log(position_pres_r);
 
            if(position_pres_r.top > 190){
             pres_r.style.transform= "translate3d(0px, 0px, 0px)";
@@ -189,9 +193,9 @@ import Brand from '../Brand';
 
             
             */
-
+          
   });
-
+   }
 
 
 const Homefrench = () => {
