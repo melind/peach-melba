@@ -58,12 +58,14 @@ import Brand from '../Brand';
         bloc_title.style.transition="opacity 1500ms ease-in-out";
       }
 
-      const overflowDsabled = function () {
+     body.style.overflowY="hidden";
+
+      const overflowDisabled = function () {
         body.style.overflowY="visible"
       }
       setTimeout(opacity, 4200);
       setTimeout(opacity_title, 3600);
-      setTimeout(overflowDsabled, 5000);
+      setTimeout(overflowDisabled, 5000);
 
       
 
@@ -83,7 +85,7 @@ import Brand from '../Brand';
               let rec_l = document.getElementsByClassName("rectangle_left")[0];
               let pres_r = document.getElementsByClassName("presentation_right")[0];
               let pres_l = document.getElementsByClassName("presentation_left")[0];
-             // let main = document.getElementsByClassName("Home")[0];
+              let main = document.getElementsByClassName("circle_top")[0];
 
              if(rec_r) {
                let position_r = rec_r.getBoundingClientRect();
@@ -150,7 +152,39 @@ import Brand from '../Brand';
            }
             }
 
-          /*  if(main) {
+         /*
+           
+            if(main) {
+              console.log(main.offsetTop);
+           let   ease = 0.05;
+           let start_position = main.offsetTop;
+              let scroll_request = 0;
+             let  total_offset = 0;
+            let animation_running = false;
+             if (!animation_running) {
+              animation_running = true;
+              animation_loop();
+          }
+          function animation_loop() {
+            let current_offset = window.pageYOffset;
+        
+            let difference = current_offset - total_offset;
+            difference *= ease;
+        
+            if (Math.abs(difference) < 0.05) {
+                scroll_request = 0;
+        
+                total_offset = current_offset;
+                animation_running = false;
+                return;
+            }
+        
+            main.style.top = `${start_position - total_offset}px`;
+            total_offset += difference;
+        
+            requestAnimationFrame(animation_loop);
+        }
+              
               let position_main = main.getBoundingClientRect();
 
 
@@ -188,11 +222,12 @@ import Brand from '../Brand';
             main.style.transform= "translate3d(0px, 0px, 0px)";
             main.style.transition="transform 600ms ease-in-out";
            }
-            }
+
+            }*/
            
 
             
-            */
+            
           
   });
    }
@@ -203,7 +238,7 @@ const Homefrench = () => {
   
 
     return (
-        <div className=""  >
+        <div className="page"  >
                   <div className="nav" >
                             <div className="tab">
                                   <a href="#graphisme"><div>Graphisme</div></a>

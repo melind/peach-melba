@@ -10,6 +10,9 @@ import Load from '../Load';
 import Homefrench from '../Homefrench';
 import Homejapan from '../Homejapan';
 import NotFound  from '../NotFound';
+import Blog from '../Blog';
+import Blogenglish from '../Blogenglish';
+import Blogjapan from '../Blogjapan';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -31,7 +34,10 @@ const App = () => {
         <Route path="/jp" exact component={Homejapan}/>
         <Route path="/404" exact component={NotFound}/>
         <Route path="/fr/mentions-legales" exact component={LegalMentions}/>
-        <Route path="/jp/mentions-legales" exact component={LegalMentionsjapan}/>
+        <Route path="/jp/legal-mentions" exact component={LegalMentionsjapan}/>
+        <Route path="/blog" exact component={Blog}/>
+        <Route path="/blog/en" exact component={Blogenglish}/>
+        <Route path="/blog/jp" exact component={Blogjapan}/>
         
           <Redirect to="/404" />
       </Switch>

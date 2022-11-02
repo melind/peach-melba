@@ -58,13 +58,13 @@ import Footerjapan from '../Footerjapan';
         bloc_title.style.opacity= "1";  
         bloc_title.style.transition="opacity 1500ms ease-in-out";
       }
-
-      const overflowDsabled = function () {
+      body.style.overflowY="hidden";
+      const overflowDisabled = function () {
         body.style.overflowY="visible"
       }
       setTimeout(opacity, 4200);
       setTimeout(opacity_title, 3600);
-      setTimeout(overflowDsabled, 5000);
+      setTimeout(overflowDisabled, 5000);
 
       
 
@@ -197,14 +197,14 @@ const Homejapan = () => {
   
 
     return (
-        <div className=""  >
+        <div className="page"  >
                   <div className="nav" >
                             <div className="tab">
                                   <a href="#graphisme"><div>グラフィック</div></a>
                                   <a href="#site"><div>Webサイト</div></a>
                                   <a href="#webmarketing"><div>Webマーケティング</div></a>
                                   <a href="#prestations"><div>サービス</div></a>
-                                  <a href="#propos"><div>について</div></a>
+                                  <a href="#propos"><div>About</div></a>
                                  <div className="logo">
                                     <img src={logo1} width="40" alt="peche melba icone"/>
                                     < Logo  />
@@ -229,7 +229,7 @@ const Homejapan = () => {
                                   <a href="#site" className='a'><div>Webサイト</div></a>
                                   <a href="#webmarketing" className='a'><div>Webマーケティング</div></a>
                                   <a href="#prestations" className='a'><div>サービス</div></a>
-                                  <a href="#propos" className='a'><div>について</div></a>
+                                  <a href="#propos" className='a'><div>About</div></a>
                                   <div className='a' onClick={hide}>X</div>
                             </div>  
                             
@@ -463,7 +463,7 @@ const Homejapan = () => {
                  </section>
 
                  <section className='apropos content' id="propos"> <br/><br/>
-                   <h2>について</h2>
+                   <h2>About</h2>
                    <p> フリーランスのウェブ開発者兼ウェブデザイナーのメリンダ・メンディです。 <br/> <br/>
                    2019年にウェブ開発者トレーニング（レベルIIタイトル）とウェブデザイナー2021を完了した後、
                    私はフリーランスの冒険に乗り出しました<br/>

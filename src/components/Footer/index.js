@@ -11,7 +11,7 @@ const Footer = () => {
         <a href="https://www.behance.net/melimendy"><img src="https://cdn.cdnlogo.com/logos/b/29/behance.svg" width="50"/></a>
       </div>
         <a href="https://pechemelba.tunetoo.com/" target="_blank">Goodies </a> <br/><br/><Link to="/fr/mentions-legales"> Mentions Legales</Link>
-     
+      
     </div>
   );
 }

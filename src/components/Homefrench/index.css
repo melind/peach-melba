@@ -283,6 +283,7 @@ margin-bottom: -1100px;
    opacity: 0;
    text-align: center;
 }
+
 .presentation_left {
    opacity: 0;
   margin-top: 25%;
@@ -466,7 +467,7 @@ ul {
       padding: 4%;
   }
   .presentation_{
-     margin-top: 20vh;
+     margin-top: 32%;
      margin-bottom: 66%;
   }
    .presentationContent p {
@@ -556,9 +557,10 @@ margin-top: 25%;
 }
 
 .presentation_title div  h1{
-   margin-left: 21%;
+   
    margin-bottom: 10%;
 }
+
 }
 .apropos {
    margin-bottom: 5%;
@@ -591,6 +593,14 @@ margin-top: 25%;
 
  
 }
+
+@media screen and (max-width: 495px) {
+   .presentation_title div  h1{
+   
+      margin-left: 21%;
+   }
+}
+
      .apropos {
         margin-top: 5%;
      }
