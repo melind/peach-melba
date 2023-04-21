@@ -416,7 +416,6 @@ ul {
 
 
 
-
 @media screen and (max-width: 1000px) {
 
    .nav {
@@ -436,7 +435,9 @@ ul {
   .language_mobile{
       position: fixed;
       right: 7%;
-      top: 11%;
+      top: 12%;
+      z-index:1;
+      color: #da0c67;
       
   }
 
@@ -562,12 +563,8 @@ margin-top: 25%;
 }
 
 }
-.apropos {
-   margin-bottom: 5%;
-}
-.apropos p {
-   text-align: left;
-}
+
+
 
 
 
@@ -595,20 +592,30 @@ margin-top: 25%;
 }
 
 @media screen and (max-width: 495px) {
+   .logo-mobile {
+      margin-bottom: 19%
+   }
    .presentation_title div  h1{
    
       margin-left: 21%;
    }
 }
 
+
+
      .apropos {
         margin-top: 5%;
+        margin-bottom: 5%;
      }
 
     .apropos p {
+      
        margin-left: 2%;
        margin-top: 3%;
     }
+    .apropos_content {
+      text-align: left;
+    }
     .contact {
-       text-align: left;
+       text-align: center;
     }

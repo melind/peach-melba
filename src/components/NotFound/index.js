@@ -100,33 +100,29 @@ const NotFound = () => {
 export default NotFound;*/
 
 
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import {Link} from 'react-router-dom';
 import './index.css';
 
 
-import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
-import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
-import firefliesVertexShader from '../../shaders/fireflies/vertex.js'
-import firefliesFragmentShader from '../../shaders/fireflies/fragment.js'
-import alcoolVertexShader from '../../shaders/alcool/vertex.js'
-import alcoolFragmentShader from '../../shaders/alcool/fragment.js'
+import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
+import firefliesVertexShader from '../../shaders/fireflies/vertex.js';
+import firefliesFragmentShader from '../../shaders/fireflies/fragment.js';
+import alcoolVertexShader from '../../shaders/alcool/vertex.js';
+import alcoolFragmentShader from '../../shaders/alcool/fragment.js';
+
 const NotFound = () => {
 
-    
-    
-        useEffect(() => {
-   
-        three()
-        }, []); 
+   function three() { 
      
 /**
  *   THREE JS
  */
 
-const three = () => { 
+
  /**
   * Base
   */
@@ -154,7 +150,7 @@ if (canvas){
  /**
   * Textures
   */
-  const bakedTexture = textureLoader.load('../../texture_cocktail.jpg')
+  const bakedTexture = textureLoader.load('texture_cocktail.jpg')
   bakedTexture.flipY = false
  
  /**
@@ -199,12 +195,11 @@ if (canvas){
   * Model
   */
 
- gltfLoader.load(
-     '../../cocktail_scene_allin.glb',
-    
-     (gltf) => {
+ gltfLoader.setPath('../') 
+
+ gltfLoader.load( 'cocktail_scene_allin.glb', (gltf) => {
          /**
-          * // traverse the whole scene if not merge in one mesh
+           // traverse the whole scene if not merge in one mesh
                  gltf.scene.traverse((child) =>
                  {
                      child.material = bakedMaterial
@@ -215,7 +210,8 @@ if (canvas){
          
          scene.add(gltf.scene)
          const bakedMesh = gltf.scene.children.find((child) => child.name === 'Plane005') //name of mesh in collection
-         bakedMesh.material = bakedMaterial
+    
+         bakedMesh.material = bakedMaterial 
          
      }
      
@@ -346,7 +342,14 @@ if (canvas){
  
  tick()
 }
+
+
 }
+
+useEffect(() => {
+    three();
+    }, []); 
+
     return (
         <div className="sea ">
 
@@ -364,5 +367,7 @@ if (canvas){
        </div>
         
     )
+    
 }
+
 export default NotFound;

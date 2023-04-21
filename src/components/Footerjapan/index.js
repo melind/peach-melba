@@ -8,7 +8,8 @@ const Footerjapan = () => {
       
       <div className='reseaux_sociaux'>
         <a href="https://www.linkedin.com/in/melimendy/" target="_blank"><img src="https://cdn.cdnlogo.com/logos/l/78/linkedin-icon.svg" alt=" linkedin logo" width="50"/></a>
-        <a href="https://www.behance.net/melimendy"><img src="https://cdn.cdnlogo.com/logos/b/29/behance.svg" width="50"/></a>
+        <a href="https://www.behance.net/melimendy" target="_blank"><img src="https://cdn.cdnlogo.com/logos/b/29/behance.svg" width="50"/></a>
+        <a href="https://www.instagram.com/miss_pechemelba/" target="_blank"><img src="https://cdn.cdnlogo.com/logos/i/92/instagram.svg" width="50"/></a>
       </div>
      
      

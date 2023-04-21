@@ -472,7 +472,7 @@ const Homejapan = () => {
                    </p>
                    <p className='contact'> 
                    <br/>
-                   コンタクト :  melinda@pechemelba.fr 
+                   <strong>コンタクト :</strong> <br/><br/> melinda@pechemelba.fr /   <a href="https://www.malt.fr/profile/pechemelba" target="_blank">Malt</a> / <a href="https://docs.google.com/forms/d/1zhGAym4yMBAbdb5ffzQTg5FgONLz1lBZQiukrh33evw/edit" target="_blank">Form</a>
                     </p> <br/>
                  
                  </section>

@@ -517,7 +517,7 @@ const Homefrench = () => {
 
                  <section className='apropos content' id="propos"> <br/><br/>
                    <h2>À propos</h2>
-                   <p>  Je suis Mélinda MENDY, développeur web et web designer freelance. <br/> <br/>
+                   <p className='apropos_content'>  Je suis Mélinda MENDY, développeur web et web designer freelance. <br/> <br/>
                    Après avoir suivi les formations de Concepteur Développeur web en 2019 (titre niveau II) et de Web Designer 2021(titre niveau II),
                    je me lance dans l'aventure du freelancing.<br/>
                    J'ai plaisir à accompagner mes clients (particuliers, associations, entreprises) dans leur évolution numérique.
@@ -525,7 +525,7 @@ const Homefrench = () => {
                    </p>
                    <p className='contact'> 
                    <br/>
-                     Me contacter :  melinda@pechemelba.fr 
+                     <strong>Me contacter :</strong>  <br/><br/> melinda@pechemelba.fr /  <a href="https://www.malt.fr/profile/pechemelba" target="_blank">Malt</a> / <a href="https://docs.google.com/forms/d/15rzJwWATuNbTFtQhbdFNGqxIfmKMS81MDEgDK2HJqCk/edit" target="_blank">Formulaire</a>
                     </p> <br/>
                  
                  </section>
