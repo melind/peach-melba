@@ -18,6 +18,9 @@ import ps from '../../images/ps.png';
 import logo1 from '../../icones/logo1.svg';
 import Logo from '../Logo';
 import Brand from '../Brand';
+import pdf_charte from '../../pdf/charte_graphique.pdf';
+import pdf_site from '../../pdf/site_web.pdf';
+import pdf_promotion from '../../pdf/promotion.pdf';
 
     const show = function () {  
       let bar = document.getElementsByClassName("bar")[0];  
@@ -350,7 +353,8 @@ const Homefrench = () => {
                                          <div className='circle circle_top 'id="0" >
 
                                               <p>ÉLÉMENTS GRAPHIQUES</p><br/>
-                                            
+                                              
+      
 
                                          </div>
                                         
@@ -368,7 +372,11 @@ const Homefrench = () => {
                                            En effet, "LA" symbolique des couleurs varie selon les pays, les cultures.
                                            Alors n'hésitez pas à choisir des couleurs que vous ressentez.
                                            Nous élaborerons ensemble l'aspect du se votre site internet.
-                                            </p>
+                                           <br/><br/> <a  href={pdf_charte} target="_blank">Exemple </a>
+                                           
+                                            </p> 
+                                            
+
                           
                             
                            </div>
@@ -396,7 +404,7 @@ const Homefrench = () => {
                                               Après validation de la maquette graphique de votre site internet, nous procéderons au développement de celui-ci.<br/>
                                               Cela se fera soit via un CMS (comme WordPress) soit entièrement fait à la main.
                                               
-                                            
+                                              <br/><br/><a href={pdf_site} target="_blank">Exemple </a> 
                                         
 
                                              </p>
@@ -425,6 +433,8 @@ const Homefrench = () => {
                                                     
                                                    Nous réalisons des visuels sous format imprimé ou numérique pour la promotion de votre site internet ou de votre activité.<br/>
                                                    <em>Si vous n'êtes pas encore présent sur les réseaux sociaux, nous pouvons vous accompagner dans votre sélection.</em>
+                                            
+                                                   <br/><br/><a href={pdf_promotion} target="_blank">Exemple </a> 
                                               </p>
 
                                  </div>
@@ -518,7 +528,7 @@ const Homefrench = () => {
                  <section className='apropos content' id="propos"> <br/><br/>
                    <h2>À propos</h2>
                    <p className='apropos_content'>  Je suis Mélinda MENDY, développeur web et web designer freelance. <br/> <br/>
-                   Après avoir suivi les formations de Concepteur Développeur web en 2019 (titre niveau II) et de Web Designer 2021(titre niveau II),
+                   Après avoir suivi les formations de Concepteur Développeur web et de Web Designer,
                    je me lance dans l'aventure du freelancing.<br/>
                    J'ai plaisir à accompagner mes clients (particuliers, associations, entreprises) dans leur évolution numérique.
                    

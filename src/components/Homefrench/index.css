@@ -22,6 +22,9 @@
    text-align: justify;
     padding: 7%;
 }
+.pdf {
+   text-align: center !important;
+}
 .citation {
    color: #df4f15
 }

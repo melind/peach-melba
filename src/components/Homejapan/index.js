@@ -19,6 +19,9 @@ import logo1 from '../../icones/logo1.svg';
 import Logo from '../Logo';
 import Brandjp from '../Brandjp';
 import Footerjapan from '../Footerjapan';
+import pdf_charte from '../../pdf/charte_graphique.pdf';
+import pdf_site from '../../pdf/site_web.pdf';
+import pdf_promotion from '../../pdf/promotion.pdf';
 
     const show = function () {  
       let bar = document.getElementsByClassName("bar")[0];  
@@ -322,6 +325,7 @@ const Homejapan = () => {
                                   確かに、色の象徴は国や文化によって異なります。
                                            だから、あなたが感じる色を自由に選んでください。
                                            一緒に私たちはあなたのウェブサイトの外観を開発します。
+                                           <br/><br/> <a  href={pdf_charte} target="_blank">例 </a>
                                </p>
                               
                            </div>
@@ -347,6 +351,7 @@ const Homejapan = () => {
                                       <em className='citation'>  「 私のサービスに与えられたスキルのおかげで、私のウェブサイトの実現があります。」</em><br/><br/>
                                       あなたのウェブサイトのグラフィックモデルの検証後、私たちはそれの開発を進めます。
                                               これは、CMS（WordPressなど）を介して実行されるか、完全に手動で実行されます。
+                                              <br/><br/><a href={pdf_site} target="_blank">例 </a> 
                                       </p>
                                       
                                 </div>                   
@@ -371,6 +376,7 @@ const Homejapan = () => {
                               <em className='citation'> 「 私は自分のセクターに適したコミュニケーションチャネルをターゲットにすることで、自分のWebサイトのプロモーションを最大化します。」</em><br/><br/>
                               私たちはあなたのウェブサイトやあなたの活動を宣伝するために印刷またはデジタル形式でビジュアルを作成します。
                                                    <em>ソーシャルネットワークにまだ参加していない場合は、選択のお手伝いをします。</ em>
+                                                   <br/><br/><a href={pdf_promotion} target="_blank">例 </a> 
                         
                               </p>
                          
@@ -465,7 +471,7 @@ const Homejapan = () => {
                  <section className='apropos content' id="propos"> <br/><br/>
                    <h2>About</h2>
                    <p> フリーランスのウェブ開発者兼ウェブデザイナーのメリンダ・メンディです。 <br/> <br/>
-                   2019年にウェブ開発者トレーニング（レベルIIタイトル）とウェブデザイナー2021を完了した後、
+                   ウェブ開発者トレーニングとウェブデザイナーを完了した後、
                    私はフリーランスの冒険に乗り出しました<br/>
                    私はクライアント（個人、協会、企業）のデジタル開発をサポートすることを楽しんでいます。
                    

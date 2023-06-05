@@ -195,9 +195,8 @@ if (canvas){
   * Model
   */
 
- gltfLoader.setPath('../') 
 
- gltfLoader.load( 'cocktail_scene_allin.glb', (gltf) => {
+ gltfLoader.load('cocktail_scene_allin.glb', (gltf) => {
          /**
            // traverse the whole scene if not merge in one mesh
                  gltf.scene.traverse((child) =>
@@ -353,7 +352,7 @@ useEffect(() => {
     return (
         <div className="sea ">
 
-        <Link to="/"><p className="accueil">Accueil</p></Link>
+        <p className="accueil"><Link to="/">Accueil</Link></p>
 
              <p className='welcome'> Perdu en mer ? Détendez vous...</p>
 

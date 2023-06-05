@@ -25,6 +25,7 @@
    padding-bottom: 3%;
    padding-left: 15%;
    text-align: left;
+   width: fit-content;
 }
 .logo-ml {
    display: flex;
