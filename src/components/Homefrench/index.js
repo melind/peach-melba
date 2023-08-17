@@ -369,7 +369,8 @@ const Homefrench = () => {
                                            En effet, "LA" symbolique des couleurs varie selon les pays, les cultures.
                                            Alors n'hésitez pas à choisir des couleurs que vous ressentez.
                                            Nous élaborerons ensemble l'aspect du se votre site internet.
-                                           <br/><br/> <a  href="https://www.behance.net/gallery/143722639/BarBeer-Shop" target="_blank">Exemple </a>
+                                           <br/><br/> <a  href="https://www.behance.net/gallery/143722639/BarBeer-Shop" target="_blank">Exemple 1</a>/
+                                                   <a href="https://www.instagram.com/miss_pechemelba/" target="_blank">Exemple 2 </a> 
                                            
                                             </p> 
                                             

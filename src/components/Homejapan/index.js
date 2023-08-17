@@ -322,7 +322,8 @@ const Homejapan = () => {
                                   確かに、色の象徴は国や文化によって異なります。
                                            だから、あなたが感じる色を自由に選んでください。
                                            一緒に私たちはあなたのウェブサイトの外観を開発します。
-                                           <br/><br/> <a  href="https://www.behance.net/gallery/143722639/BarBeer-Shop" target="_blank">例 </a>
+                                           <br/><br/> <a  href="https://www.behance.net/gallery/143722639/BarBeer-Shop" target="_blank">例 1</a>/
+                                                   <a href="https://www.instagram.com/miss_pechemelba/" target="_blank">例 2 </a> 
                                </p>
                               
                            </div>
