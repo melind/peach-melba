@@ -2,12 +2,12 @@
     padding-top: 70px;
     background-color: #5b0025;
     min-height: 30vh;
-    
+    color: white;
 }
 
 .footer a {
     text-decoration: none;
-    margin-right: 2%;
+    
 }
 
 .reseaux_sociaux{

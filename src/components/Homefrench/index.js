@@ -369,8 +369,13 @@ const Homefrench = () => {
                                            En effet, "LA" symbolique des couleurs varie selon les pays, les cultures.
                                            Alors n'hésitez pas à choisir des couleurs que vous ressentez.
                                            Nous élaborerons ensemble l'aspect du se votre site internet.
-                                           <br/><br/> <a  href="https://www.behance.net/gallery/143722639/BarBeer-Shop" target="_blank">Exemple 1</a>/
-                                                   <a href="https://www.instagram.com/miss_pechemelba/" target="_blank">Exemple 2 </a> 
+                                           <br/><br/>
+                                           
+                                                 <div className='button'>
+                                                   <a  href="https://www.behance.net/gallery/143722639/BarBeer-Shop" target="_blank"><div className='button_ex'>Exemple 1</div></a>
+                                                   <div className='button_space'></div>
+                                                   <a href="https://www.instagram.com/miss_pechemelba/" target="_blank"><div className='button_ex'>Exemple 2 </div></a> 
+                                                  </div>
                                            
                                             </p> 
                                             
@@ -431,10 +436,16 @@ const Homefrench = () => {
                                                     
                                                    Nous réalisons des visuels sous format imprimé ou numérique pour la promotion de votre site internet ou de votre activité.<br/>
                                                    <em>Si vous n'êtes pas encore présent sur les réseaux sociaux, nous pouvons vous accompagner dans votre sélection.</em>
-                                            
-                                                   <br/><br/><a href="https://www.behance.net/gallery/144979215/Bannieres-publicitaires" target="_blank">Exemple 1 </a> /
-                                                   <a href="https://www.behance.net/gallery/143743881/BarBeer-Shop-Promotion" target="_blank">Exemple 2 </a> /
-                                                   <a href="https://www.behance.net/gallery/143743593/Storyboard-Motion-design-BarBeer-Shop" target="_blank">Exemple 3 </a> 
+                                                  
+                                                   <br/><br/>
+                                                        
+                                                         <div className='button'>
+                                                               <a href="https://www.behance.net/gallery/144979215/Bannieres-publicitaires" target="_blank"><div className='button_ex'>Exemple 1 </div></a> 
+                                                               <div className='button_space'></div>
+                                                              <a href="https://www.behance.net/gallery/143743881/BarBeer-Shop-Promotion" target="_blank"><div className='button_ex'>Exemple 2</div> </a> 
+                                                              <div className='button_space'></div>
+                                                              <a href="https://www.behance.net/gallery/143743593/Storyboard-Motion-design-BarBeer-Shop" target="_blank"><div className='button_ex'>Exemple 3</div> </a> 
+                                                         </div>
                                               </p>
 
                                  </div>
@@ -447,83 +458,97 @@ const Homefrench = () => {
 
 
 
-                 <section id="prestations" className='prestations_list content'>
-                   <h2 className=''>Envie de cuisiner ?</h2>
-
-                   <h3>Nos recettes</h3>
-
-                   <div className='prestations prestations_menus '>
-
-                               <div>
-                                          <p>SITE VITRINE STANDARD</p>
-                                          <ul>
-                                            <li>Charte graphique</li>
-                                            <li>Site web - <strong>WordPress</strong> </li>
-                                            <li>Mise en ligne </li>
-                                            <li>Nom de domaine</li>
-                                            <li>Hébergement</li>
-                                          </ul>
-                                        </div>
-                                        <div>
-                                          <p>SITE VITRINE PERSONNALISÉ</p>
-                                          <ul>
-                                            <li>Charte graphique</li>
-                                            <li>Site web - <strong>sans</strong> WordPress</li>
-                                            <li>Mise en ligne</li>
-                                            <li>Nom de domaine</li>
-                                            <li>Hébergement</li>
-                                          </ul>
-                                        </div>
-                                        <div>
-                                          <p>SITE E-COMMERCE STANDARD</p>
-                                          <ul>
-                                            <li>Charte graphique</li>
-                                            <li>Site web - <strong>Wordpress</strong></li>
-                                            <li>Mise en ligne </li>
-                                            <li>Nom de domaine</li>
-                                            <li>Hébergement</li>
-                                          </ul>
-                                        </div>
-
-
-                               </div>
-
+                 
+                   <section  className='prestations_list content' id="prestations">
                    
+                   <div className='recettes' >
+                             <h3>Nos recettes</h3>
 
-                   <div className='prestations prestations_formulas'>
+                             <div className='prestations prestations_menus '>
 
-                                 <div>
-                                         <p>CHARTE GRAPHIQUE</p>
-                                         <ul>
-                                           <li>Choix des couleurs</li>
-                                           <li>Typographie</li>
-                                           <li>Maquettes du site</li>
-                                         </ul>
-                                       </div>
-                                       <div>
-                                         <p>DÉVELOPPEMENT SITE WEB</p>
-                                         <ul>
-                                           <li>Site web - avec ou sans WordPress</li>
-                                         </ul>
-                                       </div>
-                                       <div>
-                                         <p>COMMUNICATION VISUELLE</p>
-                                         <ul>
-                                           <li> Supports imprimés (Flyers Affiches)</li>
-                                           <li> Supports numériques </li>
-                                           <li>(visuel d'e-mail, réseaux sociaux,...)</li>
-                                         </ul>
-                                 </div>
+                                         <div>
+                                                    <p>SITE VITRINE STANDARD</p>
+                                                    <ul>
+                                                      <li>Charte graphique</li>
+                                                      <li>Site web - <strong>WordPress</strong> </li>
+                                                      <li>Mise en ligne </li>
+                                                      <li>Nom de domaine</li>
+                                                      <li>Hébergement</li>
+                                                    </ul>
+                                                  </div>
+                                                  <div>
+                                                    <p>SITE VITRINE PERSONNALISÉ</p>
+                                                    <ul>
+                                                      <li>Charte graphique</li>
+                                                      <li>Site web - <strong>sans</strong> WordPress</li>
+                                                      <li>Mise en ligne</li>
+                                                      <li>Nom de domaine</li>
+                                                      <li>Hébergement</li>
+                                                    </ul>
+                                                  </div>
+                                                  <div>
+                                                    <p>SITE E-COMMERCE STANDARD</p>
+                                                    <ul>
+                                                      <li>Charte graphique</li>
+                                                      <li>Site web - <strong>Wordpress</strong></li>
+                                                      <li>Mise en ligne </li>
+                                                      <li>Nom de domaine</li>
+                                                      <li>Hébergement</li>
+                                                    </ul>
+                                                  </div>
 
-                     
+
+                                         </div>
+                   
+                 
+                                <div className='prestations prestations_formulas'>
+                 
+                                              <div>
+                                                      <p>CHARTE GRAPHIQUE</p>
+                                                      <ul>
+                                                        <li>Choix des couleurs</li>
+                                                        <li>Typographie</li>
+                                                        <li>Maquettes du site</li>
+                                                      </ul>
+                                                    </div>
+                                                    <div>
+                                                      <p>DÉVELOPPEMENT SITE WEB</p>
+                                                      <ul>
+                                                        <li>Site web - avec ou sans WordPress</li>
+                                                      </ul>
+                                                    </div>
+                                                    <div>
+                                                      <p>COMMUNICATION VISUELLE</p>
+                                                      <ul>
+                                                        <li> Supports imprimés (Flyers Affiches)</li>
+                                                        <li> Supports numériques </li>
+                                                        <li>(visuel d'e-mail, réseaux sociaux,...)</li>
+                                                      </ul>
+                                              </div>
+                 
+                                  
+                                </div>
+
                    </div>
-
                   
                       
                   
 
 
                  </section>
+
+                 <section className='com' >
+
+                   <h2 className='h_presta commander content'>Passer commande ?</h2>
+                 
+                 
+                   <div className='espace_com'  >
+                   <a className="button_contact btn_malt" href="https://www.malt.fr/profile/pechemelba" target="_blank"><div>Malt</div></a> 
+                   <a className="button_contact btn_form" href="https://docs.google.com/forms/d/15rzJwWATuNbTFtQhbdFNGqxIfmKMS81MDEgDK2HJqCk/edit" target="_blank"><div>Form</div></a>
+                   
+                   </div>
+                   </section>
+
 
                  <section className='apropos content' id="propos"> <br/><br/>
                    <h2>À propos</h2>
@@ -533,10 +558,6 @@ const Homefrench = () => {
                    J'ai plaisir à accompagner mes clients (particuliers, associations, entreprises) dans leur évolution numérique.
                    
                    </p>
-                   <p className='contact'> 
-                   <br/>
-                     <strong>Me contacter :</strong>  <br/><br/> melinda@pechemelba.fr /  <a href="https://www.malt.fr/profile/pechemelba" target="_blank">Malt</a> / <a href="https://docs.google.com/forms/d/15rzJwWATuNbTFtQhbdFNGqxIfmKMS81MDEgDK2HJqCk/edit" target="_blank">Formulaire</a>
-                    </p> <br/>
                  
                  </section>
 

@@ -12,6 +12,8 @@ const Footer = () => {
         <a href="https://www.instagram.com/miss_pechemelba/" target="_blank"><img src="https://cdn.cdnlogo.com/logos/i/92/instagram.svg" width="50"/></a>
       </div>
         <a href="https://pechemelba.tunetoo.com/" target="_blank">Goodies </a> <br/><br/><Link to="/fr/mentions-legales"> Mentions Legales</Link>
+        <br/><br/>
+        melinda@pechemelba.fr
       
     </div>
   );

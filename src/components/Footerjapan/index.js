@@ -14,6 +14,8 @@ const Footerjapan = () => {
      
      
       <a href="https://pechemelba.tunetoo.com/" target="_blank">グッディーズ </a> <br/><br/><Link to="/jp/legal-mentions"> 法的通知</Link>
+      <br/><br/>
+      melinda@pechemelba.fr
       
     </div>
   );

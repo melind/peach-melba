@@ -1,10 +1,6 @@
 
 
-.prestations_list h2 {
-  
-      font-family: 'Pelmeshka Cyrillic';
-      margin-bottom: 4%;
-}
+
 
 .realisation_description h3 {
    color:#ff6a66;
@@ -22,6 +18,27 @@
    text-align: justify;
     padding: 7%;
 }
+.button {
+display: flex;
+justify-content: flex-end;
+margin-top: 7%;
+}
+.button_ex {
+   background-color: #5b0025;
+   color: white;
+   width: 100%;
+   padding: 7%;
+   border-radius: 7px;
+}
+
+.button > a {
+   text-decoration: none;
+}
+.button_space{
+   width: 50px; 
+}
+
+
 .pdf {
    text-align: center !important;
 }
@@ -106,8 +123,8 @@ margin-bottom: -1100px;
    margin-top: -20%;
 }
 .circle {
-   height: 50vh;
-   width: 50vh;
+   height: 40vh;
+   width: 40vh;
    border-radius: 25vh; 
    display: flex;
    align-items: center;
@@ -324,10 +341,10 @@ margin-bottom: -1100px;
    margin-top: 21%;
 }
 .realisation_type {
-   height: 90vh;
+   height: 59vh;
    display: flex;
    align-items: center;
-   margin-bottom: 6%;
+   /*margin-bottom: 6%;*/
    margin-top: 6%;
    justify-content: center;
 }
@@ -392,13 +409,58 @@ ul {
    list-style-type : none;
    padding-inline-start: 4%;
  }
-.prestations_list {
+
+ .commander {
    background-color: #df4f15;
    color: #f1dbba;
    border-radius: 10px;
+   padding: 1%;
+   margin-top: 3%;
+ }
+
+ .button_contact {
+   text-decoration: none;
+   background-color: #5b0025;
+   color: white;
+   border: 2px solid #5b0025;
+   border-radius: 50%;
+   margin-right: 1%;
+   margin-left: 2%;
+    
+   font-family: 'Pelmeshka Cyrillic';
+}
+.button_contact:hover {
+   background-color: white;
+   color: #5b0025;
+}
+.com {
+   margin-top: 7%;
+}
+.espace_com {
+   display: flex;
+   justify-content: center;
+   margin-top: 4%;
+   font-size: 1.5em;
+}
+.btn_malt {
+   padding: 3% 2.4% 3% 2.4%;
+
+}
+.btn_form {
+   padding: 2.6% 2.2% 2.6% 2.2%;
+}
+
+.h_presta {
+   text-align: center;
+}
+.prestations_list {
+   background-color: white;
+   color: #df4f15;
+   border-radius: 10px;
    text-align: left;
    padding: 1%;
-   margin:auto;
+   margin-top: 5%;
+   border: 2px solid;
 }
 
 .prestations_list h3 {
@@ -602,6 +664,11 @@ margin-top: 25%;
    
       margin-left: 21%;
    }
+
+   .button{
+     
+      justify-content: center;
+      }
 }
 
 

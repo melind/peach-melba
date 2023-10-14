@@ -322,8 +322,12 @@ const Homejapan = () => {
                                   確かに、色の象徴は国や文化によって異なります。
                                            だから、あなたが感じる色を自由に選んでください。
                                            一緒に私たちはあなたのウェブサイトの外観を開発します。
-                                           <br/><br/> <a  href="https://www.behance.net/gallery/143722639/BarBeer-Shop" target="_blank">例 1</a>/
-                                                   <a href="https://www.instagram.com/miss_pechemelba/" target="_blank">例 2 </a> 
+                                           <br/><br/> 
+                                              <div className='button'>
+                                                   <a  href="https://www.behance.net/gallery/143722639/BarBeer-Shop" target="_blank"><div className='button_ex'>例 1</div></a>
+                                                  <div className='button_space'></div>
+                                                   <a href="https://www.instagram.com/miss_pechemelba/" target="_blank"><div className='button_ex'>例 2 </div></a> 
+                                             </div>
                                </p>
                               
                            </div>
@@ -375,10 +379,14 @@ const Homejapan = () => {
                               私たちはあなたのウェブサイトやあなたの活動を宣伝するために印刷またはデジタル形式でビジュアルを作成します。
                                                    <em>ソーシャルネットワークにまだ参加していない場合は、選択のお手伝いをします。</ em>
                                                    
-                                                   <br/><br/><a href="https://www.behance.net/gallery/144979215/Bannieres-publicitaires" target="_blank">例 1 </a> /
-                                                   <a href="https://www.behance.net/gallery/143743881/BarBeer-Shop-Promotion" target="_blank">例 2 </a> /
-                                                   <a href="https://www.behance.net/gallery/143743593/Storyboard-Motion-design-BarBeer-Shop" target="_blank">例 3 </a> 
-                        
+                                                   <br/><br/>
+                                                      <div className='button'>
+                                                          <a href="https://www.behance.net/gallery/144979215/Bannieres-publicitaires" target="_blank"><div className='button_ex'>例 1</div> </a> 
+                                                          <div className='button_space'></div>
+                                                          <a href="https://www.behance.net/gallery/143743881/BarBeer-Shop-Promotion" target="_blank"><div className='button_ex'>例 2 </div></a> 
+                                                          <div className='button_space'></div>
+                                                          <a href="https://www.behance.net/gallery/143743593/Storyboard-Motion-design-BarBeer-Shop" target="_blank"><div className='button_ex'>例 3 </div></a> 
+                                                     </div>
                               </p>
                          
                                
@@ -392,7 +400,7 @@ const Homejapan = () => {
 
 
                  <section id="prestations" className='prestations_list content'>
-                   <h2 className=''>料理したいですか？</h2>
+                 
 
                    <h3>私たちのレシピ</h3>
 
@@ -469,6 +477,18 @@ const Homejapan = () => {
 
                  </section>
 
+                 <section className='com' >
+
+                   <h2 className='h_presta commander content'>注文する？ </h2>
+                 
+                 
+                   <div className='espace_com'  >
+                   <a className="button_contact btn_malt" href="https://www.malt.fr/profile/pechemelba" target="_blank"><div>Malt</div></a> 
+                   <a className="button_contact btn_form" href="https://docs.google.com/forms/d/15rzJwWATuNbTFtQhbdFNGqxIfmKMS81MDEgDK2HJqCk/edit" target="_blank"><div>Form</div></a>
+                   
+                   </div>
+                   </section>
+
                  <section className='apropos content' id="propos"> <br/><br/>
                    <h2>About</h2>
                    <p> フリーランスのウェブ開発者兼ウェブデザイナーのメリンダ・メンディです。 <br/> <br/>
@@ -477,10 +497,7 @@ const Homejapan = () => {
                    私はクライアント（個人、協会、企業）のデジタル開発をサポートすることを楽しんでいます。
                    
                    </p>
-                   <p className='contact'> 
-                   <br/>
-                   <strong>コンタクト :</strong> <br/><br/> melinda@pechemelba.fr /   <a href="https://www.malt.fr/profile/pechemelba" target="_blank">Malt</a> / <a href="https://docs.google.com/forms/d/1zhGAym4yMBAbdb5ffzQTg5FgONLz1lBZQiukrh33evw/edit" target="_blank">Form</a>
-                    </p> <br/>
+                   
                  
                  </section>
 
