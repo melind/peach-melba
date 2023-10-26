@@ -434,12 +434,13 @@ ul {
    color: #5b0025;
 }
 .com {
-   margin-top: 7%;
+   margin-top: 12%;
+   margin-bottom: 10%;
 }
 .espace_com {
    display: flex;
    justify-content: center;
-   margin-top: 4%;
+   margin-top: 5%;
    font-size: 1.5em;
 }
 .btn_malt {
@@ -573,8 +574,8 @@ margin-top: 25%;
 
 
 .circle{
-   width: 40vh;
-   height: 40vh;
+   width: 33vh;
+   height: 33vh;
    border-radius: 20vh;
    margin-bottom: 20%;
    margin-top: 20%;
@@ -664,6 +665,10 @@ margin-top: 25%;
       margin-left: initial;
    }
 
+   .espace_com{
+      margin-top: 7%;
+   }
+
  
  
 }
@@ -676,7 +681,13 @@ margin-top: 25%;
    
       margin-left: 21%;
    }
-
+   .prestations_list{
+      margin-top: 20%;
+   }
+   .circle{
+      width: 27vh;
+      height: 27vh;
+   }
    .button{
      
       justify-content: center;
@@ -689,11 +700,25 @@ margin-top: 25%;
       .btn_form {
          padding: 8.6% 3.5% 8.6% 3.5%;
       }
+
+      .com {
+         margin-top: 32%;
+         margin-bottom: 24%;
+      }
+
+      .espace_com{
+         margin-top: 17%;
+      }
+     
+      .apropos p{
+           margin-bottom: 20%;
+        }
 }
 
 
 
      .apropos {
+      border-top: 2px solid #5b0025;
         margin-top: 5%;
         margin-bottom: 5%;
      }
