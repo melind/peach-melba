@@ -10,6 +10,7 @@ import mijote from '../../icones/mijote.svg';
 import react_typescript from '../../icones/react1.svg';
 import node from '../../images/node.png';
 import mongodb from '../../images/mgdb.png';
+import wp from '../../images/wp.png';
 import express from '../../images/express.png';
 import ae from '../../images/ae.png';
 import ai from '../../images/ai.png';
@@ -262,10 +263,10 @@ const Homejapan = () => {
                                                       <img alt="ae" src={ae} />
                                                     </div>
                                                     <div className='langages'>
+                                                      <img alt="wp" src={wp} />
                                                       <img alt="react-typescript" className="react" src={react_typescript} />
                                                       <img alt="node" src={node} />
                                                       <img alt="express" src={express} />
-                                                      <img alt="mongodb" src={mongodb} />
                                                     </div>
 
                                                 </div>
@@ -353,7 +354,11 @@ const Homejapan = () => {
                                       <em className='citation'>  「 私のサービスに与えられたスキルのおかげで、私のウェブサイトの実現があります。」</em><br/><br/>
                                       あなたのウェブサイトのグラフィックモデルの検証後、私たちはそれの開発を進めます。
                                               これは、CMS（WordPressなど）を介して実行されるか、完全に手動で実行されます。
-                                             
+                                              <br/><br/>
+
+                                        <div className='button button_realisation'>
+                                             <a  href="https://www.sdv-avocats.com/" target="_blank"><div className='button_ex '>例 </div></a>
+                                            </div>
                                       </p>
                                       
                                 </div>                   
@@ -410,7 +415,7 @@ const Homejapan = () => {
                                           <p>標準のショーケースサイト</p>
                                           <ul>
                                             <li>グラフィカルチャーター</li>
-                                            <li>Webサイト - <strong>ワードプレス</strong> </li>
+                                            <li>Webサイト </li>
                                             <li>Webサイトの立ち上げ </li>
                                             <li>ドメイン名</li>
                                             <li>ホスティング</li>
@@ -420,7 +425,7 @@ const Homejapan = () => {
                                           <p>パーソナライズされた<br/>ショーケースサイト</p>
                                           <ul>
                                             <li>グラフィカルチャーター</li>
-                                            <li>Webサイト -  ワードプレス <strong>なし</strong></li>
+                                            <li>Webサイト</li>
                                             <li>Webサイトの立ち上げ</li>
                                             <li>ドメイン名</li>
                                             <li>ホスティング</li>
@@ -430,7 +435,7 @@ const Homejapan = () => {
                                           <p>標準のECサイト</p>
                                           <ul>
                                             <li>グラフィカルチャーター</li>
-                                            <li>Webサイト - <strong>ワードプレス</strong></li>
+                                            <li>Webサイト</li>
                                             <li>Webサイトの立ち上げ </li>
                                             <li>ドメイン名</li>
                                             <li>ホスティング</li>
@@ -483,8 +488,7 @@ const Homejapan = () => {
                  
                  
                    <div className='espace_com'  >
-                   <a className="button_contact btn_malt" href="https://www.malt.fr/profile/pechemelba" target="_blank"><div>Malt</div></a> 
-                   <a className="button_contact btn_form" href="https://docs.google.com/forms/d/15rzJwWATuNbTFtQhbdFNGqxIfmKMS81MDEgDK2HJqCk/edit" target="_blank"><div>Form</div></a>
+                   <a className="button_contact btn_form" href="https://docs.google.com/forms/d/15rzJwWATuNbTFtQhbdFNGqxIfmKMS81MDEgDK2HJqCk/edit" target="_blank"><div>フォーム</div></a>
                    
                    </div>
                    </section>

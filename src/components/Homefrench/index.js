@@ -11,6 +11,7 @@ import react_typescript from '../../icones/react1.svg';
 import node from '../../images/node.png';
 import mongodb from '../../images/mgdb.png';
 import express from '../../images/express.png';
+import wp from '../../images/wp.png';
 import ae from '../../images/ae.png';
 import ai from '../../images/ai.png';
 import id from '../../images/id.png';
@@ -223,7 +224,10 @@ import Brand from '../Brand';
             main.style.transition="transform 600ms ease-in-out";
            }
 
-            }*/
+            }
+           
+           <a className='language' href="/jp" >日本語</a> 
+           <a className='language language_mobile' href="/jp" >日本語</a>*/
            
 
             
@@ -246,10 +250,11 @@ const Homefrench = () => {
                                   <a href="#webmarketing"><div>Web Marketing</div></a>
                                   <a href="#prestations"><div>Prestations</div></a>
                                   <a href="#propos"><div>À Propos</div></a>
+                                  <a href="https://docs.google.com/forms/d/15rzJwWATuNbTFtQhbdFNGqxIfmKMS81MDEgDK2HJqCk/edit" target="_blank"><div>Contact</div></a>
+                                  
                                  <div className="logo">
                                     <img src={logo1} width="40" alt="peche melba icone"/>
                                     < Logo  />
-                                    <a className='language' href="/jp" >日本語</a>
                                 </div>
                             </div>
                   </div>
@@ -262,7 +267,7 @@ const Homefrench = () => {
                                     <div className="menu"></div><div className="menu"></div><div className="menu">
                            </div>
                            </div>
-                           <a className='language language_mobile' href="/jp" >日本語</a>
+                           <a className='language contact_mobile' href="https://docs.google.com/forms/d/15rzJwWATuNbTFtQhbdFNGqxIfmKMS81MDEgDK2HJqCk/edit" target="_blank" >Prendre contact ?</a>
                             <div className="bar" >
                             
                                   <a href="#graphisme" className='a'><div>Graphisme</div></a>
@@ -301,10 +306,11 @@ const Homefrench = () => {
                                                       <img alt="ae" src={ae} />
                                                     </div>
                                                     <div className='langages'>
+                                                      <img alt="wp" src={wp} />
                                                       <img alt="react-typescript"  className="react" src={react_typescript} />
                                                       <img alt="node" src={node} />
                                                       <img alt="express" src={express} />
-                                                      <img alt="mongodb" src={mongodb} />
+                                                      
                                                     </div>
 
                                                 </div>
@@ -406,8 +412,11 @@ const Homefrench = () => {
                                               <em className='citation'>"Grâce aux compétences mises à mon service, je concrétise la création de mon site web."   </em><br/><br/>
                                               Après validation de la maquette graphique de votre site internet, nous procéderons au développement de celui-ci.<br/>
                                               Cela se fera soit via un CMS (comme WordPress) soit entièrement fait à la main.
-                                              
-                                              
+                                              <br/><br/>
+
+                                              <div className='button button_realisation'>
+                                                   <a  href="https://www.sdv-avocats.com/" target="_blank"><div className='button_ex '>Exemple </div></a>
+                                                  </div>
                                         
 
                                              </p>
@@ -470,7 +479,7 @@ const Homefrench = () => {
                                                     <p>SITE VITRINE STANDARD</p>
                                                     <ul>
                                                       <li>Charte graphique</li>
-                                                      <li>Site web - <strong>WordPress</strong> </li>
+                                                      <li>Site web</li>
                                                       <li>Mise en ligne </li>
                                                       <li>Nom de domaine</li>
                                                       <li>Hébergement</li>
@@ -480,7 +489,7 @@ const Homefrench = () => {
                                                     <p>SITE VITRINE PERSONNALISÉ</p>
                                                     <ul>
                                                       <li>Charte graphique</li>
-                                                      <li>Site web - <strong>sans</strong> WordPress</li>
+                                                      <li>Site web</li>
                                                       <li>Mise en ligne</li>
                                                       <li>Nom de domaine</li>
                                                       <li>Hébergement</li>
@@ -490,7 +499,7 @@ const Homefrench = () => {
                                                     <p>SITE E-COMMERCE STANDARD</p>
                                                     <ul>
                                                       <li>Charte graphique</li>
-                                                      <li>Site web - <strong>Wordpress</strong></li>
+                                                      <li>Site web</li>
                                                       <li>Mise en ligne </li>
                                                       <li>Nom de domaine</li>
                                                       <li>Hébergement</li>
@@ -539,11 +548,11 @@ const Homefrench = () => {
 
                  <section className='com' >
 
-                   <h2 className='h_presta commander content'>Passer commande ?</h2>
+                   <h2 className='h_presta commander content'id="contact">Passer commande ?</h2>
                  
                  
                    <div className='espace_com'  >
-                   <a className="button_contact btn_malt" href="https://www.malt.fr/profile/pechemelba" target="_blank"><div>Malt</div></a> 
+                   
                    <a className="button_contact btn_form" href="https://docs.google.com/forms/d/15rzJwWATuNbTFtQhbdFNGqxIfmKMS81MDEgDK2HJqCk/edit" target="_blank"><div>Form</div></a>
                    
                    </div>
