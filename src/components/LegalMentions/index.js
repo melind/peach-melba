@@ -13,7 +13,7 @@ const LegalMentions = () => {
             
             
             <div className="logo-ml">
-                                    <img src={logo1} width="50" alt="pêche melba icone"/>
+                                  
                                     < Logo  />
             </div>
             

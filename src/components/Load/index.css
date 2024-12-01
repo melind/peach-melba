@@ -4,7 +4,7 @@
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   background-color: #f1dbba;
+   /*background-color: #f1dbba;*/
    min-height: 100vh;
   
    /*min-height: 95vh;
@@ -12,15 +12,6 @@
 }
 @media screen and (max-width: 800px) {
   
-.load img {
-   width: 60%;
-   margin-left: 20%;
+
 }
-}
-.brand {
-   display: flex;
-   
-   /*flex-direction: column;
-   /*background-color: #f1dbba;
-   align-items: center;*/
-}
+

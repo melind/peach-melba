@@ -4,58 +4,33 @@
    font-size: 18px;
    height: 100%;
    margin-top: -10%;
+   
 }
 
-
-#point2 {
-   color: #f1dbba;
+.logo {
+   /* border: red solid 2px;*/
+    width: 145px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+.logo img {
+   margin-right: 12px;
 }
+ .logo h2 {
+   font-family: 'Pelmeshka Cyrillic';
+   font-size: 1.5em;
+ }
 
-#P2 {
+#P2, #\(\) {
 
    color: #f79203;
 }
 
-#e2 {
 
-   color: #f79203;
-}
-
-#c2 {
-   color: #f79203;
-}
-
-#h2 {
-   color: #f79203;
-}
-
-#ee2 {
-   color: #f79203;
-}
-
-
-#m2 {
+#m2, #point2 {
    color: #5b0025;
-}
-
-#eee2 {
-   color: #5b0025;
-}
-
-#l2 {
-   color: #5b0025;
-}
-
-#b2 {
-   color: #5b0025;
-}
-
-#a2 {
-   color: #5b0025;
-}
-
-#\(\) {
-   color: #f79203;
 }
 
 

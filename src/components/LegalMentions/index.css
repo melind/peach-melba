@@ -1,7 +1,6 @@
 .mentions {
    /*border:  solid 2px blue;*/
    color: #5b0025;
-   background-color: #f1dbba;
    width: 100%;
    height: 100%;
    padding-bottom: 10px;
@@ -14,6 +13,10 @@
    margin-left: 5%;
    margin-right: 5%;
 }
+
+.mentions a {
+   color: #ff6a66;
+}
 @media screen and (min-width: 1001px) {
       .mentions_texte {
          width: 1000px;
@@ -21,7 +24,7 @@
       }
 }
 .accueil {
-   
+   color: #ff6a66;
    padding-bottom: 3%;
    padding-left: 15%;
    text-align: left;

@@ -2,239 +2,12 @@ import React, {useEffect} from 'react';
 import { Link } from "react-router-dom";
 import './index.css';
 import Footer from '../Footer';
-import peche1 from '../../icones/peche1.svg';
-import peche_melba from '../../icones/peche_melba.png';
-import peche_melba_bis from '../../icones/peche_melba_bis.png';
-import toque from '../../icones/toque.svg';
-import mijote from '../../icones/mijote.svg';
-import react_typescript from '../../icones/react1.svg';
-import node from '../../images/node.png';
-import mongodb from '../../images/mgdb.png';
-import express from '../../images/express.png';
-import wp from '../../images/wp.png';
-import ae from '../../images/ae.png';
-import ai from '../../images/ai.png';
-import id from '../../images/id.png';
-import ps from '../../images/ps.png';
-import logo1 from '../../icones/logo1.svg';
+
+import chef from '../../images/chef.png';
+import ustensiles from '../../images/ustensiles.jpg';
+import tablier from '../../images/tablier.jpg';
 import Logo from '../Logo';
-import Brand from '../Brand';
 
-    const show = function () {   
-      let bar = document.getElementsByClassName("bar")[0];  
-      bar.style.display= "flex"; 
-      let hambNav = document.getElementsByClassName("hamburgerNav")[0];  
-      hambNav.style.display= "none"; 
-    }
-    const hide = function () {  
-      let bar = document.getElementsByClassName("bar")[0];   
-      bar.style.display= "none"; 
-      let hambNav = document.getElementsByClassName("hamburgerNav")[0];  
-      hambNav.style.display= "flex"; 
-      hambNav.style.position= "fixed"; 
-
-    } 
-
-   const up = function () {  
-    let body = document.body;
-
-
-      let pechemelba = document.getElementsByClassName("presentation_center")[0];   
-      pechemelba.style.transform= "translate3d(0px, 0px, 0px)";  
-      pechemelba.style.transition="transform 3600ms ease-in-out";
-
-      let bloc_l = document.getElementsByClassName("presentation_left")[0];
-      let bloc_r = document.getElementsByClassName("presentation_right")[0];  
-      let bloc_title = document.getElementsByClassName("presentation_title")[0];  
-
-      const opacity = function () {
-        bloc_l.style.opacity= "1";  
-        bloc_l.style.transition="opacity 1500ms ease-in-out";
-        bloc_r.style.opacity= "1";  
-        bloc_r.style.transition="opacity 1500ms ease-in-out";
-      }
-
-      const opacity_title = function () {
-        bloc_title.style.opacity= "1";  
-        bloc_title.style.transition="opacity 1500ms ease-in-out";
-      }
-
-     body.style.overflowY="hidden";
-
-      const overflowDisabled = function () {
-        body.style.overflowY="visible"
-      }
-      setTimeout(opacity, 4200);
-      setTimeout(opacity_title, 3600);
-      setTimeout(overflowDisabled, 5000);
-
-      
-
-   }    
-
-
-   
-   if(  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    //console.log("mobile")
-   }else{
-    //console.log("pc")
-   
-
-   window.addEventListener('scroll', function(e) {
-    
-              let rec_r = document.getElementsByClassName("rectangle_right")[0];
-              let rec_l = document.getElementsByClassName("rectangle_left")[0];
-              let pres_r = document.getElementsByClassName("presentation_right")[0];
-              let pres_l = document.getElementsByClassName("presentation_left")[0];
-              let main = document.getElementsByClassName("circle_top")[0];
-
-             if(rec_r) {
-               let position_r = rec_r.getBoundingClientRect();
-
-
-          //  console.log(position_r);
-
-            if(position_r.top < 900){
-             rec_r.style.transform= "translateX(0)";  
-             rec_r.style.transition="transform 300ms ease-in-out";
-            }
-            else{
-             rec_r.style.transform= "translateX(-90%)";  
-             rec_r.style.transition="transform 300ms ease-in-out";
-            }
-             }
-
-             if(rec_l) {
-              let position_l = rec_l.getBoundingClientRect();
-
-
-          // console.log(position_l);
-
-           if(position_l.top < 800){
-            rec_l.style.transform= "translateX(0)";  
-            rec_l.style.transition="transform 300ms ease-in-out";
-           }
-           else {
-            rec_l.style.transform= "translateX(90%)";  
-            rec_l.style.transition="transform 300ms ease-in-out";
-           }
-            }
-
-
-            if(pres_l) {
-              let position_pres_l = pres_l.getBoundingClientRect();
-
-
-         //  console.log(position_pres_l);
-
-           if(position_pres_l.top > 190){
-            pres_l.style.transform= "translate3d(0px, 0px, 0px)";
-            pres_l.style.transition="transform 150ms ease-in-out";
-           }
-           else if(position_pres_l.top < 490) {
-            pres_l.style.transform= "translate3d(0px, -200px, 0px)";
-            pres_l.style.transition="transform 150ms ease-in-out";
-           }
-            }
-
-            if(pres_r) {
-              let position_pres_r = pres_l.getBoundingClientRect();
-
-
-         //  console.log(position_pres_r);
-
-           if(position_pres_r.top > 190){
-            pres_r.style.transform= "translate3d(0px, 0px, 0px)";
-            pres_r.style.transition="transform 300ms ease-in-out";
-           }
-           else if (position_pres_r.top < 490) {
-            pres_r.style.transform= "translate3d(0px, -200px, 0px)";
-            pres_r.style.transition="transform 300ms ease-in-out";
-           }
-            }
-
-         /*
-           
-            if(main) {
-              console.log(main.offsetTop);
-           let   ease = 0.05;
-           let start_position = main.offsetTop;
-              let scroll_request = 0;
-             let  total_offset = 0;
-            let animation_running = false;
-             if (!animation_running) {
-              animation_running = true;
-              animation_loop();
-          }
-          function animation_loop() {
-            let current_offset = window.pageYOffset;
-        
-            let difference = current_offset - total_offset;
-            difference *= ease;
-        
-            if (Math.abs(difference) < 0.05) {
-                scroll_request = 0;
-        
-                total_offset = current_offset;
-                animation_running = false;
-                return;
-            }
-        
-            main.style.top = `${start_position - total_offset}px`;
-            total_offset += difference;
-        
-            requestAnimationFrame(animation_loop);
-        }
-              
-              let position_main = main.getBoundingClientRect();
-
-
-           
-           if(position_main.top < -4000){
-
-          console.log(position_main,`(${position_main.top})`,`${position_main.top+50})`);
-           let x = `${position_main.top+50})`;
-            main.style.transform= "translate3d(0px, -1200px, 0px)";
-            main.style.transition="transform 600ms ease-in-out";
-           }
-          else if(position_main.top < -2800){
-            main.style.transform= "translate3d(0px, -1150px, 0px)";
-            main.style.transition="transform 600ms ease-in-out";
-           }
-           else if(position_main.top <= -2200){
-            main.style.transform= "translate3d(0px, -950px, 0px)";
-           main.style.transition="transform 1000ms ease-in-out";
-           }
-           else if(position_main.top <= -1200){
-            main.style.transform= "translate3d(0px, -650px, 0px)";
-            main.style.transition="transform 1000ms ease-in-out";
-           }
-           else if(position_main.top <= -550){
-            main.style.transform= "translate3d(0px, -350px, 0px)";
-            main.style.transition="transform 600ms ease-in-out";
-           }
-           else if(position_main.top <= -350){
-            main.style.transform= "translate3d(0px, -150px, 0px)";
-            main.style.transition="transform 600ms ease-in-out";
-           }
-         
-          
-           else {
-            main.style.transform= "translate3d(0px, 0px, 0px)";
-            main.style.transition="transform 600ms ease-in-out";
-           }
-
-            }
-           
-           <a className='language' href="/jp" >日本語</a> 
-           <a className='language language_mobile' href="/jp" >日本語</a>*/
-           
-
-            
-            
-          
-  });
-   }
 
 
 const Homefrench = () => {
@@ -242,337 +15,249 @@ const Homefrench = () => {
   
 
     return (
-        <div className="page"  >
-                  <div className="nav" >
-                            <div className="tab">
-                                  <a href="#graphisme"><div>Graphisme</div></a>
-                                  <a href="#site"><div>Site web</div></a>
-                                  <a href="#webmarketing"><div>Web Marketing</div></a>
-                                  <a href="#prestations"><div>Prestations</div></a>
-                                  <a href="#propos"><div>À Propos</div></a>
-                                  <a href="https://docs.google.com/forms/d/15rzJwWATuNbTFtQhbdFNGqxIfmKMS81MDEgDK2HJqCk/edit" target="_blank"><div>Contact</div></a>
-                                  
-                                 <div className="logo">
-                                    <img src={logo1} width="40" alt="peche melba icone"/>
-                                    < Logo  />
-                                </div>
-                            </div>
-                  </div>
-                  <div className="nav-mobile"  >
-                          <div className="logo-mobile">
-                                  <img src={logo1} width="50" alt="peche melba icone"/>
-                                  < Logo />
-                          </div>
-                           <div className="hamburgerNav" onClick={show}>
-                                    <div className="menu"></div><div className="menu"></div><div className="menu">
-                           </div>
-                           </div>
-                           <a className='language contact_mobile' href="https://docs.google.com/forms/d/15rzJwWATuNbTFtQhbdFNGqxIfmKMS81MDEgDK2HJqCk/edit" target="_blank" >Prendre contact ?</a>
-                            <div className="bar" >
-                            
-                                  <a href="#graphisme" className='a'><div>Graphisme</div></a>
-                                  <a href="#site" className='a'><div>Site web</div></a>
-                                  <a href="#webmarketing" className='a'><div>Web Marketing</div></a>
-                                  <a href="#prestations" className='a'><div>Prestations</div></a>
-                                  <a href="#propos" className='a'><div>À Propos</div></a>
-                                  <div className='a' onClick={hide}>X</div>
-                            </div>  
-                            
-                   </div>
+        <div className="home"  >
                  
-            <div className="home" >
-                   <section className="presentation_" onClick={hide}>
-            
-                              
-            
-                              <div className="presentationContent_">
+                 <div className="logo_">
+                       
+                        < Logo  />
+                  </div>
 
-                                          <div className='brand_name presentation_title presentation_brand'> 
-                                               < Brand />
-                                               <h1 className='title'> Concepteur de site Web </h1>
-                                          </div>
-                                         
-                                              
+            <div className="home_main_content" >
+                
 
-                                               <div className='presentation_left '>
+            <section className='introduction'>
+           
 
-                                                <h2>Ingredients</h2>
+                   
 
-                                                <div className='stack'>
-                                                    <div className='logiciels'>
-                                                      <img alt="ai" src={ai} />
-                                                      <img alt="ps" src={ps} />
-                                                      <img alt="id" src={id} />
-                                                      <img alt="ae" src={ae} />
-                                                    </div>
-                                                    <div className='langages'>
-                                                      <img alt="wp" src={wp} />
-                                                      <img alt="react-typescript"  className="react" src={react_typescript} />
-                                                      <img alt="node" src={node} />
-                                                      <img alt="express" src={express} />
-                                                      
-                                                    </div>
+                            <div className='titre titre_nom_recette'> 
+                 
+                                 <h2 className='nom_recette'>  La recette d'un site internet</h2>
+                                 <p className='phrase_accroche'>Pour une expérience en ligne savoureuse et inoubliable...</p>
 
-                                                </div>
+                            </div>
 
-                                          </div>
+                            <img alt="dessin d'un chef" className='chef' src={chef} /> 
 
-                                          
+                            <a className="chef contact_lien" href="https://docs.google.com/forms/d/15rzJwWATuNbTFtQhbdFNGqxIfmKMS81MDEgDK2HJqCk/edit" target="_blank">
+                                        <div className='contact'>Prendre contact ?</div>
+                            </a>
+                   
+                                                                                                   
+                            <video  autoPlay loop className='video'  >
+                                   <source  src="https://video.pechemelba.fr/conception_web.mp4" type="video/mp4"/>
+                            </video><br/> <br/>
+                               
+                            <div className='titre titre_h1'> 
 
-                                          <div className="presentation_center icone  " onLoad={up}>
-                                             <img  alt="pech melba icone"  srcSet={`${peche_melba} 330w, ${peche_melba_bis} 900w `} sizes="(max-width: 420px) 100vw , 35vw"/>
-                                            
-                                          </div>
+                                   <h1 >Conceptrice de site internet</h1>
+                                 
 
+                                   <div className='surlignage surlignage_h1'></div> 
 
-
-                                          <div className='presentation_right '>
-                                            <h2>Préparation</h2>
-                                            <ol>
-                                              <li>Conception graphique du site web</li>
-                                              <li>Réalisation du site web</li>
-                                              <li>Promotion du site web</li>
-                                            </ol> 
-                                          </div>
-
-                                         
-
-
-                              </div>
-            
-                    </section>
-
-
-            
-                   <section className="mainContent_ content" onClick={hide}>
-
-                     <h2>Pour réaliser l'ensemble ou une partie de mon site web : </h2>
-
-
-                     <div id="graphisme" className='realisation_type  '>
-                          <div>
-
-                                      
-                                         <div className='circle circle_top 'id="0" >
-
-                                              <p>ÉLÉMENTS GRAPHIQUES</p><br/>
-                                              
-      
-
-                                         </div>
-                                        
-                                      
-                           </div>
-                           <div className='realisation_description  '>
-                            
-                          
-                              
-                                           <h3>1. Les goûts et les couleurs ne se discutent pas !</h3> <br/>
-                                            <p>
-                                           <em className='citation'> "Je définis "MA" symbolique des couleurs."</em><br/><br/>
-                          
-
-                                           En effet, "LA" symbolique des couleurs varie selon les pays, les cultures.
-                                           Alors n'hésitez pas à choisir des couleurs que vous ressentez.
-                                           Nous élaborerons ensemble l'aspect du se votre site internet.
-                                           <br/><br/>
-                                           
-                                                 <div className='button'>
-                                                   <a  href="https://www.behance.net/gallery/143722639/BarBeer-Shop" target="_blank"><div className='button_ex'>Exemple 1</div></a>
-                                                   <div className='button_space'></div>
-                                                   <a href="https://www.instagram.com/miss_pechemelba/" target="_blank"><div className='button_ex'>Exemple 2 </div></a> 
-                                                  </div>
-                                           
-                                            </p> 
-                                            
-
-                          
-                            
-                           </div>
                            
+                           </div>
 
-                         
+
+                          
+              </section> 
+
+               
+
+              <section className='ingredients'>
+
+                     <div className='titre'> 
+                 
+                                <h2>Ingredients</h2>
+                     
+                                <div className='surlignage surlignage_h2'></div> 
 
                      </div>
-                         <div className='rectangle rectangle_right ' ></div>
-                     
-                     <div id="site" className='realisation_type realisation_type_middle '>
+                    
+                    
+                    
                    
-                                <div className='circle circle_center'id="1" >
+                                <ul className='liste_ingredients'>
+                                  <li>1 chef web expert (à votre service, avec passion et savoir-faire)</li>
+                                  <li>1 analyse approfondie des besoins clients (pour bien comprendre les goûts)</li>
+                                  <li>200 g de créativité fraîche (pour un design unique et appétissant)</li>
+                                  <li>2 à 3 technologies web (HTML, CSS, JavaScript, PHP, et bien plus)</li>
+                                  <li>1 dose généreuse de responsive design (pour une recette adaptée à tous les appareils)</li>
+                                  <li>1 soupçon de sécurité (HTTPS et protection des données)</li>
+                                  <li>1 zeste de maintenance (pour garder votre site au goût du jour)</li>
+                                  <li>1 cuillère à soupe de support client sur-mesure </li>
+                                </ul> 
+                    <div className='planche_decouper'></div>
 
-                                        <p>RÉALISATIONS WEB</p><br/>
-                                      
+                   
+            
+              </section>
 
 
-                                </div>
-                                <div className='realisation_description'>
-                              
-                                             <h3>2. L'art de déléguer ! </h3><br/>
-                                             <p>
-                                              <em className='citation'>"Grâce aux compétences mises à mon service, je concrétise la création de mon site web."   </em><br/><br/>
-                                              Après validation de la maquette graphique de votre site internet, nous procéderons au développement de celui-ci.<br/>
-                                              Cela se fera soit via un CMS (comme WordPress) soit entièrement fait à la main.
-                                              <br/><br/>
 
-                                              <div className='button button_realisation'>
-                                                   <a  href="https://www.sdv-avocats.com/" target="_blank"><div className='button_ex '>Exemple </div></a>
-                                                  </div>
+              <section className='recette'>
+
+                    <div className='titre'> 
+                 
+                          <h2> La recette pas à pas</h2>
+                          <div className='surlignage surlignage_h2'></div> 
+
+                    </div>
+
+                      <div className='etape etape1'>
+
+                          
+
+                            <div className='etape_content'>
+
+                                <h3>1) Préparer la base (Analyse des besoins)</h3>
+                                <p >
+
+                                        <em > "Les goûts et les couleurs ne se discutent pas !"</em><br/>
+                                          
+    
+                                        Définitions de vos besoins, objectifs et attentes afin de confectionner ensemble le **goût unique** de votre site.<br/>
+                                        Comme pour toute recette réussie, il faut d’abord **préparer les ingrédients de base** qui vont donner de la **saveur** à votre site. <br/>
+                                </p>
+
+                                <h3>2) Mélanger les idées (un design sur-mesure) </h3>
+
+                                <p>
+                                        Prendre une portion de **créativité fraîche** et mélangez-la avec l’identité visuelle de votre marque. <br/>
+                                        Cela permet la création d'un design unique : couleurs, typographies, images, et mise en page sont soigneusement choisis pour faire ressortir le meilleur de votre projet web.<br/>
                                         
+                                  
+                                </p>
 
-                                             </p>
-                                      
-                                      
-                                </div>                   
-                       </div>
-                     
-                       <div className='rectangle rectangle_left '></div>
-                       
-                     <div id="webmarketing" className='realisation_type   ' >
+                                <h3>3) Passer à la cuisson (Développement)</h3>
 
-                                 <div className='circle circle_bottom' id="2" >
+                                <p>
+                                        L’étape clé : **Cuisson** de votre projet par le chef, c’est le moment où le plat prend forme !<br/>
+                                        Développement du site en utilisant des technologies web modernes et efficaces (HTML, CSS,
+                                        JavaScript, CMS comme WordPress) pour que votre site soit fluide, rapide et interactif. <br/>
+                                        
+                                  
+                                </p>
 
-                                            <p>SUPPORTS PROMOTIONNELS</p><br/>
+                                <h3>4) Dresser ! (responsive design)</h3>
+
+                                <p>
+                                Une recette doit être visuellement **appétissant**, peu importe la taille ou la forme de **l’assiette** !
+                                Assurez-vous que votre **plat** soit aussi **savoureux** sur tous les appareils ! <br/>
+                                La présentation de votre site s’adapte à n'importe quel écran : ordinateur, tablette ou smartphone.
+                                  
+                                </p>
+
+                                <h3>5) Saupoudrer de sécurité</h3>
+
+                                <p>
+                                Un **plat** délicieux, mais aussi sécurisé pour vos visiteurs et vos informations. <br/>
+                                Une sécurité optimale (HTTPS, protections des données) pour que votre site soit à l’abri des menaces. <br/>
+                                
+                                  
+                                </p>
+
+                                <h3>6) Server ! (Livraison et mise en ligne) </h3>
+
+                                <p>
+                                Le moment tant attendu ! <br/>
+                                Comme un chef qui présente son plat avec fierté, livraison d'un site qui est prêt à être **dégusté** par vos visiteurs.
+                                  
+                                </p>
+
+                                <h3> <em>Conseil du chef (La maintenance et le support) </em></h3>
+
+                                <p>
+                                Un **plat** ne doit jamais perdre de sa fraîcheur ! Proposition d'une maintenance continue, avec des mises à jour régulières, et un
+                                support client sur-mesure pour répondre à toutes vos questions et besoins.
+                                  
+                                </p>
+
+                                <p className='conclusion_recette'>
+                                <h3>Et voilà ! Votre site est prêt à être **dégusté !**</h3>
+                                  Avec cette **recette** sur mesure, nous vous offrons un site web qui répond exactement à vos
+                                  attentes, qui vous ressemble et qui plait à vos visiteurs.<br/>
+                                 **Bon appétit numérique !**
+                                </p>
 
 
-                                 </div>
+                              
+                                           
 
-                                 <div className='realisation_description '>
 
-                                             <h3>3. Choisir c'est renoncer !</h3> <br/>
-                                             <p>
-                                                   <em className='citation'>"Je maximise la promotion de mon site web en ciblant les canaux de communication appropriés à mon secteur."</em><br/><br/>
-                                                   
-                                                    
-                                                   Nous réalisons des visuels sous format imprimé ou numérique pour la promotion de votre site internet ou de votre activité.<br/>
-                                                   <em>Si vous n'êtes pas encore présent sur les réseaux sociaux, nous pouvons vous accompagner dans votre sélection.</em>
-                                                  
-                                                   <br/><br/>
-                                                        
-                                                         <div className='button'>
-                                                               <a href="https://www.behance.net/gallery/144979215/Bannieres-publicitaires" target="_blank"><div className='button_ex'>Exemple 1 </div></a> 
-                                                               <div className='button_space'></div>
-                                                              <a href="https://www.behance.net/gallery/143743881/BarBeer-Shop-Promotion" target="_blank"><div className='button_ex'>Exemple 2</div> </a> 
-                                                              <div className='button_space'></div>
-                                                              <a href="https://www.behance.net/gallery/143743593/Storyboard-Motion-design-BarBeer-Shop" target="_blank"><div className='button_ex'>Exemple 3</div> </a> 
-                                                         </div>
-                                              </p>
+                            </div>     
 
-                                 </div>
-                  
+
+                      </div>
+
+
             
 
-                     </div> 
-          
-                 </section>
+                                    <div className='cercle cercle_etape cercle_violet cercle_bas_hauteur'></div>
+                                    <div className='cercle cercle_etape cercle_rose cercle_haut_hauteur'></div>
+                                    <div className='cercle cercle_etape cercle_jaune cercle_haut_hauteur cercle_jaune_gauche cercle_jaune1'></div>
+                                    <div className='cercle cercle_etape cercle_jaune cercle_bas_hauteur cercle_jaune_droit cercle_jaune2'></div>
+    
+    
+                                    <div className='cercle cercle_etape cercle_violet cercle_bas_hauteur2'></div>
+                                    <div className='cercle cercle_etape cercle_rose cercle_haut_hauteur2'></div>
+                                    <div className='cercle cercle_etape cercle_jaune cercle_haut_hauteur2 cercle_jaune_gauche cercle_jaune3'></div>
+                                    <div className='cercle cercle_etape cercle_jaune cercle_bas_hauteur2 cercle_jaune_droit cercle_jaune4'></div>
+                               
 
+              </section>
 
-
+              <section className='contactez'>
+                 <div className='titre'> 
                  
-                   <section  className='prestations_list content' id="prestations">
-                   
-                   <div className='recettes' >
-                             <h3>Nos recettes</h3>
+                     <h2>Envie de cuisiner ?</h2>
+                     <div className='surlignage surlignage_h2'></div> 
+                    
+                </div>
+                    <img className="tablier"alt="cuisiner" src={tablier} />
+                     <a className='contact_lien contact_lien_bas ' href="https://docs.google.com/forms/d/15rzJwWATuNbTFtQhbdFNGqxIfmKMS81MDEgDK2HJqCk/edit" target="_blank"><div className='contact contact_tablier'>Entrer en cuisine ici</div></a>
+             
+              </section>
+              
+              <img className="ustensiles"alt="ustensiles" src={ustensiles} />
 
-                             <div className='prestations prestations_menus '>
+              <section className='presentation'>
 
-                                         <div>
-                                                    <p>SITE VITRINE STANDARD</p>
-                                                    <ul>
-                                                      <li>Charte graphique</li>
-                                                      <li>Site web</li>
-                                                      <li>Mise en ligne </li>
-                                                      <li>Nom de domaine</li>
-                                                      <li>Hébergement</li>
-                                                    </ul>
-                                                  </div>
-                                                  <div>
-                                                    <p>SITE VITRINE PERSONNALISÉ</p>
-                                                    <ul>
-                                                      <li>Charte graphique</li>
-                                                      <li>Site web</li>
-                                                      <li>Mise en ligne</li>
-                                                      <li>Nom de domaine</li>
-                                                      <li>Hébergement</li>
-                                                    </ul>
-                                                  </div>
-                                                  <div>
-                                                    <p>SITE E-COMMERCE STANDARD</p>
-                                                    <ul>
-                                                      <li>Charte graphique</li>
-                                                      <li>Site web</li>
-                                                      <li>Mise en ligne </li>
-                                                      <li>Nom de domaine</li>
-                                                      <li>Hébergement</li>
-                                                    </ul>
-                                                  </div>
-
-
-                                         </div>
-                   
-                 
-                                <div className='prestations prestations_formulas'>
-                 
-                                              <div>
-                                                      <p>CHARTE GRAPHIQUE</p>
-                                                      <ul>
-                                                        <li>Choix des couleurs</li>
-                                                        <li>Typographie</li>
-                                                        <li>Maquettes du site</li>
-                                                      </ul>
-                                                    </div>
-                                                    <div>
-                                                      <p>DÉVELOPPEMENT SITE WEB</p>
-                                                      <ul>
-                                                        <li>Site web - avec ou sans WordPress</li>
-                                                      </ul>
-                                                    </div>
-                                                    <div>
-                                                      <p>COMMUNICATION VISUELLE</p>
-                                                      <ul>
-                                                        <li> Supports imprimés (Flyers Affiches)</li>
-                                                        <li> Supports numériques </li>
-                                                        <li>(visuel d'e-mail, réseaux sociaux,...)</li>
-                                                      </ul>
-                                              </div>
-                 
-                                  
-                                </div>
-
-                   </div>
-                  
-                      
-                  
-
-
-                 </section>
-
-                 <section className='com' >
-
-                   <h2 className='h_presta commander content'id="contact">Passer commande ?</h2>
-                 
-                 
-                   <div className='espace_com'  >
-                   
-                   <a className="button_contact btn_form" href="https://docs.google.com/forms/d/15rzJwWATuNbTFtQhbdFNGqxIfmKMS81MDEgDK2HJqCk/edit" target="_blank"><div>Form</div></a>
-                   
-                   </div>
-                   </section>
-
-
-                 <section className='apropos content' id="propos"> <br/><br/>
-                   <h2>À propos</h2>
-                   <p className='apropos_content'>  Je suis Mélinda MENDY, développeur web et web designer freelance. <br/> <br/>
-                   Après avoir suivi les formations de Concepteur Développeur web et de Web Designer,
-                   je me lance dans l'aventure du freelancing.<br/>
-                   J'ai plaisir à accompagner mes clients (particuliers, associations, entreprises) dans leur évolution numérique.
-                   
-                   </p>
-                 
-                 </section>
-
-
+                <div className='presentation_contenu'>
+            
+                    <div className='presentation_cercles'>
+                              
+                               <div className='cercle cercle_ingredient cercle_moi'></div>
+                              
+                    </div>  
+                    <div className='resume'>
+                               <p className='presentation_texte moi'>  Je suis Mélinda MENDY, alias Peche Melba, concepteur de site internet freelance.
+                                                            J'ai plaisir à accompagner mes clients (particuliers, associations, entreprises) dans leur évolution numérique.
+                               </p>
+                               <p className='presentation_texte pourquoi'>
+                                                             **Pourquoi choisir ma cuisine digitale ?**
+                               </p>
+                               <p className='presentation_texte arguments'>
+                                                             J’élabore des sites internet comme un chef prépare ses plats : avec passion, précision et un brin de créativité. 
+                                                             Mon rôle est de créer des sites web qui non seulement reflètent votre identité, mais qui optimisent l'expérience utilisateur et favorisent l'engagement de vos visiteurs.<br/><br/>
+                                                             Vous êtes impliqué(e) à chaque étape, et vos retours sont essentiels pour vous satisfaire et répondre à vos attentes les plus fines.
+                                                             Chaque projet est une véritable **création culinaire numérique** délicieuse à regarder et agréable à utiliser.<br/><br/>
+                                                             Que vous ayez besoin d’un site vitrine ou d’une boutique en ligne, ensemble nous allons créer la **recette idéale** pour votre site internet où chaque élément a son rôle à jouer, du design à l’ergonomie.<br/><br/>
+                                                             <a className='contact_lien contact_lien_presentation' href="https://docs.google.com/forms/d/15rzJwWATuNbTFtQhbdFNGqxIfmKMS81MDEgDK2HJqCk/edit" target="_blank">Contactez-moi</a> dès aujourd'hui, pour commencer à travailler sur votre projet gourmand et donner vie à vos idées.<br/>
+                                                    
+                                                    
+                                                    
+                               </p>
+                                                    
+                    </div>
                  </div>
-                 <Footer />
+
+              </section>
+                   
+                < Footer />
+
+            </div>
+              
 
         </div>
     )

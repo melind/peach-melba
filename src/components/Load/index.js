@@ -1,8 +1,8 @@
 import React from 'react';
-import './index.css';
+//import './index.css';
 
 import logo1 from '../../icones/logo1.svg';
-import Brand from '../Brand';
+import Logo from '../Logo';
 
 
 const Load = () => {
@@ -12,10 +12,10 @@ const Load = () => {
        
         <div className="load">
         
-          <div className=" brand shaped rotateInLeft">
-                   <img src={logo1} width="300" alt="pech melba logo"/>       
+          <div className=" shaped rotateInLeft">
+                   < Logo />     
          </div>
-            < Brand />
+            
         </div>
         
     )
