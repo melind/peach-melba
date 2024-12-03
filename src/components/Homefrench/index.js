@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react';
-import { Link } from "react-router-dom";
+import React from 'react';
+import ReactPlayer from 'react-player/lazy';
 import './index.css';
 import Footer from '../Footer';
 
@@ -11,7 +11,6 @@ import Logo from '../Logo';
 
 
 const Homefrench = () => {
-  
   
 
     return (
@@ -43,10 +42,15 @@ const Homefrench = () => {
                                         <div className='contact'>Prendre contact ?</div>
                             </a>
                    
-                                                                                                   
-                            <video  autoPlay loop className='video'  >
-                                   <source  src="https://video.pechemelba.fr/conception_web.mp4" type="video/mp4"/>
-                            </video><br/> <br/>
+                            <div className='video_contenant'>                                                   
+                                       <video  className='video' >
+                                              <source  src="https://video.pechemelba.fr/conception_web.mp4" type="video/mp4"/>
+                                              
+                                       </video>
+                
+                                       <ReactPlayer  width='' height='' className='video video_r' playing={true}  loop={true}  muted={true} light={true} url={'https://video.pechemelba.fr/conception_web.mp4'} />
+                            </div>      
+                           
                                
                             <div className='titre titre_h1'> 
 
